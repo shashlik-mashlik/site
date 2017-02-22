@@ -1,0 +1,7 @@
+<!-- CONTENT -->
+				
+	
+	<?=$CONTENT['text'];?>	
+				
+		
+<!-- CONTENT -->

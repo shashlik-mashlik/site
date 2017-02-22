@@ -1,0 +1,10 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /control/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /control/index.php [L,QSA] 
+
+
+php_value display_errors 1

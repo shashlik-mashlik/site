@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+a:focus {outline: none;}
+
+body {
+	font-size: small;
+	font-family: Tahoma, Verdana, sans-serif;
+	height: 100%;
+	color: #ooo;
+}
+#wrap {
+	
+	width: 1200px;
+	margin: 0px auto;
+/*	margin: 50px;*/
+	min-width: 980px;
+	height: 100%;
+	overflow:hidden;
+}
+
+#header {	margin: 5px 0px;
+	overflow: hidden;
+}
+	#header #logo {		float: left;
+	}
+	#header #recomend {		float: right;
+		margin: 20px 0px 0px 0px;
+	}
+	#header p {		float: left;
+		width: 300px;
+		margin: 10px 0px 0px 50px;
+		text-align: center;
+	}
+
+
+
+#login {	width: 353px;
+	margin: 50px auto 0px auto;
+	font-size: 18px;
+	color: #666;
+}
+	#login table {		width: 200px;
+		margin: 10px auto;
+	}
+		#login td {			text-align: right;
+			padding: 5px 5px;
+		}
+		#login input {
+			border: 1px solid #ccc;
+			width: 100%;
+			height: 25px;
+		}
+		#login input:focus {			background: #fbedde;
+			border: 1px solid #ffdab2;
+		}
+	#login a {		color: #592A20;
+		background: #eee;
+		padding: 3px;
+	}
+	#login .error {		bordeR: 1px solid red;
+	}
+	#login p.error {		border: none;
+		color: red;
+		margin-top: 10px;
+		font-size: 80%;
+		padding: 2px 4px;
+		text-align: center;
+	}
+
+#menu {	float: left;
+	width: 223px;
+	margin: 10px 10px 0px 0px;
+}
+	#menu .block {		background: #F4F3F2 url('img/menubg.png') bottom center no-repeat;
+    	margin: 10px 0px 30px 0px;
+    	overflow: hidden;
+	}
+		#menu .block h2 {			background: url('img/menuh2.png') top left no-repeat;
+			height: 37px;
+			line-height: 40px;
+			color: #fff;
+			font-size: 14px;
+			text-align:center;
+		}
+		#menu .block ul {
+			list-style: none;
+			width: 220px;
+			margin: 1px;
+		}
+			#menu .block ul li {				padding: 5px 0px;
+				line-height: 20px;
+                height: 20px;
+			}
+			#menu .block ul li a {				color: #3e3e3e;
+				font-size: 13px;
+				margin-left: 10px;
+				text-decoration: none;
+				font-weight: bold
+			}
+			#menu .block ul li:hover {
+				background: #ffb77b;
+
+			}
+			#menu .block ul li a:hover {				color: #000;
+			}
+			#menu .block .video {
+				display: block;
+				float: right;
+				margin-right: 10px;				width: 21px;
+				height: 21px;
+				background: url('img/video.png') center center no-repeat;
+			}
+
+#content {	float: right;
+	width: 950px;
+/*	float: left;
+*/	margin-top: 24px;
+}
+	#content h1 {		font-size: 22px;
+		color: #592A20;
+		font-weight: normal;
+		margin-bottom: 7px;
+	}
+	#content input, #content textarea, #content select {		border: 1px solid #F29A12;
+	}
+	#content select option.cat_level_0 { font-weight: bold; }
+	#content select option.cat_level_1 { margin-left: 10px; font-weight: bold; font-style: italic; }
+	#content select option.cat_level_2 { margin-left: 20px; }
+	#content select option.cat_level_3 { margin-left: 30px; }
+	
+	#content a {		color: #555;
+	}
+	#content .text_img {		margin:0 0 4px;
+	}
+		#content .text_img img {			position: relative;
+			top: 3px;
+		}
+	#content .table {		width: 100%;
+	}
+		#content .table th {			text-align: left;
+			background: #EC760E;
+			color: #fff;
+		}
+		#content .table td, #content .table th  {			padding: 3px;
+		}	#content .addtable {		width: 90%;
+	}
+		#content .addtable input.long {			width: 100%;
+		}
+		#content .addtable textarea {			width: 100%;
+			height: 75px;
+		}
+		#content .addtable textarea.long {
+			width: 100%;
+			height: 300px;
+		}
+
+#footer {	width: 100%;
+	clear:both;
+	margin: 10px 0px;
+}
+	#footer a {		color: #D35B0D;
+	}
+
+
+
+/** HELPER **/
+#helper {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+}
+	#helper #hlogin {		position: relative;
+		top: 88px;
+		left: 293px;
+	}
+#exit {	text-align: center;
+	display: block;
+	width: 100%;
+	color: #f44;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+/** ToolTip **/
+#easyTooltip{
+	padding:5px 10px;
+	border:1px solid #ccc;
+	background:#592A20;
+	color:#fff;
+}

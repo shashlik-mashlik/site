@@ -1,0 +1,22 @@
+if ($URL[1]=='basket') {
+
+	if(isset($_GET['catalog_item'])){
+		$_SESSION['goods'][] = $_GET['catalog_item'];
+	//	header('Location: /basket');
+	//	exit;
+	}
+		
+	if(isset($_SESSION['goods'])){
+		foreach ($_SESSION['goods'] as $tmp) {
+			sort($_SESSION['goods']); 
+			$_SESSION['count'] = $count++;
+		}
+	} else {$_SESSION['count']=0;}
+
+
+	if(isset($_GET['del_item'])){
+		unset($_SESSION['goods'][$_GET['del_item']]); 
+		sort($_SESSION['goods']); 	
+	}
+
+}

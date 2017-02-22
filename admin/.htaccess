@@ -1,0 +1,10 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /admin/index.php [L,QSA] 
+
+
+#php_value display_errors 0
