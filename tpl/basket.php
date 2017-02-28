@@ -193,7 +193,7 @@ if (isset($_GET['del_basket_item'])) {
 
                             </div>
                         </div>
-                        <!--End Right side -->
+                        <!--End Right side hhhh-->
                     </div>
 
 
