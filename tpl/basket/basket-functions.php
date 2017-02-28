@@ -1,6 +1,6 @@
 <?
 
-function add_to_cart($product_id, $count = 1)
+/*function add_to_cart($product_id, $count = 1)
 {
     if (!empty($_SESSION['products'][$product_id])) {
         $_SESSION['products'][$product_id]['count']++;
@@ -12,6 +12,20 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id]['count'] = $count;
     }
     update_cart();
+}*/
+function add_to_cart($product_id, $count = 1)
+{
+    if (!empty($_SESSION['products'][$product_id])) {
+        $_SESSION['products'][$product_id]['count']++;
+    } else {
+        $_SESSION['products'][$product_id] = array();
+        $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
+        $add_product = mysql_fetch_assoc(mysql_query($q));
+        $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
+        $_SESSION['products'][$product_id]['count'] = $count;
+    }
+    //update_cart();
+    //json_encode(value)
 }
 
 
