@@ -137,7 +137,7 @@ if (isset($_GET['del_basket_item'])) {
 
                                             <table style="border: none">
                                                 <tr>
-
+                                                <!--  КНОПКИ НАЧАЛО -->
                                                     <td class="active">
                                                         <a href="/basket/?del_basket_item=<?php echo $key ?>"
                                                            type="submit" 
@@ -193,7 +193,7 @@ if (isset($_GET['del_basket_item'])) {
 
                             </div>
                         </div>
-                        <!--End Right side hhhh-->
+                        <!--End Right side-->
                     </div>
 
 
