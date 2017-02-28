@@ -4,7 +4,6 @@ include('tpl/basket/basket-functions.php');
 
 
 if (isset($_GET['add_basket_item'])) {
-    return echo $_GET['add_basket_item'];
     add_to_cart($_GET['add_basket_item']);
 }
 if (isset($_GET['remove_from_cart'])) {
