@@ -78,8 +78,8 @@ $Ask = $json['query']['results']['rate']['Ask'];
               <!-- Meta description -->
               <div class="meta-desc"> 
 
-              <!--<a class="shop btn btn-gold" href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>-->
-              <a href="/basket/?add_basket_item=<?=$el['id']?>" type="submit" class="btn btn-success" style="margin-top: 10px; dysplay: block;" >Добавить в корзину</a>
+              <a class="shop btn btn-gold" href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+              <a href="/basket/?add_basket_item=<?=$el['id']?>" type="submit" class="btn btn-success" style="margin-top: 10px; dysplay: block;" >Добавить в корзину (del)</a>
 
 
                 <ul class="social pull-right">
