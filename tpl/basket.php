@@ -135,7 +135,7 @@ if (isset($_GET['del_basket_item'])) {
                                             </span>
                                             <input type="number" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
                                             <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default" data-type="plus" data-field="quant[1]"> <span class="fa fa-plus"></span> </button>
+                                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"> <span class="fa fa-plus"></span> </button>
                                             </span>
                                         </div>
                     <!-- End input group minus & plus --></td>
