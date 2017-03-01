@@ -166,8 +166,8 @@ if (isset($_GET['del_basket_item'])) {
                                         <!-- End input group minus & plus --></td>
                                     <td><span id="product_coast_<?php echo $key; ?>" class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
                                             руб. </span>
-                                        <a class="pull-right" href="/basket/?remove_from_cart=<?php echo $key ?>"><i
-                                                class="fa fa-times"></i></a></td>
+                                        <span class="pull-right" onclick="basketAjax.remove_from_cart(<?php echo $key ?>)"><i
+                                                class="fa fa-times"></i></span></td>
                                 </tr>
 
                                 <?php

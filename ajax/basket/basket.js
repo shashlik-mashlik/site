@@ -14,7 +14,17 @@ var basketAjax = {
 			document.querySelector('#all_count_word').innerText = word;
 		},
 		remove: function(param) {
+			let response = eval("(" + param.responseText + ")");
 
+			let word = 'позиций';
+			if (response.all[0] == 1) word = 'позиция'
+				else if (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
+
+			document.querySelector('#all_coast').innerText = response.all[1];
+			document.querySelector('#all_count').innerText = response.all[0];
+			document.querySelector('#all_count_word').innerText = word;
+
+			document.querySelector('#basket_row_item_' + response.id).remove();
 		},
 		delete: function(param) {
 
@@ -23,5 +33,9 @@ var basketAjax = {
 	add_to_cart: function(item) {
 		let xhr = ajax.ini();
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'add_basket_item=' + item, basketAjax.callback.add);
+	},
+	remove_from_cart: function(item) {
+		let xhr = ajax.ini();
+		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'remove_from_cart=' + item, basketAjax.callback.remove);
 	}
 }

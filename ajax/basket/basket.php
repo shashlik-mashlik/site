@@ -71,5 +71,11 @@ function update_product_count($product_id, $count)
 function remove_from_cart($product_id)
 {
     unset($_SESSION['products'][$product_id]);
+    echo json_encode([
+        "id" => $product_id,
+        "status" => 1,
+        "all" => update_cart()
+    ]);
+    exit();
 }
 ?>
