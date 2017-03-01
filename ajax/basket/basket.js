@@ -7,11 +7,11 @@ var basketAjax = {
 			if (response.all[0] == 1) word = 'позиция'
 				else if (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
 
+			document.querySelector('#header_basket_all_count').innerText = response.all[0];
 			document.querySelector('#product_count_' + response.id).value = response.count;
 			document.querySelector('#product_coast_' + response.id).value = response.coast;
 			document.querySelector('#all_coast').innerText = response.all[1];
 			document.querySelector('#all_count').innerText = response.all[0];
-			document.querySelector('#header_basket_all_count').innerText = response.all[0];
 			document.querySelector('#all_count_word').innerText = word;
 		},
 		remove: function(param) {
