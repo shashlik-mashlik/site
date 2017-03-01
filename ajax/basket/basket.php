@@ -24,7 +24,6 @@ function add_to_cart($product_id, $count = 1)
 {
     if (!empty($_SESSION['products'][$product_id])) {
         $_SESSION['products'][$product_id]['count']++;
-        echo $_SESSION['products'][$product_id]['count'];
     } else {
         $_SESSION['products'][$product_id] = array();
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
@@ -33,7 +32,7 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id]['count'] = $count;
     }
 
-    echo "ok";
+    return echo "pep";
     //return echo json_encode([
         //"id" => $product_id//,
         //"count" => $_SESSION['products'][$product_id]['count'],
