@@ -34,12 +34,12 @@ function add_to_cart($product_id, $count = 1)
     }
 
 
-    return echo json_encode([
+    //return echo json_encode([
         "id" => $product_id//,
         //"count" => $_SESSION['products'][$product_id]['count'],
         //"coast" => $_SESSION['products'][$product_id]['coast'],
         //"all" => update_cart()
-    ]);
+    //]);
 }
 
 function del_basket_item($product_id, $count = 1)
