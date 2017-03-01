@@ -30,7 +30,6 @@ function add_to_cart($product_id, $count = 1)
         $add_product = mysql_fetch_assoc(mysql_query($q));
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
         $_SESSION['products'][$product_id]['count'] = $count;
-        echo $_SESSION['products'][$product_id]['count'];
     }
     update_cart();
 }
@@ -55,7 +54,7 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    echo 
+    echo var_dump($_SESSION['cart_coast']);
     exit;
 }
 
