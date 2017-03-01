@@ -19,6 +19,7 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id] = array();
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
         $add_product = mysql_fetch_assoc(mysql_query($q));
+        echo var_dump($add_product);
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
         $_SESSION['products'][$product_id]['count'] = $count;
     }
