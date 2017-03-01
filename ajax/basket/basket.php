@@ -4,28 +4,28 @@ include $_SERVER['DOCUMENT_ROOT'] . '_config.php';
 if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);
 }
-/*if (isset($_POST['remove_from_cart'])) {
+if (isset($_POST['remove_from_cart'])) {
     remove_from_cart($_POST['remove_from_cart']);
 }
 if (isset($_POST['del_basket_item'])) {
     del_basket_item($_POST['del_basket_item']);
-}*/
+}
 
 function add_to_cart($product_id, $count = 1)
 {
     if (!empty($_SESSION['products'][$product_id])) {
-        //$_SESSION['products'][$product_id]['count']++;
+        $_SESSION['products'][$product_id]['count']++;
     } else {
-        //$_SESSION['products'][$product_id] = array();
-        $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
+        $_SESSION['products'][$product_id] = array();
+        $q = "SELECT * FROM `mandarinko_catalog_item` WHERE id='$product_id'";
         $add_product = mysql_fetch_assoc(mysql_query($q));
         echo var_dump($add_product);
-        //$_SESSION['products'][$product_id]['coast'] = $add_product['price'];
-        //$_SESSION['products'][$product_id]['count'] = $count;
+        $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
+        $_SESSION['products'][$product_id]['count'] = $count;
     }
-    //update_cart();
+    update_cart();
 }
-/*
+
 function del_basket_item($product_id, $count = 1)
 {
     if (!empty($_SESSION['products'][$product_id])) {
@@ -60,5 +60,5 @@ function remove_from_cart($product_id)
     unset($_SESSION['products'][$product_id]);
     update_cart();
 }
-*/
+
 ?>
