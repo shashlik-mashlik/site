@@ -5,7 +5,7 @@ var basketAjax = {
 
 			let word = 'позиций';
 			if (response.all[0] == 1) word = 'позиция'
-				elseif (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
+				else if (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
 
 			document.querySelector('#product_count_' + response.id).value = response.count;
 			document.querySelector('#product_coast_' + response.id).value = response.coast;
