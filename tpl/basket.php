@@ -128,9 +128,20 @@ if (isset($_GET['del_basket_item'])) {
                                                                         class="img-thumbnail"> <?= $product['name'] ?>
                                         </a></td>
                                     <td><?= $product['price'] ?> руб.</td>
+                                     <td><!-- input group minus & plus-->
+                    <div class="input-group plus-minus"> <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"> <span class="fa fa-minus"></span> </button>
+                      </span>
+                      <input type="number" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"> <span class="fa fa-plus"></span> </button>
+                      </span> </div>
+                    <!-- End input group minus & plus --></td>
+                  <td>
+                                    <!--
                                     <td><!-- input group minus & plus-->
 
-                                        <!--  КНОПКИ НАЧАЛО -->
+                                        <!--  КНОПКИ НАЧАЛО 
                                         <div class="input-group plus-minus">
 
                                             <table style="border: none">
@@ -155,16 +166,19 @@ if (isset($_GET['del_basket_item'])) {
 
                                                 </tr>
 
-                                                <!-- <button class="btn btn-danger">ggg+++</button> -->
+                                                <button class="btn btn-danger">ggg+++</button>
 
                                             </table>
 
                                         </div>
-                                        <!-- КНОПКИ КОНЕЦ -->
+                                         КНОПКИ КОНЕЦ 
 
 
-                                        <!-- End input group minus & plus --></td>
-                                    <td><span id="product_coast_<?php echo $key; ?>" class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
+                                         End input group minus & plus </td>
+                                    <td>-->
+
+
+                                    <span id="product_coast_<?php echo $key; ?>" class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
                                             руб. </span>
                                         <span class="pull-right" onclick="basketAjax.remove_from_cart(<?php echo $key ?>)"><i
                                                 class="fa fa-times"></i></span></td>

@@ -3,9 +3,9 @@ var basketAjax = {
 		add: function(param) {
 			let response = eval("(" + param.responseText + ")");
 
-			let word = 'позиций';
-			if (response.all[0] == 1) word = 'позиция'
-				else if (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
+			let word = ' позиций';
+			if (response.all[0] == 1) word = ' позиция'
+				else if (response.all[0] > 1 && response.all[0] < 5) word = ' позиции';
 
 			document.querySelector('#header_basket_all_count').innerText = response.all[0];
 			document.querySelector('#product_count_' + response.id).value = response.count;
@@ -17,9 +17,9 @@ var basketAjax = {
 		remove: function(param) {
 			let response = eval("(" + param.responseText + ")");
 
-			let word = 'позиций';
-			if (response.all[0] == 1) word = 'позиция'
-				else if (response.all[0] > 1 && response.all[0] < 5) word = 'позиции';
+			let word = ' позиций';
+			if (response.all[0] == 1) word = ' позиция'
+				else if (response.all[0] > 1 && response.all[0] < 5) word = ' позиции';
 
 			document.querySelector('#all_coast').innerText = response.all[1];
 			document.querySelector('#all_count').innerText = response.all[0];
