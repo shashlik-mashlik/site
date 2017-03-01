@@ -83,7 +83,7 @@ if (isset($_GET['del_basket_item'])) {
                                             if ($_SESSION['products_incart'] > 4) {
                                                 echo(" позицй");
                                             }
-                                    ?> на сумму: <span><?= $_SESSION['cart_coast'] ?></span> руб.</h3>
+                                    ?> на сумму: <span id="all_coast"><?= $_SESSION['cart_coast'] ?></span> руб.</h3>
                             <? } ?>
                         </blockquote>
 
