@@ -73,7 +73,7 @@ if (isset($_GET['del_basket_item'])) {
                             <? if (($_SESSION['products_incart']) < 1) {
                                 echo('<h3>В корзине нет товаров</h3>');
                             } else { ?>
-                                <h3 id="all_count">В корзине <span id="all_count_word"><?= $_SESSION['products_incart'];
+                                <h3 id="all_count">В корзине <?= $_SESSION['products_incart'];?><span id="all_count_word"><?
                                     if ($_SESSION['products_incart'] == 1) {
                                         echo(" позиция");
                                     } else
