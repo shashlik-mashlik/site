@@ -10,12 +10,7 @@ mysql_query("set names utf8");
 
 session_start();
 
-$q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='681328'";
-$add_product = mysql_fetch_assoc(mysql_query($q));
-echo mysql_ping() . ' ';
-echo var_dump($add_product);
-
-/*if (isset($_POST['add_basket_item'])) {
+if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);
 }
 if (isset($_POST['remove_from_cart'])) {
@@ -75,5 +70,4 @@ function remove_from_cart($product_id)
     unset($_SESSION['products'][$product_id]);
     update_cart();
 }
-*/
 ?>
