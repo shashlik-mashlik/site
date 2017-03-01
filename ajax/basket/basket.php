@@ -7,10 +7,10 @@ $dbhost  = "antondtl.beget.tech";
 mysql_connect($dbhost, $dbuser, $dbpass) or die ("Could not connect: ".mysql_error());
 mysql_select_db($dbname);
 mysql_query("set names utf8");
-echo mysql_ping();
-//session_start();
 
+session_start();
 
+echo mysql_ping() . ' ' . session_id();
 /*if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);
 }
