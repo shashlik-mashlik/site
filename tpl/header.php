@@ -94,7 +94,7 @@ session_start();// Начинаем сессию
           <div id="shop_cart" > 
           	<a href="/basket" id="shop_tigger_"><i class="fa fa-shopping-cart"></i>
           	<?	if ($_SESSION['products_incart'] != 0) {	?>
-          		<span><?=$_SESSION['products_incart'];?></span>
+          		<span id="header_basket_all_count"><?=$_SESSION['products_incart'];?></span>
           	<?	}	?>
           	</a>
             

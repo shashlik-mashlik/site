@@ -11,6 +11,7 @@ var basketAjax = {
 			document.querySelector('#product_coast_' + response.id).value = response.coast;
 			document.querySelector('#all_coast').innerText = response.all[1];
 			document.querySelector('#all_count').innerText = response.all[0];
+			document.querySelector('#header_basket_all_count').innerText = response.all[0];
 			document.querySelector('#all_count_word').innerText = word;
 		},
 		remove: function(param) {
@@ -22,6 +23,7 @@ var basketAjax = {
 
 			document.querySelector('#all_coast').innerText = response.all[1];
 			document.querySelector('#all_count').innerText = response.all[0];
+			document.querySelector('#header_basket_all_count').innerText = response.all[0];
 			document.querySelector('#all_count_word').innerText = word;
 
 			document.querySelector('#basket_row_item_' + response.id).remove();
