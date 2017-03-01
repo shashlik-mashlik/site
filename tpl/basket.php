@@ -131,11 +131,11 @@ if (isset($_GET['del_basket_item'])) {
                                     <td><!-- input group minus & plus-->
                                         <div class="input-group plus-minus">
                                             <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"> <span class="fa fa-minus"></span> </button>
+                                                <button type="button" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
                                             </span>
-                                            <input type="number" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                            <input type="number" class="form-control input-number" value="1">
                                             <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"> <span class="fa fa-plus"></span> </button>
+                                                <button type="button" class="btn btn-default btn-number" data-type="plus"> <span class="fa fa-plus"></span> </button>
                                             </span>
                                         </div>
                     <!-- End input group minus & plus --></td>
