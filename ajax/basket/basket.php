@@ -47,8 +47,8 @@ function del_basket_item($product_id, $count = 1)
         if ($_SESSION['products'][$product_id]['count'] > 1) {
             $_SESSION['products'][$product_id]['count']--;
         }
-        
-    } elseif ($_SESSION['products'][$product_id]['count'] === 1) {
+
+    } else if ($_SESSION['products'][$product_id]['count'] === 1) {
         echo json_encode(["status": false, "msg": "remove"]);
         exit();
 

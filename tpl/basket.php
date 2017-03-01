@@ -131,7 +131,7 @@ if (isset($_GET['del_basket_item'])) {
                                     <td><!-- input group minus & plus-->
                                         <div class="input-group plus-minus">
                                             <span class="input-group-btn">
-                                                <button type="button" onclick="basketAjax.delete_basket_item(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
+                                                <button type="button" onclick="basketAjax.delete_basket_item22222222222222222(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
                                             </span>
                                             <input type="number" class="form-control input-number" value="1">
                                             <span class="input-group-btn">
