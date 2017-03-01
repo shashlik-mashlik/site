@@ -1,14 +1,14 @@
 var basketAjax = {
 	callback: {
-		add: function(response) {
-			let response = eval("(" + response.responseText + ")");
+		add: function(param) {
+			let response = eval("(" + param.responseText + ")");
 			document.querySelector('#product_count_' + response.id).value = response.count;
 			document.querySelector('#all_coast').innerText = response.all[1];
 		},
-		remove: function(response) {
+		remove: function(param) {
 
 		},
-		delete: function(response) {
+		delete: function(param) {
 
 		}
 	},
