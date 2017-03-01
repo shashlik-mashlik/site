@@ -131,11 +131,11 @@ if (isset($_GET['del_basket_item'])) {
                                     <td><!-- input group minus & plus-->
                                         <div class="input-group plus-minus">
                                             <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
+                                                <button type="button" onclick="basketAjax.remove_from_cart(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
                                             </span>
                                             <input type="number" class="form-control input-number" value="1">
                                             <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default btn-number" data-type="plus"> <span class="fa fa-plus"></span> </button>
+                                                <button type="button" onclick="basketAjax.add_to_cart(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="plus"> <span class="fa fa-plus"></span> </button>
                                             </span>
                                         </div>
                     <!-- End input group minus & plus --></td>

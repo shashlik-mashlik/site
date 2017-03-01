@@ -29,7 +29,18 @@ var basketAjax = {
 			document.querySelector('#basket_row_item_' + response.id).remove();
 		},
 		delete: function(param) {
+			let response = eval("(" + param.responseText + ")");
 
+			let word = ' позиций';
+			if (response.all[0] == 1) word = ' позиция'
+				else if (response.all[0] > 1 && response.all[0] < 5) word = ' позиции';
+
+			document.querySelector('#header_basket_all_count').innerText = response.all[0];
+			document.querySelector('#product_count_' + response.id).value = response.count;
+			document.querySelector('#product_coast_' + response.id).value = response.coast;
+			document.querySelector('#all_coast').innerText = response.all[1];
+			document.querySelector('#all_count').innerText = response.all[0];
+			document.querySelector('#all_count_word').innerText = word;
 		}
 	},
 	add_to_cart: function(item) {
@@ -39,5 +50,9 @@ var basketAjax = {
 	remove_from_cart: function(item) {
 		let xhr = ajax.ini();
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'remove_from_cart=' + item, basketAjax.callback.remove);
+	},
+	delete_basket_item: function(item) {
+		et xhr = ajax.ini();
+		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'del_basket_item=' + item, basketAjax.callback.delete);
 	}
 }

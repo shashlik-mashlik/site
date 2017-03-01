@@ -43,14 +43,26 @@ function add_to_cart($product_id, $count = 1)
 
 function del_basket_item($product_id, $count = 1)
 {
-    if (!empty($_SESSION['products'][$product_id])) {
+    if (!empty($_SESSION['products'][$product_id]) && $_SESSION['products'][$product_id] > 1) {
         if ($_SESSION['products'][$product_id]['count'] > 1) {
             $_SESSION['products'][$product_id]['count']--;
-        } else {
-            remove_from_cart($product_id);
         }
+        
+    } elseif ($_SESSION['products'][$product_id]['count'] === 1) {
+        echo json_encode(["status": false, "msg": "remove"]);
+        exit();
 
+    } else {    
+        echo json_encode(["status": false, "msg": "Warning: #1 ajax query illegal"]);
+        exit();
     }
+
+    echo json_encode([
+        "status": true,
+        "id" => $product_id,
+        "count" => $_SESSION['products'][$product_id]['count'],
+        "all" => update_cart()
+    ]);
 }
 
 function update_cart()
@@ -73,7 +85,7 @@ function remove_from_cart($product_id)
     unset($_SESSION['products'][$product_id]);
     echo json_encode([
         "id" => $product_id,
-        "status" => 1,
+        "status" => true,
         "all" => update_cart()
     ]);
     exit();
