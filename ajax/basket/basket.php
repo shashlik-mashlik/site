@@ -23,7 +23,7 @@ function add_to_cart($product_id, $count = 1)
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
         echo "Запрос: " . $q . '\n';
         echo mysql_ping() . ' ping ';
-        var_dump(mysql_query($q));
+        var_dump(mysql_query('SHOW TABLES'));
         //$add_product = mysql_fetch_assoc(mysql_query($q));
         echo var_dump($add_product) . ' '; // Убрать
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
