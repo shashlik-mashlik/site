@@ -1,6 +1,6 @@
 var basketAjax = {
 	callback: function(response) {
-		console.log(response.responseText.count)
+		console.log(eval("(" + response.responseText + ")").count)
 	},
 	add_to_cart: function(item) {
 		let xhr = ajax.ini();
