@@ -30,8 +30,8 @@ function add_to_cart($product_id, $count = 1)
         $add_product = mysql_fetch_assoc(mysql_query($q));
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
         $_SESSION['products'][$product_id]['count'] = $count;
+        echo $_SESSION['products'][$product_id]['count'];
     }
-    update_cart();
 }
 
 function del_basket_item($product_id, $count = 1)
@@ -44,7 +44,6 @@ function del_basket_item($product_id, $count = 1)
         }
 
     }
-    update_cart();
 }
 
 function update_cart()
@@ -54,19 +53,16 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    echo var_dump($_SESSION['cart_coast']);
     exit;
 }
 
 function update_product_count($product_id, $count)
 {
     $_SESSION['products'][$product_id]['count'] = $count;
-    update_cart();
 }
 
 function remove_from_cart($product_id)
 {
     unset($_SESSION['products'][$product_id]);
-    update_cart();
 }
 ?>
