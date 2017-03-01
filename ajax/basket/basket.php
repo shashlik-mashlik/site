@@ -4,6 +4,8 @@ $dbname  = "antondtl_sm";
 $dbpass  = "y3l0l3k0r";
 $dbhost  = "antondtl.beget.tech";
 
+error_reporting('E_ALL');
+
 mysql_connect($dbhost, $dbuser, $dbpass) or die ("Could not connect: ".mysql_error());
 mysql_select_db($dbname);
 mysql_query("set names utf8");
@@ -40,7 +42,7 @@ function add_to_cart($product_id, $count = 1)
     ]);
     exit();
 }
-
+/*
 function del_basket_item($product_id, $count = 1)
 {
     if (!empty($_SESSION['products'][$product_id]) && $_SESSION['products'][$product_id] > 1) {
@@ -56,7 +58,7 @@ function del_basket_item($product_id, $count = 1)
         echo json_encode(["status": false, "msg": "Warning: #1 ajax query illegal"]);
         exit();
     }
-*/
+
     echo json_encode([
         "status": true,
         "id" => $product_id,
@@ -64,7 +66,7 @@ function del_basket_item($product_id, $count = 1)
         "all" => update_cart()
     ]);
 }
-
+*/
 function update_cart()
 {
     $_SESSION['products_incart'] = count($_SESSION['products']);
@@ -74,7 +76,7 @@ function update_cart()
     }
     return [$_SESSION['products_incart'], $_SESSION['cart_coast']];
 }
-
+/*
 function update_product_count($product_id, $count)
 {
     $_SESSION['products'][$product_id]['count'] = $count;
@@ -89,5 +91,5 @@ function remove_from_cart($product_id)
         "all" => update_cart()
     ]);
     exit();
-}
+}*/
 ?>
