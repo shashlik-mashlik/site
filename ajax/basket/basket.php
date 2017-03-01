@@ -47,7 +47,7 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    echo $_SESSION['cart_coast']; //Возврат результата AJAX
+    echo $_SESSION['products']; //Возврат результата AJAX
     exit;
 }
 
