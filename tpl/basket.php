@@ -211,8 +211,3 @@ if (isset($_GET['del_basket_item'])) {
 
 </div>
 <!-- end of #content -->
-	
-				
-
-
-
