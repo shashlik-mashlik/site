@@ -1,6 +1,5 @@
 <?
 include $_SERVER['DOCUMENT_ROOT'] . '_config.php';
-echo mysql_ping() . ' ';
 
 if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);
