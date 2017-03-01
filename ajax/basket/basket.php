@@ -18,12 +18,9 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id]['count']++;
 
     } else {
-        echo $product_id . ' '; // Убрать
         $_SESSION['products'][$product_id] = array();
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
-        echo "Запрос: " . $q . '\n';
-        echo mysql_ping() . ' ping ';
-        var_dump(mysql_query('SHOW TABLES'));
+        var_dump(mysql_query('SHOW TABLES') or mysql_error());
         //$add_product = mysql_fetch_assoc(mysql_query($q));
         echo var_dump($add_product) . ' '; // Убрать
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
