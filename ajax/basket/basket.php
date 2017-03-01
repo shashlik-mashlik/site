@@ -10,7 +10,11 @@ mysql_query("set names utf8");
 
 session_start();
 
-echo mysql_ping() . ' ' . session_id();
+$q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='" . $_POST['add_basket_item']) . " '";
+        $add_product = mysql_fetch_assoc(mysql_query($q));
+        echo mysql_ping() . ' ';
+        echo var_dump($add_product);
+
 /*if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);
 }
