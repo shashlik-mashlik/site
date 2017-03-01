@@ -10,7 +10,7 @@ mysql_query("set names utf8");
 
 session_start();
 
-$q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='" . $_POST['add_basket_item']) . "'";
+$q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='681328'";
 $add_product = mysql_fetch_assoc(mysql_query($q));
 echo mysql_ping() . ' ';
 echo var_dump($add_product);
