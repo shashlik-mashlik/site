@@ -139,7 +139,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
                     <!-- Button -->
                     <div class="button"> 
                       <span class="btn btn-gold" href="menu_masonry_fullwidth.html#"><i class="fa fa-shopping-cart"></i></span>
-                      <a class="btn btn-gold" href="/market/<?=$el['url']?>/<?=$el['c_url']?>"><i class="fa fa-link"></i></a> </div>
+                      <span class="btn btn-gold" onclick="window.location='/market/<?=$el['url']?>/<?=$el['c_url']?>'"><i class="fa fa-link"></i></span> </div>
                     <!-- End Button -->
                     <a class="close-overlay hidden">x</a> </div>
                 </div>
