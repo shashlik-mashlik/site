@@ -73,7 +73,7 @@ if (isset($_GET['del_basket_item'])) {
                             <? if (($_SESSION['products_incart']) < 1) {
                                 echo('<h3>В корзине нет товаров</h3>');
                             } else { ?>
-                                <h3>В корзине <?= $_SESSION['products_incart'];
+                                <h3 id="all_count">В корзине <span id="all_count_word"><?= $_SESSION['products_incart'];
                                     if ($_SESSION['products_incart'] == 1) {
                                         echo(" позиция");
                                     } else
@@ -83,7 +83,7 @@ if (isset($_GET['del_basket_item'])) {
                                             if ($_SESSION['products_incart'] > 4) {
                                                 echo(" позицй");
                                             }
-                                    ?> на сумму: <span id="all_coast"><?= $_SESSION['cart_coast'] ?></span> руб.</h3>
+                                    ?></span> на сумму: <span id="all_coast"><?= $_SESSION['cart_coast'] ?></span> руб.</h3>
                             <? } ?>
                         </blockquote>
 
@@ -166,8 +166,7 @@ if (isset($_GET['del_basket_item'])) {
 
 
                                         <!-- End input group minus & plus --></td>
-                                    <td><span
-                                            class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
+                                    <td><span id="product_coast_<?php echo $key; ?>" class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
                                             руб. </span>
                                         <a class="pull-right" href="/basket/?remove_from_cart=<?php echo $key ?>"><i
                                                 class="fa fa-times"></i></a></td>
