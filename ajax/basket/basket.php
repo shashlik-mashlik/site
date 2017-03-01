@@ -20,8 +20,7 @@ function add_to_cart($product_id, $count = 1)
     } else {
         $_SESSION['products'][$product_id] = array();
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
-        mysql_query('SHOW TABLES') or echo mysql_error();
-        //$add_product = mysql_fetch_assoc(mysql_query($q));
+        $add_product = mysql_fetch_assoc(mysql_query($q));
         echo var_dump($add_product) . ' '; // Убрать
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
         $_SESSION['products'][$product_id]['count'] = $count;
