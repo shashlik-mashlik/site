@@ -1,5 +1,15 @@
 <?
 
+if (isset($_POST['add_basket_item'])) {
+    add_to_cart($_POST['add_basket_item']);
+}
+if (isset($_POST['remove_from_cart'])) {
+    remove_from_cart($_POST['remove_from_cart']);
+}
+if (isset($_POST['del_basket_item'])) {
+    del_basket_item($_POST['del_basket_item']);
+}
+
 function add_to_cart($product_id, $count = 1)
 {
     //Если ни одного товара нет
