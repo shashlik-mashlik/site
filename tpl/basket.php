@@ -101,8 +101,6 @@ if (isset($_GET['del_basket_item'])) {
 
 
                             <?
-
-                            //echo $i;
                             foreach ($_SESSION['products'] as $key => $value) {
                                 $i++;
                                 $q = "SELECT * FROM `mandarinko_catalog_item` WHERE id='" . $key . "'";
@@ -111,7 +109,7 @@ if (isset($_GET['del_basket_item'])) {
                                 ?>
 
 
-                                <tr>
+                                <tr id="basket_row_item_<?php echo $key ?>">
 
                                     <?
                                     $images_url = './upload/catalog/' . $product['id'] . '.jpg';/*тыбля с тучкой*/
