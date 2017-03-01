@@ -33,9 +33,9 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id]['count'] = $count;
     }
 
-
+    echo "ok";
     //return echo json_encode([
-        "id" => $product_id//,
+        //"id" => $product_id//,
         //"count" => $_SESSION['products'][$product_id]['count'],
         //"coast" => $_SESSION['products'][$product_id]['coast'],
         //"all" => update_cart()
