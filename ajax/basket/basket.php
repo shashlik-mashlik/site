@@ -32,6 +32,14 @@ function add_to_cart($product_id, $count = 1)
         $_SESSION['products'][$product_id]['coast'] = $add_product['price'];
         $_SESSION['products'][$product_id]['count'] = $count;
     }
+
+
+    return echo json_encode([
+        "id" => $product_id,
+        "count" => $_SESSION['products'][$product_id]['count'],
+        "coast" => $_SESSION['products'][$product_id]['coast'],
+        "all" => update_cart()
+    ]);
 }
 
 function del_basket_item($product_id, $count = 1)
@@ -53,7 +61,7 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    exit;
+    return [$_SESSION['products_incart'], $_SESSION['cart_coast']];
 }
 
 function update_product_count($product_id, $count)
