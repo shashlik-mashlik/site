@@ -2,8 +2,10 @@
 
 function add_to_cart($product_id, $count = 1)
 {
+    //Если ни одного товара нет
     if (!empty($_SESSION['products'][$product_id])) {
         $_SESSION['products'][$product_id]['count']++;
+
     } else {
         $_SESSION['products'][$product_id] = array();
         $q = "SELECT price FROM `mandarinko_catalog_item` WHERE id='$product_id'";
@@ -34,7 +36,7 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    header('Location: /basket');
+    echo $_SESSION['cart_coast']; //Возврат результата AJAX
     exit;
 }
 
