@@ -60,7 +60,7 @@ function update_cart()
     foreach ($_SESSION['products'] as $key => $value) {
         $_SESSION['cart_coast'] += $_SESSION['products'][$key]['coast'] * $_SESSION['products'][$key]['count'];
     }
-    //return [$_SESSION['products_incart'], $_SESSION['cart_coast']];
+    return [$_SESSION['products_incart'], $_SESSION['cart_coast']];
 }
 
 function update_product_count($product_id, $count)
