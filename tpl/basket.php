@@ -132,12 +132,11 @@ if (isset($_GET['del_basket_item'])) {
                                     <td><?= $product['price'] ?> руб.</td>
                                     <td><!-- input group minus & plus-->
 
-
+                                        <!--  КНОПКИ НАЧАЛО -->
                                         <div class="input-group plus-minus">
 
                                             <table style="border: none">
                                                 <tr>
-                                                <!--  КНОПКИ НАЧАЛО -->
                                                     <td class="active">
                                                         <a href="/basket/?del_basket_item=<?php echo $key ?>"
                                                            type="submit" 
@@ -149,19 +148,21 @@ if (isset($_GET['del_basket_item'])) {
                                                                id="product_count_<?php echo $key; ?>"
                                                                value="<?php echo $_SESSION['products'][$key]['count'] ?>"/>
                                                     </td>
-                                                    <td class="active"><a
-                                                            href="/basket/?add_basket_item=<?php echo $key ?>"
-                                                            type="submit" title="Добавить один лот"><span
-                                                                class="glyphicon glyphicon-plus"></span></a></td>
+                                                    <td class="active">
+                                                        <span onclick="basketAjax.add_to_cart(<?php echo $key ?>)" title="Добавить один лот">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </span>
+                                                    </td>
 
 
                                                 </tr>
 
-                                                <button class="btn btn-danger">ggg+++</button>
+                                                <!-- <button class="btn btn-danger">ggg+++</button> -->
 
                                             </table>
 
                                         </div>
+                                        <!-- КНОПКИ КОНЕЦ -->
 
 
                                         <!-- End input group minus & plus --></td>
