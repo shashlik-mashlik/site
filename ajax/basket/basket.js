@@ -52,7 +52,7 @@ var basketAjax = {
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'remove_from_cart=' + item, basketAjax.callback.remove);
 	},
 	delete_basket_item: function(item) {
-		et xhr = ajax.ini();
+		let xhr = ajax.ini();
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'del_basket_item=' + item, basketAjax.callback.delete);
 	}
 }
