@@ -485,9 +485,9 @@
                                                 </div>
                                             </td>
 											<td>
-                                                <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px;" value="<?php 
+                                                <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px; display: inline-block;" value="<?php 
                                                 if (isset($_POST['home']) && !empty($_POST['home'])) echo $_POST['home']; ?>">
-                                                <input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px;" value="<?php 
+                                                <input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px; display: inline-block;" value="<?php 
                                                 if (isset($_POST['room']) && !empty($_POST['room'])) echo $_POST['room']; ?>">
                                             </td>
 											</tr>
