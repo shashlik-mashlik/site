@@ -97,7 +97,11 @@ var basketAjax = {
 			}
 		},
 		hide: function(){
+			document.querySelector('#top_cart_content').innerHTML = '';
 
+			let el = document.querySelector("#shop_cart_content");
+			el.style.opacity = "0";
+			el.style.margin = "-10000px 0 0";
 		}
 	}
 }
