@@ -490,7 +490,7 @@
 
 
 
-												<input name="street" type="text" class="form-control" id="text" placeholder="ул. политехническая" value="<?php 
+												<input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
 												if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px;">
 												<input class="btn btn-success form-control" type="button" value="Проверяем" onclick="getGGG()"/>
 
@@ -502,36 +502,36 @@
 											<tr>
 											<td><div class="form-group" style="float: left; margin-right: 20px;">
 												<label for="">Дом</label>
-												<input name="home" type="text" class="form-control" id="" placeholder="9" style="width: 100px;" value="<?php 
+												<input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px;" value="<?php 
 												if (isset($_POST['home']) && !empty($_POST['home'])) echo $_POST['home']; ?>">
 											</div></td>
 											<td><div class="form-group">
 												<label for="">Квартира</label>
-												<input name="room" type="text" class="form-control" id="" placeholder="32" style="width: 100px;" value="<?php 
+												<input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px;" value="<?php 
 												if (isset($_POST['room']) && !empty($_POST['room'])) echo $_POST['room']; ?>">
 											</div></td>
 											</tr>
 											<tr>
 											<td><div class="form-group">
 												<label for="">Телефон (для получания СМС)</label>
-												<input name="tel" type="tel" class="form-control" id="" placeholder="79042973048" value="<?php 
+												<input name="tel" type="tel" class="form-control" id="" placeholder="11 цифр" value="<?php 
 												if (isset($_POST['tel']) && !empty($_POST['tel'])) echo $_POST['tel']; ?>" style="width: 250px;">
 											</div></td>
 											<td><div class="form-group">
 												<label for="">Имя получателя</label>
-												<input name="name" type="text" class="form-control" id="" placeholder="Петров Петр Петрович" value="<?php 
+												<input name="name" type="text" class="form-control" id="" placeholder="имя" value="<?php 
 												if (isset($_POST['name']) && !empty($_POST['name'])) echo $_POST['name']; ?>" style="width: 250px;">
 											</div></td>
 											</tr>
 											<tr>
 											<td><div class="form-group">
 												<label for="">E-mail</label>
-												<input name="email" type="email" class="form-control" id="" placeholder="info@bonvio.com" value="<?php 
+												<input name="email" type="email" class="form-control" id="" placeholder="e-mail" value="<?php 
 												if (isset($_POST['email']) && !empty($_POST['email'])) echo $_POST['email']; ?>" style="width: 250px;">
 											</div></td>
 											<td><div class="form-group">
 												<label for="">Комментарий</label>
-												<textarea name="message" class="form-control" id="" placeholder="What's on your mind?" style="width: 250px; height: 60px;"><?php 
+												<textarea name="message" class="form-control" id="" placeholder="комментарий" style="width: 250px; height: 60px;"><?php 
 												if (isset($_POST['message']) && !empty($_POST['message'])) echo $_POST['message']; ?>
 												</textarea>
 											</div></td>
@@ -554,7 +554,7 @@
 					
 					
 <!-- Область показа карты -->
-<div id="myMap" style="width: 800px; height: 600px"></div>
+<div id="myMap" style="width: 800px; height: 600px; display: none;"></div>
 
 					
 					
