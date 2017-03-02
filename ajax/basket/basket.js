@@ -73,7 +73,7 @@ var basketAjax = {
 		constr: function(param) {
 			let response = eval("(" + param.responseText + ")");
 			let el = document.querySelector('#top_cart_content');
-			for (let i = 0; i < response.length; i++) {
+			for (let i = 1; i < response.length; i++) {
 				let div = document.createElement('div'); // Родитель
 				div.setAttribute('class', 'item clearfix');
 				let a = document.createElement('a'); //up
@@ -95,6 +95,7 @@ var basketAjax = {
 				div.appendChild(a.appendChild(img));
 				el.appendChild(div).appendChild(div2);
 			}
+			document.querySelector('#top_cart_all_coast').innerText = response[0] + 'р';
 		},
 		hide: function(){
 			document.querySelector('#top_cart_content').innerHTML = '';
