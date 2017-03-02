@@ -54,5 +54,19 @@ var basketAjax = {
 	delete_basket_item: function(item) {
 		let xhr = ajax.ini();
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'del_basket_item=' + item, basketAjax.callback.delete);
+	},
+	top_cart: {
+		state: false,
+		check_state: function() {
+
+		},
+		show: function() {
+			let el = document.querySelector("#shop_cart_content");
+			el.style.opacity = "1";
+			el.style.margin = "0px";
+		},
+		hide: function(){
+
+		}
 	}
 }
