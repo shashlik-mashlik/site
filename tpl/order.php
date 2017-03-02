@@ -476,40 +476,29 @@
 										<div style="width: 750px; margin: 0 auto;">
 											<table style="width: 750px;">
 											<tr>
-											<td><div style="display: none;" class="form-group">
-												<label for="">Город</label>
-												<select name="sity" class="form-control" id="" placeholder="Enter email" style="width: 250px;">
-													<option>Санкт-Петербург</option>
-													<option>Москва</option>													
-												</select>
-											</div></td>
-											<td><div class="form-group">
-												<label for="">Улица</label>
-
-
-
-
-
-
-												<input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
-												if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px;">
-												<input class="btn btn-success form-control" type="button" value="Проверяем" onclick="getGGG()"/>
-
-
-
-
-											</div></td>
+											<td>
+                                                <div class="form-group">
+                                                    <label for="">Улица</label>
+                                                    <input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
+                                                    if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px;">
+                                                    <input class="btn btn-success form-control" type="button" value="Проверяем" onclick="getGGG()"/>
+                                                </div>
+                                            </td>
+											<td>
+                                                <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px;" value="<?php 
+                                                if (isset($_POST['home']) && !empty($_POST['home'])) echo $_POST['home']; ?>">
+                                                <input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px;" value="<?php 
+                                                if (isset($_POST['room']) && !empty($_POST['room'])) echo $_POST['room']; ?>">
+                                            </td>
 											</tr>
 											<tr>
 											<td><div class="form-group" style="float: left; margin-right: 20px;">
 												<label for="">Дом</label>
-												<input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px;" value="<?php 
-												if (isset($_POST['home']) && !empty($_POST['home'])) echo $_POST['home']; ?>">
+												
 											</div></td>
 											<td><div class="form-group">
 												<label for="">Квартира</label>
-												<input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px;" value="<?php 
-												if (isset($_POST['room']) && !empty($_POST['room'])) echo $_POST['room']; ?>">
+												
 											</div></td>
 											</tr>
 											<tr>
