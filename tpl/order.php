@@ -477,10 +477,10 @@
 											<table style="width: 750px;">
 											<tr>
 											<td>
-                                                <div class="form-group">
+                                                
                                                     <input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
                                                     if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px; display: inline-block;">
-                                                </div>
+                                                
                                             </td>
 											<td>
                                                 <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px; display: inline-block;" value="<?php 
