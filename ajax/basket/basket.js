@@ -83,17 +83,19 @@ var basketAjax = {
 				a.setAttribute('onclick', 'return false;');
 
 				var img = document.createElement('img'); //up
-				img.setAttribute('src', 'img/post_thumb.jpg');
+				img.setAttribute('src', '/upload/catalog/' + response[i].id + '.jpg');
 
 				var div2 = document.createElement('div'); //down
 				div2.setAttribute('class', 'item_desc');
 				var a2 = document.createElement('a');  //down
 				a2.setAttribute('onclick', 'return false;');
-				a2.innerText = response[i].id;
+				a2.innerText = response[i].name;
 				var span = document.createElement('span'); //down
 				span.setAttribute('class', 'item_price');
+				span.innerText = response[i].coast + 'р';
 				var span2 = document.createElement('span'); //down
 				span2.setAttribute('class', 'item_quantity');
+				span2.innerText = 'x ' + response[i].count;
 
 				div2.appendChild(a2).appendChild(span).appendChild(span2);
 
