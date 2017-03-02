@@ -78,9 +78,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
               <!-- Meta description -->
               <div class="meta-desc"> 
 
-              <a class="shop btn btn-gold" href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-              <a href="/basket/?add_basket_item=<?=$el['id']?>" type="submit" class="btn btn-success" style="margin-top: 10px; dysplay: block;" >Добавить в корзину (del)</a>
-
+              <span onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>)" class="shop btn btn-gold"data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></span>
 
                 <ul class="social pull-right">
                   <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
