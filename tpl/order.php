@@ -594,7 +594,7 @@
               <!-- Shipping Address -->
               <div class="col-md-4">
                 <div class="calc-shipping">
-                  <h3>Shipping Address</h3>
+                  <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Адрес">
