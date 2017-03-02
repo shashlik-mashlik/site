@@ -78,7 +78,6 @@ var basketAjax = {
 
 				let div = document.createElement('div'); // Родитель
 				div.setAttribute('class', 'item clearfix');
-				div.style.width = '450px';
 
 				let a = document.createElement('a'); //up
 				a.setAttribute('onclick', 'return false;');

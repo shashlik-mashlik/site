@@ -97,7 +97,7 @@ session_start();// Начинаем сессию
           		<span id="header_basket_all_count"><?=$_SESSION['products_incart'];?></span>
           	<?	}	?>
           	</a>
-            <div class="shop_cart_content" id="shop_cart_content">
+            <div class="shop_cart_content" id="shop_cart_content" style="width: 450px;">
               <h4>Shopping Cart</h4>
               <div class="cart_items" id="top_cart_items">
                 <div id="top_cart_content"></div>
