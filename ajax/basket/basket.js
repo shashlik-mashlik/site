@@ -97,7 +97,7 @@ var basketAjax = {
 			}
 		},
 		hide: function(){
-			document.querySelector('#top_cart_content').innerHTML = '';
+			//document.querySelector('#top_cart_content').innerHTML = '';
 
 			let el = document.querySelector("#shop_cart_content");
 			el.style.opacity = "0";
