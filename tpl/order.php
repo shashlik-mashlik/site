@@ -139,7 +139,7 @@
         var getGGG = function (){        	
 
 
-             getAddresses (document.getElementById('text').value);
+             getAddresses (document.getElementById('adrs').value);
 
 
         }
@@ -353,7 +353,7 @@
 <?php
     if (!isset($_POST['sity'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Заполните форму! </b>";} else
-	if (isset($_POST['street']) && empty($_POST['street'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
+	if (isset($_POST['adrs']) && empty($_POST['adrs'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Введите улицу! </b>";} else
 	if (isset($_POST['home']) && empty($_POST['home'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Укажите номер дома! </b>";} else
@@ -596,7 +596,7 @@
                 <div class="calc-shipping">
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Имя">
+                    <input id="adrs" type="text" class="form-control" placeholder="Имя" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <input type="text" class="form-control" placeholder="Адрес">
                     <input type="text" class="form-control" placeholder="Город">
                     <input type="text" class="form-control" placeholder="Контактный телефон">
