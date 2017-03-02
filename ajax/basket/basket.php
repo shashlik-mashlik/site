@@ -42,9 +42,9 @@ function add_to_cart($product_id, $count = 1)
     ]);
     exit();
 }
-/*
+
 function del_basket_item($product_id, $count = 1)
-{
+{   /*
     if (!empty($_SESSION['products'][$product_id]) && $_SESSION['products'][$product_id] > 1) {
         if ($_SESSION['products'][$product_id]['count'] > 1) {
             $_SESSION['products'][$product_id]['count']--;
@@ -65,8 +65,9 @@ function del_basket_item($product_id, $count = 1)
         "count" => $_SESSION['products'][$product_id]['count'],
         "all" => update_cart()
     ]);
+    */
 }
-*/
+
 function update_cart()
 {
     $_SESSION['products_incart'] = count($_SESSION['products']);
@@ -76,7 +77,7 @@ function update_cart()
     }
     return [$_SESSION['products_incart'], $_SESSION['cart_coast']];
 }
-/*
+
 function update_product_count($product_id, $count)
 {
     $_SESSION['products'][$product_id]['count'] = $count;
@@ -91,5 +92,5 @@ function remove_from_cart($product_id)
         "all" => update_cart()
     ]);
     exit();
-}*/
+}
 ?>
