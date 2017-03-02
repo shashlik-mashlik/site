@@ -596,28 +596,14 @@
                 <div class="calc-shipping">
                   <h3>Shipping Address</h3>
                   <div class="form-group">
-                    <!-- Selct wrap -->
-                    <div class="select_wrap dark_slect">
-                      <select class="form-control">
-                        <option value="">Select Delivery Method</option>
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                      </select>
-                    </div>
-                    <!-- End select wrap -->
-                    <input type="text" class="form-control" placeholder="First Name*">
-                    <input type="text" class="form-control" placeholder="Last Name*">
-                    <input type="text" class="form-control" placeholder="Address*">
-                    <input type="text" class="form-control" placeholder="City*">
-                    <input type="text" class="form-control" placeholder="Postal Code">
-                    <input type="text" class="form-control" placeholder="Phone Number*">
-                    <input type="text" class="form-control" placeholder="Email">
-                    <textarea class="form-control" placeholder="Order Notes"></textarea>
+                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Адрес">
+                    <input type="text" class="form-control" placeholder="Город">
+                    <input type="text" class="form-control" placeholder="Контактный телефон">
+                    <input type="text" class="form-control" placeholder="Эл. почта">
+                    <textarea class="form-control" placeholder="Комментарий"></textarea>
                   </div>
-                  <button type="submit" class="btn form-control btn-black">Order Now</button>
+                  <button type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
                 </div>
                 <!-- Shipping Address -->
               </div>
