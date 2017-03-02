@@ -29,7 +29,7 @@ var basketAjax = {
 			document.querySelector('#basket_row_item_' + response.id).remove();
 		},
 		delete: function(param) {
-			/*let response = eval("(" + param.responseText + ")");
+			let response = eval("(" + param.responseText + ")");
 
 			let word = ' позиций';
 			if (response.all[0] == 1) word = ' позиция'
@@ -40,7 +40,7 @@ var basketAjax = {
 			document.querySelector('#product_coast_' + response.id).value = response.coast;
 			document.querySelector('#all_coast').innerText = response.all[1];
 			document.querySelector('#all_count').innerText = response.all[0];
-			document.querySelector('#all_count_word').innerText = word;*/
+			document.querySelector('#all_count_word').innerText = word;
 		}
 	},
 	add_to_cart: function(item) {
@@ -56,10 +56,6 @@ var basketAjax = {
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'del_basket_item=' + item, basketAjax.callback.delete);
 	},
 	top_cart: {
-		state: false,
-		check_state: function() {
-
-		},
 		show: function() {
 			let el = document.querySelector("#shop_cart_content");
 			el.style.opacity = "1";
