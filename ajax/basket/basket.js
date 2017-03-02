@@ -61,7 +61,7 @@ var basketAjax = {
 
 		},
 		show: function() {
-			let el = document.querySelector("#shop_cart_content");
+			let el = document.querySelector(".shop_cart_content")[0];
 			el.style.opacity = "1";
 			el.style.margin = "0px";
 		},
