@@ -140,46 +140,6 @@ if (isset($_GET['del_basket_item'])) {
                                         </div>
                     <!-- End input group minus & plus --></td>
                   <td>
-                                    <!--
-                                    <td>input group minus & plus-->
-
-                                        <!--  КНОПКИ НАЧАЛО 
-                                        <div class="input-group plus-minus">
-
-                                            <table style="border: none">
-                                                <tr>
-                                                    <td class="active">
-                                                        <a href="/basket/?del_basket_item=<?php echo $key ?>"
-                                                           type="submit" 
-                                                           title="Удалить один лот">
-                                                            <span class="glyphicon glyphicon-minus"></span></a></td>
-                                                    <td class="active" style="width: 70px;">
-
-                                                        <input readonly class="" type="text" size="2"
-                                                               id="product_count_<?php echo $key; ?>"
-                                                               value="<?php echo $_SESSION['products'][$key]['count'] ?>"/>
-                                                    </td>
-                                                    <td class="active">
-                                                        <span onclick="basketAjax.add_to_cart(<?php echo $key ?>)" title="Добавить один лот">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </span>
-                                                    </td>
-
-
-                                                </tr>
-
-                                                <button class="btn btn-danger">ggg+++</button>
-
-                                            </table>
-
-                                        </div>
-                                         КНОПКИ КОНЕЦ 
-
-
-                                         End input group minus & plus </td>
-                                    <td>-->
-
-
                                     <span id="product_coast_<?php echo $key; ?>" class="total"><?php echo($_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast']) ?>
                                             руб. </span>
                                         <span class="pull-right" onclick="basketAjax.remove_from_cart(<?php echo $key ?>)"><i
