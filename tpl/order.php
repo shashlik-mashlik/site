@@ -167,7 +167,7 @@
 
                     //TODO это после клика на конкретном адресе, выставляем в какую зону попали
                     //console.log(res);
-                    console.log(res + 'us');
+                    console.log(res);
                 });
 
             });
