@@ -49,10 +49,10 @@ function del_basket_item($product_id, $count = 1)
     }*/
 
     echo json_encode([
-        "status": true,
-        "id" => $product_id,
-        "count" => $_SESSION['products'][$product_id]['count'],
-        "all" => update_cart()
+       "id" => $product_id,
+       "count" => $_SESSION['products'][$product_id]['count'],
+       "coast" => $_SESSION['products'][$product_id]['coast'],
+       "all" => update_cart()
     ]);
     exit();
     
