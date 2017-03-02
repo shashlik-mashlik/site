@@ -107,7 +107,7 @@
 <!-- JS Custom Codes -->
 <script src="/themes/majesty/javascripts/custom/main.js" ></script>
 <script src="/ajax/ajax.js"></script>
-<!--<script src="/ajax/common.js"></script>-->1
+<!--<script src="/ajax/common.js"></script>-->
 <script src="/ajax/basket/basket.js"></script>
 <!-- For This Pgae Only Zooming slider -->
 <script src="/themes/majesty/javascripts/custom/mbBgGallery_init.js"></script>
