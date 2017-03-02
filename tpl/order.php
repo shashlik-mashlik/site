@@ -617,49 +617,11 @@
                     <input type="text" class="form-control" placeholder="Email">
                     <textarea class="form-control" placeholder="Order Notes"></textarea>
                   </div>
+                  <button type="submit" class="btn form-control btn-black">Order Now</button>
                 </div>
                 <!-- Shipping Address -->
               </div>
               <!-- Billing Details -->
-              <div class="col-md-4">
-                <div class="calc-shipping">
-                  <h3>Billing Details</h3>
-                  <div class="form-group">
-                    <!-- Selct wrap -->
-                    <div class="select_wrap dark_slect">
-                      <select class="form-control">
-                        <option value="">Select Country</option>
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                      </select>
-                    </div>
-                    <!-- End select wrap -->
-                    <input type="text" class="form-control" placeholder="First Name*">
-                    <input type="text" class="form-control" placeholder="Last Name*">
-                    <input type="text" class="form-control" placeholder="Company Name*">
-                    <input type="text" class="form-control" placeholder="Address*">
-                    <input type="text" class="form-control" placeholder="City">
-                    <input type="text" class="form-control" placeholder="Postal Code">
-                    <input type="text" class="form-control" placeholder="Email">
-                    <input type="text" class="form-control" placeholder="Phone">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox">
-                        Create an account </label>
-                    </div>
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox">
-                        Ship the same address </label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn form-control btn-black">Order Now</button>
-                </div>
-                <!-- Billing Details -->
-              </div>
             </div>
           </div>
         </div>
