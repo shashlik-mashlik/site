@@ -350,24 +350,8 @@
         <div class="row">
           <div class="col-md-12 carts-content">
             <div class="row">
-
-
-
-
-
-
-
-
-
-
 <?php
-
-
-
-
-	
-	
-	if (!isset($_POST['sity'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
+    if (!isset($_POST['sity'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Заполните форму! </b>";} else
 	if (isset($_POST['street']) && empty($_POST['street'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Введите улицу! </b>";} else
@@ -470,8 +454,35 @@
 						<div style="height: 80px; width: 750px;"><h4><?=$msg;?></h4></div>
 
 						
-						
-						<fieldset>
+						<div class="col-md-4">
+                <div class="calc-shipping">
+                  <h3>Shipping Address</h3>
+                  <div class="form-group">
+                    <!-- Selct wrap -->
+                    <div class="select_wrap dark_slect">
+                      <select class="form-control">
+                        <option value="">Select Delivery Method</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                      </select>
+                    </div>
+                    <!-- End select wrap -->
+                    <input type="text" class="form-control" placeholder="First Name*">
+                    <input type="text" class="form-control" placeholder="Last Name*">
+                    <input type="text" class="form-control" placeholder="Address*">
+                    <input type="text" class="form-control" placeholder="City*">
+                    <input type="text" class="form-control" placeholder="Postal Code">
+                    <input type="text" class="form-control" placeholder="Phone Number*">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <textarea class="form-control" placeholder="Order Notes"></textarea>
+                  </div>
+                </div>
+                <!-- Shipping Address -->
+              </div>
+						<!--<fieldset>
 										<? if (($_SESSION['products_incart']) >= 1) { ?>	
 										<div style="width: 750px; margin: 0 auto;">
 											<table style="width: 750px;">
@@ -480,7 +491,6 @@
                                                 
                                                     <input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
                                                     if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px; display: inline-block;">
-                                                
                                             </td>
 											<td>
                                                 <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px; display: inline-block;" value="<?php 
@@ -533,7 +543,7 @@
 
 
 									
-						</fieldset>
+						</fieldset>-->
 					</form>
 
 					
