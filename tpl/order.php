@@ -166,7 +166,8 @@
                 showOnMap(firstGeoObject).then(function (res) {
 
                     //TODO это после клика на конкретном адресе, выставляем в какую зону попали
-                    console.log(res);
+                    //console.log(res);
+                    console.log(res + 'us');
                 });
 
             });
@@ -554,7 +555,7 @@
 					
 					
 <!-- Область показа карты -->
-<div id="myMap" style="width: 800px; height: 600px; "></div>
+<div id="myMap" style="width: 800px; height: 600px; display: none;"></div>
 
 					
 					
