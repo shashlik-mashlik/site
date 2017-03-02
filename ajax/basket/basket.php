@@ -1,16 +1,5 @@
 <?
-$dbuser  = "antondtl_sm";
-$dbname  = "antondtl_sm";
-$dbpass  = "y3l0l3k0r";
-$dbhost  = "antondtl.beget.tech";
-
-error_reporting('E_ALL');
-
-mysql_connect($dbhost, $dbuser, $dbpass) or die ("Could not connect: ".mysql_error());
-mysql_select_db($dbname);
-mysql_query("set names utf8");
-
-session_start();
+include $_SERVER['DOCUMENT_ROOT'] . '/ajax/config.php';
 
 if (isset($_POST['add_basket_item'])) {
     add_to_cart($_POST['add_basket_item']);

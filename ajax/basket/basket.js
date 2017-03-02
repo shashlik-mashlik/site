@@ -64,6 +64,12 @@ var basketAjax = {
 			let el = document.querySelector("#shop_cart_content");
 			el.style.opacity = "1";
 			el.style.margin = "0px";
+
+			let xhr = ajax.ini();
+			ajax.send(xhr, 'post', '/ajax/basket/top_cart.php', '', basketAjax.top_cart.constr);
+		},
+		constr: function(response) {
+			console.log(response);
 		},
 		hide: function(){
 
