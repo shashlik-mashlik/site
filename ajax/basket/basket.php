@@ -46,7 +46,7 @@ function del_basket_item($product_id, $count = 1)
     } else {    
         echo json_encode(["status": false, "msg": "Warning: #1 ajax query illegal"]);
         exit();
-    }
+    }*/
 
     echo json_encode([
         "status": true,
@@ -54,7 +54,8 @@ function del_basket_item($product_id, $count = 1)
         "count" => $_SESSION['products'][$product_id]['count'],
         "all" => update_cart()
     ]);
-    */
+    exit();
+    
 }
 
 function update_cart()
