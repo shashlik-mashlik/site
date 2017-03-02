@@ -69,7 +69,7 @@ var basketAjax = {
 			ajax.send(xhr, 'post', '/ajax/basket/top_cart.php', '', basketAjax.top_cart.constr);
 		},
 		constr: function(response) {
-			console.log(response);
+			console.log(response.responseText);
 		},
 		hide: function(){
 
