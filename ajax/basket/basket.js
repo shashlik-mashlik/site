@@ -89,6 +89,7 @@ var basketAjax = {
 				div2.setAttribute('class', 'item_desc');
 				var a2 = document.createElement('a');  //down
 				a2.setAttribute('onclick', 'return false;');
+				a2.innerText = response[i].id;
 				var span = document.createElement('span'); //down
 				span.setAttribute('class', 'item_price');
 				var span2 = document.createElement('span'); //down
