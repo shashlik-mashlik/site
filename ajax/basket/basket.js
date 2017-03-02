@@ -68,7 +68,7 @@ var basketAjax = {
 			let xhr = ajax.ini();
 			ajax.send(xhr, 'post', '/ajax/basket/top_cart.php', '', basketAjax.top_cart.constr);
 
-			document.querySelector("#shop_cart").attr('onclick', 'basketAjax.top_cart.hide();');
+			document.querySelector("#shop_cart").setAttribute('onclick', 'basketAjax.top_cart.hide();');
 		},
 		constr: function(param) {
 			let response = eval("(" + param.responseText + ")");
