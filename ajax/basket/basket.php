@@ -39,14 +39,14 @@ function del_basket_item($product_id, $count = 1)
             $_SESSION['products'][$product_id]['count']--;
         }
 
-    } else if ($_SESSION['products'][$product_id]['count'] === 1) {
+    } /*else if ($_SESSION['products'][$product_id]['count'] === 1) {
         echo json_encode(["status": false, "msg": "remove"]);
         exit();
 
     } else {    
         echo json_encode(["status": false, "msg": "Warning: #1 ajax query illegal"]);
         exit();
-    }
+    }*/
 
     echo json_encode([
         "status": true,
