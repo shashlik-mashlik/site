@@ -1,9 +1,9 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/ajax/config.php';
 
-$response = [];
+$response = array();
 foreach ($_SESSION['products'] as $key => $value) {
-	$response = [
+	$response[] = [
     	"id" => $key,
     	"coast" => $_SESSION['products'][$key]['coast'],
     	"count" => $_SESSION['products'][$key]['count'],
