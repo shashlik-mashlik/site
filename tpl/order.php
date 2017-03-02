@@ -555,7 +555,7 @@
           <div class="col-md-12 carts-content">
             <div class="row">
               <!-- Cart Total -->
-              <div class="col-md-4 carts-total text-left">
+              <div class="col-md-8 carts-total text-left">
                 <h3>Carts Total</h3>
                 <table class="table table-bordered">
                   <tbody>
