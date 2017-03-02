@@ -93,9 +93,9 @@ session_start();// Начинаем сессию
                         ============================================= -->
           <div id="shop_cart" style="cursor: pointer;" onclick="basketAjax.top_cart.show();"> 
           	<a id="shop_tigger_"><i class="fa fa-shopping-cart"></i>
-          	<?	if ($_SESSION['products_incart'] != 0) {	?>
-          		<span id="header_basket_all_count"><?=$_SESSION['products_incart'];} else {echo 0 ?></span>
-          	<?	}	?>
+          	
+          		<span id="header_basket_all_count"><?=$_SESSION['products_incart']; ?></span>
+          	
           	</a>
             <div class="shop_cart_content" id="shop_cart_content" style="width: 450px;">
               <h4>Shopping Cart</h4>
