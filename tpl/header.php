@@ -100,8 +100,8 @@ session_start();// Начинаем сессию
             <div class="shop_cart_content" id="shop_cart_content">
               <h4>Shopping Cart</h4>
               <div class="cart_items" id="top_cart_items">
-                
-                <div class="shop_action clearfix"> <span class="shop_checkout_price">$150.99</span>
+                <div is="top_cart_content"></div>
+                <div class="shop_action clearfix"> <span id="top_cart_all_coast" class="shop_checkout_price">0р</span>
                   <button onclick="window.location = '/basket'" class="btn btn-dark">View Cart</button>
                 </div>
               </div>

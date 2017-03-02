@@ -68,8 +68,39 @@ var basketAjax = {
 			let xhr = ajax.ini();
 			ajax.send(xhr, 'post', '/ajax/basket/top_cart.php', '', basketAjax.top_cart.constr);
 		},
-		constr: function(response) {
-			console.log(response.responseText);
+		constr: function(param) {
+			let response = eval("(" + param.responseText + ")");
+			let el = document.querySelector('#top_cart_content');
+
+			for (let i = 0; i < response.length; i++) {
+				
+				//el.appendChild();
+
+				let div = document.createElement('div'); // Родитель
+				div.setAttribute('class', 'item clearfix');
+
+				let a = document.createElement('a'); //up
+				a.setAttribute('onclick', 'return false;');
+
+				var img = document.createElement('img'); //up
+				img.setAttribute('src', 'img/post_thumb.jpg');
+
+				var div2 = document.createElement('div'); //down
+				div2.setAttribute('class', 'item_desc');
+				var a2 = document.createElement('a');  //down
+				a2.setAttribute('onclick', 'return false;');
+				var span = document.createElement('span'); //down
+				span.setAttribute('class', 'item_price');
+				var span2 = document.createElement('span'); //down
+				span2.setAttribute('class', 'item_quantity');
+
+				div2.appendChild(a2).appendChild(span).appendChild(span2);
+
+				div.appendChild(a.appendChild(img));
+
+				el.appendChild(div).appendChild(div2);
+
+			}
 		},
 		hide: function(){
 
