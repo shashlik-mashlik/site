@@ -454,35 +454,8 @@
 						<div style="height: 80px; width: 750px;"><h4><?=$msg;?></h4></div>
 
 						
-						<div class="col-md-4">
-                <div class="calc-shipping">
-                  <h3>Shipping Address</h3>
-                  <div class="form-group">
-                    <!-- Selct wrap -->
-                    <div class="select_wrap dark_slect">
-                      <select class="form-control">
-                        <option value="">Select Delivery Method</option>
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                      </select>
-                    </div>
-                    <!-- End select wrap -->
-                    <input type="text" class="form-control" placeholder="First Name*">
-                    <input type="text" class="form-control" placeholder="Last Name*">
-                    <input type="text" class="form-control" placeholder="Address*">
-                    <input type="text" class="form-control" placeholder="City*">
-                    <input type="text" class="form-control" placeholder="Postal Code">
-                    <input type="text" class="form-control" placeholder="Phone Number*">
-                    <input type="text" class="form-control" placeholder="Email">
-                    <textarea class="form-control" placeholder="Order Notes"></textarea>
-                  </div>
-                </div>
-                <!-- Shipping Address -->
-              </div>
-						<!--<fieldset>
+						
+						<fieldset>
 										<? if (($_SESSION['products_incart']) >= 1) { ?>	
 										<div style="width: 750px; margin: 0 auto;">
 											<table style="width: 750px;">
@@ -543,7 +516,7 @@
 
 
 									
-						</fieldset>-->
+						</fieldset>
 					</form>
 
 					
@@ -572,5 +545,126 @@
     </section>
     <!-- End myaccount -->
 
+  </div>
+  <div id="content">
+    <!-- My Account
+    ============================================= -->
+    <section class="myaccount text-left padding-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 carts-content">
+            <div class="row">
+              <!-- Cart Total -->
+              <div class="col-md-4 carts-total text-left">
+                <h3>Carts Total</h3>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td>Cart Subtotal</td>
+                      <td>150 $</td>
+                    </tr>
+                    <tr>
+                      <td>Shipping and Handling</td>
+                      <td>20 $</td>
+                    </tr>
+                    <tr>
+                      <td>Order Total</td>
+                      <td>170 $</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="calc-shipping margin-tb-60">
+                  <h3>Select Payment Method</h3>
+                  <div class="form-group">
+                    <!-- Selct wrap -->
+                    <div class="select_wrap dark_slect">
+                      <select class="form-control">
+                        <option value="">Credit Card</option>
+                        <option value="one">Visa</option>
+                        <option value="two">Master Card</option>
+                        <option value="three">Bank Account</option>
+                      </select>
+                    </div>
+                    <!-- End select wrap -->
+                  </div>
+                </div>
+                <!-- Carts total -->
+              </div>
+              <!-- End # Cart Total -->
+              <!-- Shipping Address -->
+              <div class="col-md-4">
+                <div class="calc-shipping">
+                  <h3>Shipping Address</h3>
+                  <div class="form-group">
+                    <!-- Selct wrap -->
+                    <div class="select_wrap dark_slect">
+                      <select class="form-control">
+                        <option value="">Select Delivery Method</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                      </select>
+                    </div>
+                    <!-- End select wrap -->
+                    <input type="text" class="form-control" placeholder="First Name*">
+                    <input type="text" class="form-control" placeholder="Last Name*">
+                    <input type="text" class="form-control" placeholder="Address*">
+                    <input type="text" class="form-control" placeholder="City*">
+                    <input type="text" class="form-control" placeholder="Postal Code">
+                    <input type="text" class="form-control" placeholder="Phone Number*">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <textarea class="form-control" placeholder="Order Notes"></textarea>
+                  </div>
+                </div>
+                <!-- Shipping Address -->
+              </div>
+              <!-- Billing Details -->
+              <div class="col-md-4">
+                <div class="calc-shipping">
+                  <h3>Billing Details</h3>
+                  <div class="form-group">
+                    <!-- Selct wrap -->
+                    <div class="select_wrap dark_slect">
+                      <select class="form-control">
+                        <option value="">Select Country</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                      </select>
+                    </div>
+                    <!-- End select wrap -->
+                    <input type="text" class="form-control" placeholder="First Name*">
+                    <input type="text" class="form-control" placeholder="Last Name*">
+                    <input type="text" class="form-control" placeholder="Company Name*">
+                    <input type="text" class="form-control" placeholder="Address*">
+                    <input type="text" class="form-control" placeholder="City">
+                    <input type="text" class="form-control" placeholder="Postal Code">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Phone">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">
+                        Create an account </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">
+                        Ship the same address </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn form-control btn-black">Order Now</button>
+                </div>
+                <!-- Billing Details -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End myaccount -->
   </div>
   <!-- end of #content -->
