@@ -92,12 +92,12 @@ session_start();// Начинаем сессию
           <!-- Top Cart
                         ============================================= -->
           <div id="shop_cart" onclick="basketAjax.top_cart.show();"> 
-          	<span id="shop_tigger_"><i class="fa fa-shopping-cart"></i>
+          	<a id="shop_tigger_"><i class="fa fa-shopping-cart"></i>
           	<?	if ($_SESSION['products_incart'] != 0) {	?>
           		<span id="header_basket_all_count"><?=$_SESSION['products_incart'];?></span>
           	<?	}	?>
-          	</span>
-            <div class="shop_cart_content">
+          	</a>
+            <div class="shop_cart_content" id="shop_cart_content">
               <h4>Shopping Cart</h4>
               <div class="cart_items">
                 <div class="item clearfix"> <a href="index01.html#"><img src="img/post_thumb.jpg" alt=""></a>
