@@ -480,7 +480,7 @@
                                                 <div class="form-group">
                                                     <input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
                                                     if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px;">
-                                                    <input class="btn btn-success form-control" type="button" value="Проверяем" onclick="getGGG()"/>
+                                                    
                                                 </div>
                                             </td>
 											<td>
