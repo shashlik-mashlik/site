@@ -32,7 +32,7 @@ session_start();// Начинаем сессию
                 <ul>
                   <li class="mega-menu-title">
                     <div id="menu_carousel">
-                    	<div class="item"> <a href="/market/shashliks"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/shashliks.png"  alt="shashliks">
+                    	<div class="item"> <a href="/market/shashliks"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/shashliks.jpg"  alt="shashliks">
                         	<h2>Шашлыки</h2>
                         </a> </div>
                       	<!--
