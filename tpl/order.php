@@ -566,39 +566,11 @@
                     ?>
                     <tr>
                         <td><?=$product['name']?></td>
-                        <td>Х<?=$product['price']?>&nbsp;&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?></td>
+                        <td><?=$product['price']?>шт&nbsp;&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?></td>
                     </tr>
 
                     
                     <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <tr>
-                      <td>Cart Subtotal</td>
-                      <td>150 $</td>
-                    </tr>
-                    <tr>
-                      <td>Shipping and Handling</td>
-                      <td>20 $</td>
-                    </tr>
-                    <tr>
-                      <td>Order Total</td>
-                      <td>170 $</td>
-                    </tr>
                   </tbody>
                 </table>
                 
