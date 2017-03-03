@@ -47,6 +47,10 @@ var basketAjax = {
 			document.querySelector('#all_count_word').innerText = word;
 		}
 	},
+	changeButton: function(item) {
+		document.querySelector('#add_cart_btn_' + item).style.display = 'none';
+		document.querySelector('#ok_cart_btn_' + item).style.display = 'inline';
+	},
 	add_to_cart: function(item) {
 		let xhr = ajax.ini();
 		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'add_basket_item=' + item, basketAjax.callback.add);
