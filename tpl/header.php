@@ -59,22 +59,22 @@ session_start();// Начинаем сессию
                         	<h2>Овощи</h2>
                         </a> </div>
 						-->
-						<div class="item"> <a href="/market/salat"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/salat.png"  alt="salat">
+						<div class="item"> <a href="/market/salat"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/salat.jpg"  alt="salat">
                         	<h2>Салаты и Закуски</h2>
                         </a> </div>
-						<div class="item"> <a href="/market/garniry"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/garniry.png"  alt="garniry">
+						<div class="item"> <a href="/market/garniry"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/garniry.jpg"  alt="garniry">
                         	<h2>Гарниры</h2>
                         </a> </div>
-						<div class="item"> <a href="/market/sousy"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/sousy.png"  alt="sousy">
+						<div class="item"> <a href="/market/sousy"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/sousy.jpg"  alt="sousy">
                         	<h2>Соусы</h2>
                         </a> </div>
-                        <div class="item"> <a href="/market/hleb"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/hleb.png"  alt="hleb">
+                        <div class="item"> <a href="/market/hleb"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/hleb.jpg"  alt="hleb">
                         	<h2>Хлеб</h2>
                         </a> </div>
-                        <div class="item"> <a href="/market/napitki"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/napitki.png"  alt="napitki">
+                        <div class="item"> <a href="/market/napitki"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/napitki.jpg"  alt="napitki">
                         	<h2>Напитки</h2>
                         </a> </div>
-                        <div class="item"> <a href="/market/pivo"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/pivo.png"  alt="pivo">
+                        <div class="item"> <a href="/market/pivo"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/pivo.jpg"  alt="pivo">
                         	<h2>Пиво</h2>
                         </a> </div>
                     </div>
