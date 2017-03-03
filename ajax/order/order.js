@@ -1,6 +1,6 @@
 var order = {
 	colors: new Array('#5FDC37', '#FAD028', '#E87D1C', '#EC4A40', '#B928F5'),
-	coasts: new Array(700, 1100, 1300, 1500, 2000);
+	coasts: new Array(700, 1100, 1300, 1500, 2000),
 	state: false,
 	check_address: function(addr) {
 		if (typeof addr.id !== 'undefined' && addr.id >= 0 && addr.id < 5) {
