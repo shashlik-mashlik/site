@@ -597,7 +597,7 @@
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
                     <input onkeyup="order.get_addr(this.value);" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
-                    <span id="min_order_coast" style="font-size: 12px; color: red;">минимальный заказ 2000р</span>
+                    <div id="min_order_coast" style="font-size: 12px; color: red; margin-bottom: 15px; text-align: center;">минимальный заказ 2000р</div>
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Контактный телефон">
                     <input type="text" class="form-control" placeholder="Эл. почта">
