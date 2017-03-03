@@ -410,7 +410,7 @@ $(function ($) {
     $('.carousel').carousel({interval: 7000});
 
     /* Flickr */
-$('#flickrbox').jflickrfeed({
+/*$('#flickrbox').jflickrfeed({
     limit: 12,
     qstrings: {
         id: '7135240@N05'
@@ -426,19 +426,28 @@ $('#flickrbox').jflickrfeed({
             opacity: 0.95,
             deeplinking: false
     });
-});
+});*/
     
 
 
 });
 
 /* Loader */
+/*
 $(window).load(function() {
     $(".loader-item").delay(800).fadeOut();
     $("#loader, #loader2, #loader3").delay(1300).fadeOut("slow");
 });
 
-    
+*/
+
+    //$(window).load(function() {
+        $(".loader-item").delay(200).fadeOut();
+        $("#loader, #loader2, #loader3").delay(200).fadeOut("slow");
+    //});
+
+
+
 })();
 
 
