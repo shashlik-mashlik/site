@@ -339,202 +339,32 @@
 
 
 
-
-  <!-- Content
-    ============================================= -->
-  <div id="content">
-    <!-- My Account
-    ============================================= -->
-    <section class="myaccount text-left padding-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 carts-content">
-            <div class="row">
 <?php
-	if (!isset($_POST['adrs'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Заполните форму! </b>";} else
-	if (isset($_POST['name']) && empty($_POST['name'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Назовите ваше имя! </b>";} else
-	if (isset($_POST['tel']) && empty($_POST['tel'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Укажите телефон! </b>";} else
-	{	
-	$phone = preg_match("|^[\d]*$|", $_POST['tel']); 
-	$num_digits = strlen($_POST['tel']);
-	if  ($num_digits != 11 && $phone[0] != "1") {$msg = 	"<div class='alert alert-warning alert-dismissable'>
-																<b> Укажите телефон в формате 79045517721! </b>";} else
-	
-	include('tpl/mailto.php');
-	
-	//$_SESSION['products_incart']='';$_SESSION['products']='';
-	$msg = "<div class='alert alert-warning alert-dismissable'>
-				<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";	
+    if (!isset($_POST['adrs'])) { $msg =    "<div class='alert alert-warning alert-dismissable'>
+                                            <b> Заполните форму! </b>";} else
+    if (isset($_POST['name']) && empty($_POST['name'])) { $msg =    "<div class='alert alert-warning alert-dismissable'>
+                                            <b> Назовите ваше имя! </b>";} else
+    if (isset($_POST['tel']) && empty($_POST['tel'])) { $msg =  "<div class='alert alert-warning alert-dismissable'>
+                                            <b> Укажите телефон! </b>";} else
+    {   
+    $phone = preg_match("|^[\d]*$|", $_POST['tel']); 
+    $num_digits = strlen($_POST['tel']);
+    if  ($num_digits != 11 && $phone[0] != "1") {$msg =     "<div class='alert alert-warning alert-dismissable'>
+                                                                <b> Укажите телефон в формате 79045517721! </b>";} else
+    
+    include('tpl/mailto.php');
+    
+    //$_SESSION['products_incart']='';$_SESSION['products']='';
+    $msg = "<div class='alert alert-warning alert-dismissable'>
+                <b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";  
 
-	}
-	
-	
-
-
-
-	?>
+    }
+    
+    
 
 
 
-	
-				<!-- article ------------------------------------------------------------- -->
-				
-				<div id="article" class="container" style="width: 780px;">
-
-					<!-- -contact ------------------------------------------------------------- -->
-					
-					
-					
-
-						
-						<blockquote class="blockquote-reverse">
-							<? if (($_SESSION['products_incart'])<1) {echo('<h3>В корзине нет товаров</h3>');} else {?>
-							<h3>В корзине <?=$_SESSION['products_incart'];
-							if ($_SESSION['products_incart']==1) {echo(" позиция");} else
-							if (($_SESSION['products_incart']>1)&&($_SESSION['products_incart']<5)) {echo(" позиции");} else
-							if ($_SESSION['products_incart']>4) {echo(" позицй");}
-								?> на сумму: <span><?=$_SESSION['cart_coast']+500?></span> руб. с учетом доставки.</h3>
-							<?} ?>
-						</blockquote>					
-
-						
-						
-							<table class="table table-striped" style="width: 750px;">
-								<tr>
-									<td> <dt>Наименование:</dt></td><td> <dt>Артикул:</dt></td><td> <dt>Цена:</dt></td><td> <dt>Сумма:</dt></td><td> <dt>Количетсво:</dt></td>
-								</tr>
-								<?
-							
-
-								foreach ($_SESSION['products'] as $key=>$value) {$i++;
-									$q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
-									$product=mysql_fetch_assoc(mysql_query($q));
-
-								?>
-								
-								<tr>	
-									<td><dd style="display: block;"><?=$product['name']?></dd></td> 
-									<td><dd style="display: block;"><?=$product['articul']?></dd></td> 
-									<td><dd style="display: block;"><?=$product['price']?> руб.</dd></td> 
-									<td><dd style="display: block;"><?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?> руб.</dd></td> 
-									<td><dd style="display: block;"><?=$_SESSION['products'][$key]['count']?></dd></td> 
-								</tr>
-
-								<?php
-								
-								}
-								?>
-								<tr>
-									<td><dt>Стоимость доставки:</dt></td><td><dt> # </dt></td><td><dt>500 руб.</dt></td><td>500 руб.<dt></dt></td><td>1<dt></dt></td>
-								</tr>								
-							</table>						
-						
-					
-
-					
-					
-										
-						
-					<!--<form method="post" action="/order">	
-						
-						
-
-						
-						
-						<fieldset>
-										<? if (($_SESSION['products_incart']) >= 1) { ?>	
-										<div style="width: 750px; margin: 0 auto;">
-											<table style="width: 750px;">
-											<tr>
-											<td>
-                                                
-                                                    <input name="street" type="text" class="form-control" id="text" placeholder="Улица" value="<?php 
-                                                    if (isset($_POST['street']) && !empty($_POST['street'])) echo $_POST['street']; ?>" style="width: 250px; display: inline-block;">
-                                            </td>
-											<td>
-                                                <input name="home" type="text" class="form-control" id="" placeholder="дом" style="width: 100px; display: inline-block;" value="<?php 
-                                                if (isset($_POST['home']) && !empty($_POST['home'])) echo $_POST['home']; ?>">
-                                                <input name="room" type="text" class="form-control" id="" placeholder="квартира" style="width: 100px; display: inline-block;" value="<?php 
-                                                if (isset($_POST['room']) && !empty($_POST['room'])) echo $_POST['room']; ?>">
-                                            </td>
-											</tr>
-											<tr>
-											<td><div class="form-group" style="float: left; margin-right: 20px;">
-												<label for="">Дом</label>
-												
-											</div></td>
-											<td><div class="form-group">
-												<label for="">Квартира</label>
-												
-											</div></td>
-											</tr>
-											<tr>
-											<td><div class="form-group">
-												<label for="">Телефон (для получания СМС)</label>
-												<input name="tel" type="tel" class="form-control" id="" placeholder="11 цифр" value="<?php 
-												if (isset($_POST['tel']) && !empty($_POST['tel'])) echo $_POST['tel']; ?>" style="width: 250px;">
-											</div></td>
-											<td><div class="form-group">
-												<label for="">Имя получателя</label>
-												<input name="name" type="text" class="form-control" id="" placeholder="имя" value="<?php 
-												if (isset($_POST['name']) && !empty($_POST['name'])) echo $_POST['name']; ?>" style="width: 250px;">
-											</div></td>
-											</tr>
-											<tr>
-											<td><div class="form-group">
-												<label for="">E-mail</label>
-												<input name="email" type="email" class="form-control" id="" placeholder="e-mail" value="<?php 
-												if (isset($_POST['email']) && !empty($_POST['email'])) echo $_POST['email']; ?>" style="width: 250px;">
-											</div></td>
-											<td><div class="form-group">
-												<label for="">Комментарий</label>
-												<textarea name="message" class="form-control" id="" placeholder="комментарий" style="width: 250px; height: 60px;"><?php 
-												if (isset($_POST['message']) && !empty($_POST['message'])) echo $_POST['message']; ?>
-												</textarea>
-											</div></td>
-											</tr>
-											</table>								
-										</div>							
-									
-									
-									<button type="submit" name="submit" class="btn btn-success" style="dysplay: block; float: right;">Подтвердить заказ</button>
-									<? } ?>
-
-
-									
-						</fieldset>
-					</form>-->
-
-					
-					
-					</br></br>
-					
-					
-<!-- Область показа карты -->
-<div id="myMap" style="width: 800px; height: 250px; display: none;"></div>
-
-					
-					
-				</div></br>
-				
-				<!-- /article ------------------------------------------------------------- -->
-<? //}?>
-
-
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End myaccount -->
-
-  </div>
+    ?>
   <div id="content">
     <!-- My Account
     ============================================= -->
@@ -582,9 +412,9 @@
                     <input onkeyup="order.get_addr(this.value);" name="adrs" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <div id="min_order_coast" style="font-size: 12px; color: red; margin-bottom: 15px; text-align: center; display: none;"></div>
                     <input type="text" class="form-control" placeholder="Имя" name="name" value="<?php if (isset($_POST['name']) && !empty($_POST['name'])) echo $_POST['name']; ?>">
-                    <input type="text" class="form-control" placeholder="Контактный телефон">
-                    <input type="text" class="form-control" placeholder="Эл. почта">
-                    <textarea class="form-control" placeholder="Комментарий"></textarea>
+                    <input type="text" class="form-control" placeholder="Контактный телефон" name="tel" value="<?php if (isset($_POST['tel']) && !empty($_POST['tel'])) echo $_POST['tel']; ?>">
+                    <input type="text" class="form-control" placeholder="Эл. почта" name="email" value="<?php if (isset($_POST['email']) && !empty($_POST['email'])) echo $_POST['email']; ?>">
+                    <textarea class="form-control" placeholder="Комментарий" name="message"><?php if (isset($_POST['message']) && !empty($_POST['message'])) echo $_POST['message']; ?></textarea>
                   </div>
                   <button id="order_submit" disabled type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
                 </div>
@@ -596,6 +426,7 @@
           </div>
         </div>
       </div>
+      <div id="myMap" style="width: 800px; height: 250px; display: none;"></div>
     </section>
     <!-- End myaccount -->
   </div>
