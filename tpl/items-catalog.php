@@ -141,7 +141,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
                       <span id="add_cart_btn_parent_<?php echo $el['id'] ?>" class="btn btn-gold" onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>); basketAjax.changeButton(<?php echo $el['id'] ?>);"><i id="add_cart_btn_<?php echo $el['id'] ?>" class="fa fa-shopping-cart"></i></span>
                       <span class="btn btn-gold" onclick="window.location='/market/<?=$el['url']?>/<?=$el['c_url']?>'"><i class="fa fa-link"></i></span>
                     </div>
-                    <a class="added_to_cart wc-forward" style="display: none; margin-top: 7px;" id="go_to_cart_<?php echo $el['id'] ?>" href="/basket">Перейти в корзину</a>
+                    <a class="added_to_cart wc-forward" style="visibility: hidden; margin-top: 12px;" id="go_to_cart_<?php echo $el['id'] ?>" href="/basket">Перейти в корзину</a>
                     <!-- End Button -->
                     <a class="close-overlay hidden"></a> </div>
                 </div>

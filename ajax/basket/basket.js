@@ -49,7 +49,7 @@ var basketAjax = {
 	},
 	changeButton: function(item) {
 		document.querySelector('#add_cart_btn_' + item).setAttribute('class', 'fa fa-check');
-		document.querySelector('#go_to_cart_' + item).style.display = "inline";
+		document.querySelector('#go_to_cart_' + item).style.visibility = "visible";
 		//document.querySelector('#ok_cart_btn_' + item).style.display = 'inline';
 		//document.querySelector('#add_cart_btn_parent_' + item).setAttribute('class', 'btn btn-white');
 		
