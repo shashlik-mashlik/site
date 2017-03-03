@@ -138,7 +138,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
                     <!-- end Rating -->
                     <!-- Button -->
                     <div class="button"> 
-                      <span class="btn btn-white" onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>); basketAjax.changeButton(<?php echo $el['id'] ?>);"><i id="add_cart_btn_<?php echo $el['id'] ?>" class="fa fa-shopping-cart"></i><i id="ok_cart_btn_<?php echo $el['id'] ?>" class="fa fa-check" style="display: none;"></i></span>
+                      <span id="add_cart_btn_parent_<?php echo $el['id'] ?>" class="btn btn-gold" onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>); basketAjax.changeButton(<?php echo $el['id'] ?>);"><i id="add_cart_btn_<?php echo $el['id'] ?>" class="fa fa-shopping-cart"></i><i id="ok_cart_btn_<?php echo $el['id'] ?>" class="fa fa-check" style="display: none;"></i></span>
                       <span class="btn btn-gold" onclick="window.location='/market/<?=$el['url']?>/<?=$el['c_url']?>'"><i class="fa fa-link"></i></span>
                     </div>
                     <!-- End Button -->
