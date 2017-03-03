@@ -351,7 +351,7 @@
           <div class="col-md-12 carts-content">
             <div class="row">
 <?php
-	if (isset($_POST['adrs']) && empty($_POST['adrs'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
+	if (!isset($_POST['adrs'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Заполните форму! </b>";} else
 	if (isset($_POST['name']) && empty($_POST['name'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Назовите ваше имя! </b>";} else
