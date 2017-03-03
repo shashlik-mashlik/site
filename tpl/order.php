@@ -556,7 +556,13 @@
             <div class="row">
               <!-- Cart Total -->
               <div class="col-md-8 carts-total text-left">
-                <h3>Заказ:</h3>
+                <? if (($_SESSION['products_incart'])<1) {echo('<h3>В корзине нет товаров</h3>');} else {?>
+                            <h3>В корзине <?=$_SESSION['products_incart'];
+                            if ($_SESSION['products_incart']==1) {echo(" позиция");} else
+                            if (($_SESSION['products_incart']>1)&&($_SESSION['products_incart']<5)) {echo(" позиции");} else
+                            if ($_SESSION['products_incart']>4) {echo(" позицй");}
+                                ?> на сумму: <span><?=$_SESSION['cart_coast']+500?></span> руб. с учетом доставки.</h3>
+                            <?} ?>
                 <table class="table table-bordered">
                   <tbody>
                     <?
