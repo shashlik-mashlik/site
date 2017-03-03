@@ -574,6 +574,7 @@
               </div>
               <!-- End # Cart Total -->
               <!-- Shipping Address -->
+              <form method="POST" action="/order">
               <div class="col-md-4">
                 <div class="calc-shipping">
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
@@ -589,6 +590,7 @@
                 </div>
                 <!-- Shipping Address -->
               </div>
+              </form>
               <!-- Billing Details -->
             </div>
           </div>
