@@ -25,7 +25,7 @@ if ($URL[1]=='market') {
           <div class="banner-content">
             <div class="container" >
               <div class="slider-content"> <i class="icon-home-ico"></i>
-                <h1>Menu</h1>
+                <h1>Меню</h1>
                 <p>Come & Taste</p>
                 <ol class="breadcrumb">
                   <li><a href="/">Главная</a></li>

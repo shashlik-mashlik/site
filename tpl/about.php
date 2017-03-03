@@ -23,7 +23,7 @@ if ($URL[1] != '') {
                         <div class="banner-content">
                             <div class="container">
                                 <div class="slider-content"><i class="icon-home-ico"></i>
-                                    <h1>About us</h1>
+                                    <h1>О нас</h1>
                                     <p>Where we all strart.</p>
                                     <ol class="breadcrumb">
                                         <li><a href="index01.html">Главная</a></li>
@@ -100,7 +100,7 @@ if ($URL[1] != '') {
                                         <!-- End Icon -->
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
-                                            <h3>Adress</h3>
+                                            <h3>Адрес</h3>
                                             <p> Юр.адрес: 5я линия В.О. д.30/10. </p>
                                         </div>
                                         <!-- End content Item -->
@@ -113,8 +113,8 @@ if ($URL[1] != '') {
                                         <!-- End Icon -->
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
-                                            <h3>PHONE</h3>
-                                            <p>Телефон:<span>8(812) 985-00-06</span></p>
+                                            <h3>Телефон</h3>
+                                            <p><span>8(812) 985-00-06</span></p>
 
                                         </div>
                                         <!-- End content Item -->
@@ -127,8 +127,8 @@ if ($URL[1] != '') {
                                         <!-- End Icon -->
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
-                                            <h3>E-MAIL</h3>
-                                            <p>Почта:<a href="mailto:shashlikmashlik.spb@gmail.com">shashlikmashlik.spb@gmail.com</a>
+                                            <h3>Почта</h3>
+                                            <p><a href="mailto:shashlikmashlik.spb@gmail.com">shashlikmashlik.spb@gmail.com</a>
                                             </p>
 
                                         </div>

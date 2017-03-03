@@ -9,7 +9,7 @@
       <div class="row">
         <!-- Our location !-->
         <div class="col-md-3 col-sm-6 col-xs-12 our_location">
-          <h3>Our Location</h3>
+          <h3>Мы находимся</h3>
           <p>Юридический адрес:</p>
           <span>С-Пб, 5-я линия В.О. д.30 кв 10</span>
           <p class="mt30">Телефон: <span >8(812) 985-00-06</span></p>
@@ -24,7 +24,7 @@
         <!-- End our location -->
         <!-- Latest Post !-->
         <div class="col-md-3 col-sm-6 col-xs-12 latest_post ">
-          <h3>Lastest Post</h3>
+          <h3>Последние новости</h3>
           <div class="media">
             <div class="media-left"> <a href="blog_single_image.html" > <img class="media-object" rel="prettyPhoto" src="/themes/majesty/img/post_thumb.jpg" alt="post thumb"> </a> </div>
             <div class="media-body">
@@ -50,7 +50,7 @@
         <!-- End latest Post -->
         <!-- Opening time !-->
         <div class="col-md-3 col-sm-6 col-xs-12 opening_time">
-          <h3>Opening Times</h3>
+          <h3>Мы открыты</h3>
           <ul>
             <li>
               <p>Понедельник
@@ -93,7 +93,7 @@
         <!-- End opening time -->
         <!-- Flickr !-->
         <div class="col-md-3 col-sm-6 col-xs-12 flickr">
-          <h3>Flickr Photos</h3>
+          <h3>Фото</h3>
           <ul id="flickrbox" class="thumbs">
           </ul>
         </div>
