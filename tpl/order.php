@@ -556,9 +556,37 @@
             <div class="row">
               <!-- Cart Total -->
               <div class="col-md-8 carts-total text-left">
-                <h3>Carts Total</h3>
+                <h3>Заказ:</h3>
                 <table class="table table-bordered">
                   <tbody>
+                    <?
+                         foreach ($_SESSION['products'] as $key=>$value) {$i++;
+                             $q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
+                             $product=mysql_fetch_assoc(mysql_query($q));
+                    ?>
+                    <tr>
+                        <td><?=$product['name']?> Х<?=$product['price']?></td>
+                        <td><?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?></td>
+                    </tr>
+
+                    
+                    <?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <tr>
                       <td>Cart Subtotal</td>
                       <td>150 $</td>
@@ -573,21 +601,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="calc-shipping margin-tb-60">
-                  <h3>Select Payment Method</h3>
-                  <div class="form-group">
-                    <!-- Selct wrap -->
-                    <div class="select_wrap dark_slect">
-                      <select class="form-control">
-                        <option value="">Credit Card</option>
-                        <option value="one">Visa</option>
-                        <option value="two">Master Card</option>
-                        <option value="three">Bank Account</option>
-                      </select>
-                    </div>
-                    <!-- End select wrap -->
-                  </div>
-                </div>
+                
                 <!-- Carts total -->
               </div>
               <!-- End # Cart Total -->
