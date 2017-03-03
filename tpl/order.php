@@ -565,8 +565,8 @@
                              $product=mysql_fetch_assoc(mysql_query($q));
                     ?>
                     <tr>
-                        <td><?=$product['name']?> Х<?=$product['price']?></td>
-                        <td><?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?></td>
+                        <td><?=$product['name']?></td>
+                        <td>Х<?=$product['price']?>&nbsp;&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?></td>
                     </tr>
 
                     
