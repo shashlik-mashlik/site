@@ -159,6 +159,8 @@
                 results: 5
             }).then(function (res) {
 
+                console.log(res);
+
                 //TODO это для автозаполнения выбираем из этих параметров res.geoObjects это список объектов
                 var firstGeoObject = res.geoObjects.get(0);
                 console.log('Полное описание объекта: %s', firstGeoObject.properties.get('text'));
