@@ -4,6 +4,7 @@ var order = {
 	check_address: function(addr) {
 		if (typeof addr.id !== 'undefined' && addr.id >= 0 && addr.id < 5) {
 			document.querySelector('#min_order_coast').style.color = this.colors[addr.id];
+			document.querySelector('#min_order_coast').style.display = 'block';
 			document.querySelector('#min_order_coast').innerText = addr.hintContent;
 		}
 	},
