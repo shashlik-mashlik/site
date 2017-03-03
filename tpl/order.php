@@ -351,18 +351,10 @@
           <div class="col-md-12 carts-content">
             <div class="row">
 <?php
-    if (!isset($_POST['sity'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Заполните форму! </b>";} else
 	if (isset($_POST['adrs']) && empty($_POST['adrs'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Введите улицу! </b>";} else
-	if (isset($_POST['home']) && empty($_POST['home'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Укажите номер дома! </b>";} else
-	if (isset($_POST['room']) && empty($_POST['room'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-											<b> Укажите номер квартиры или офиса! </b>";} else
+											<b> Заполните форму! </b>";} else
 	if (isset($_POST['name']) && empty($_POST['name'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Назовите ваше имя! </b>";} else
-	//if (isset($_POST['email']) && empty($_POST['email'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
-	//										<b> Укажите e-mail! </b>";} else
 	if (isset($_POST['tel']) && empty($_POST['tel'])) { $msg = 	"<div class='alert alert-warning alert-dismissable'>
 											<b> Укажите телефон! </b>";} else
 	{	
@@ -449,7 +441,7 @@
 					
 										
 						
-					<form method="post" action="/order">	
+					<!--<form method="post" action="/order">	
 						
 						<div style="height: 80px; width: 750px;"><h4><?=$msg;?></h4></div>
 
@@ -517,7 +509,7 @@
 
 									
 						</fieldset>
-					</form>
+					</form>-->
 
 					
 					

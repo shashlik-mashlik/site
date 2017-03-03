@@ -38,10 +38,7 @@ $primary_key = $primary_key."-".$date_today."-".time ();
 $email = $_POST['email'];
 $subject = "'BONVIO-TRADE' Заказ №: ".$primary_key." принят.";
 $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
-			Адрес: город ".htmlspecialchars(stripslashes(substr($_POST['sity'],0,32))).". 
-			улица: ".htmlspecialchars(stripslashes(substr($_POST['street'],0,32))).". 
-			дом: ".htmlspecialchars(stripslashes(substr($_POST['home'],0,32))).". 
-			кв.: ".htmlspecialchars(stripslashes(substr($_POST['room'],0,32))).". 
+			Адрес: ".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32))).". 
 			тел.: ".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32))).". 
 			Комментарий: ".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."
 			".$basket."
@@ -64,9 +61,9 @@ $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "From:\r\n";
 /* дополнительные шапки */
-$headers .= "From: BONVIO-STEAM <bonvio@bonvio.ru>\r\n";
-$headers .= "Cc: bonvio@bonvio.ru\r\n";
-$headers .= "Bcc: bonvio@bonvio.ru\r\n";
+$headers .= "From: SHASHLIK-MASHLIK <test@test.ru>\r\n";
+$headers .= "Cc: test@test.ru\r\n";
+$headers .= "Bcc: test@test.ru\r\n";
 	
 	if (mail($email, $subject, $message, $headers )){
 	mail($TEXT['e-mail'], $subject, $message, $headers );
