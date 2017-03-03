@@ -551,7 +551,7 @@
                             if ($_SESSION['products_incart']==1) {echo(" позиция");} else
                             if (($_SESSION['products_incart']>1)&&($_SESSION['products_incart']<5)) {echo(" позиции");} else
                             if ($_SESSION['products_incart']>4) {echo(" позицй");}
-                                ?> на сумму: <span><?=$_SESSION['cart_coast']+500?></span> руб. </h3>
+                                ?> на сумму: <span id="order_all_coast"><?=$_SESSION['cart_coast']?></span> руб. </h3>
                             <?} ?>
                 <table class="table table-bordered">
                   <tbody>
@@ -585,7 +585,7 @@
                     <input type="text" class="form-control" placeholder="Эл. почта">
                     <textarea class="form-control" placeholder="Комментарий"></textarea>
                   </div>
-                  <button disabled type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
+                  <button id="order_submit" disabled type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
                 </div>
                 <!-- Shipping Address -->
               </div>
