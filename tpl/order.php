@@ -572,7 +572,7 @@
                     ?>
                     <tr>
                         <td><?=$product['name']?></td>
-                        <td><?=$product['coast']?>шт&nbsp;&nbsp;на&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?>руб.</td>
+                        <td><?=$_SESSION['products'][$key]['count']?>шт&nbsp;&nbsp;на&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?>руб.</td>
                     </tr>
 
                     
@@ -595,7 +595,7 @@
                     <input type="text" class="form-control" placeholder="Эл. почта">
                     <textarea class="form-control" placeholder="Комментарий"></textarea>
                   </div>
-                  <button type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
+                  <button disabled type="submit" class="btn form-control btn-black">ЗАКАЗАТЬ</button>
                 </div>
                 <!-- Shipping Address -->
               </div>
