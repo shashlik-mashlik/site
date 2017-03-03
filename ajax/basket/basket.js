@@ -8,6 +8,7 @@ var basketAjax = {
 				else if (response.all[0] > 1 && response.all[0] < 5) word = ' позиции';
 
 			document.querySelector('#header_basket_all_count').innerText = response.all[0];
+			document.querySelector('#header_basket_all_count').style.display = 'block';
 			document.querySelector('#product_count_' + response.id).value = response.count;
 			document.querySelector('#product_coast_' + response.id).innerText = response.coast * response.count + ' руб.';
 			document.querySelector('#all_coast').innerText = response.all[1];
@@ -27,6 +28,8 @@ var basketAjax = {
 			document.querySelector('#all_count_word').innerText = word;
 
 			document.querySelector('#basket_row_item_' + response.id).remove();
+
+			if (response.all[0] === 0) document.querySelector('#header_basket_all_count').style.display = 'none';
 		},
 		delete: function(param) {
 			let response = eval("(" + param.responseText + ")");
@@ -36,6 +39,7 @@ var basketAjax = {
 				else if (response.all[0] > 1 && response.all[0] < 5) word = ' позиции';
 
 			document.querySelector('#header_basket_all_count').innerText = response.all[0];
+			document.querySelector('#header_basket_all_count').style.display = 'block';
 			document.querySelector('#product_count_' + response.id).value = response.count;
 			document.querySelector('#product_coast_' + response.id).innerText = response.coast * response.count + ' руб.';
 			document.querySelector('#all_coast').innerText = response.all[1];
@@ -91,7 +95,9 @@ var basketAjax = {
 				div.appendChild(a.appendChild(img));
 				el.appendChild(div).appendChild(div2);
 			}
-			document.querySelector('#top_cart_all_coast').innerText = response[0] + 'р';
+			
+			if (typeof response[0] === null) document.querySelector('#top_cart_all_coast').innerText = '0р';
+				else document.querySelector('#top_cart_all_coast').innerText = response[0] + 'р';
 		},
 		hide: function(){
 			document.querySelector('#top_cart_content').innerHTML = '';
