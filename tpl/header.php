@@ -85,6 +85,7 @@ session_start();// Начинаем сессию
               </div>
             </li>
             <li><a href="/about"><div>О нас</div></a></li>
+            <li><a href="/basket"><div>Корзина</div></a></li>
             <!--
             <li><a href="/review"><div>Отзывы</div></a></li>
             

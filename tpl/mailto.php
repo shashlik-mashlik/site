@@ -52,7 +52,7 @@ $msg = "";
 
 	$phonenumber=$_POST['tel'];
 	$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
-	include('tpl/register.php');//-------------------------------------------------------------------------------<<<
+	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<
 
 
 if (isset($_POST['email']) && !empty($_POST['email'])){
