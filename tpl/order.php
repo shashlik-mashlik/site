@@ -368,10 +368,7 @@
 	//$_SESSION['products_incart']='';$_SESSION['products']='';
 	$msg = "<div class='alert alert-warning alert-dismissable'>
 				<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";	
-	
-	
 
-	
 	}
 	
 	
@@ -443,7 +440,7 @@
 						
 					<!--<form method="post" action="/order">	
 						
-						<div style="height: 80px; width: 750px;"><h4><?=$msg;?></h4></div>
+						
 
 						
 						
@@ -544,6 +541,7 @@
     <section class="myaccount text-left padding-100">
       <div class="container">
         <div class="row">
+        <div><h4><?=$msg;?></h4></div>
           <div class="col-md-12 carts-content">
             <div class="row">
               <!-- Cart Total -->
