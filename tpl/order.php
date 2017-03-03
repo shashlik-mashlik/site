@@ -525,7 +525,7 @@
 					
 					
 <!-- Область показа карты -->
-<div id="myMap" style="width: 800px; height: 250px;"></div>
+<div id="myMap" style="width: 800px; height: 250px; display: none;"></div>
 
 					
 					

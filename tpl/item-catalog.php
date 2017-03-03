@@ -61,7 +61,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
             <!-- Rating -->
             <fieldset class="rating">
               <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span> 
-              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span> 
+              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
               <span><i class="fa fa-star"></i></span>
             </fieldset>
             <!-- End Rating -->

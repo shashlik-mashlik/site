@@ -70,7 +70,7 @@ $headers .= "Bcc: bonvio@bonvio.ru\r\n";
 	
 	if (mail($email, $subject, $message, $headers )){
 	mail($TEXT['e-mail'], $subject, $message, $headers );
-	mail("rus.syndicate@gmail.com", $subject, $message, $headers );
+	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
     $msg = "<div class='alert alert-warning alert-dismissable'>
 				<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
