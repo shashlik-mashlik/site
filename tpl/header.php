@@ -16,7 +16,9 @@ session_start();// Начинаем сессию
         <div id="main-menu-trigger"><i class="fa fa-bars"></i></div>
         <!-- Logo
                     ============================================= -->
-        <div id="logo"> <a href="index01.html" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> <a href="index01.html" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
+        <div id="logo"> 
+            <a href="index01.html" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
+            <a href="index01.html" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
         <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->

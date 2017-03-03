@@ -25,9 +25,9 @@ $(function ($) {
                 // else:
 
                  images:[
-                 "img/background/custom/001_dark.png",
-                 "img/background/custom/002_dark.png",
-                 "img/background/custom/003_dark.png"
+                 "img/background/custom/001_dark.jpg",
+                 "img/background/custom/002_dark.jpg",
+                 "img/background/custom/003_dark.jpg"
                  ],    
 
                 onStart:function(){},
