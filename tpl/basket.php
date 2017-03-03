@@ -133,7 +133,7 @@ if (isset($_GET['del_basket_item'])) {
                                             <span class="input-group-btn">
                                                 <button type="button" onclick="basketAjax.delete_basket_item(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="minus"> <span class="fa fa-minus"></span> </button>
                                             </span>
-                                            <input type="number" id="product_count_<?php echo $key ?>" class="form-control input-number" value="<?php echo $_SESSION['products'][$key]['count'] ?>">
+                                            <input disabled type="number" id="product_count_<?php echo $key ?>" class="form-control input-number" value="<?php echo $_SESSION['products'][$key]['count'] ?>">
                                             <span class="input-group-btn">
                                                 <button type="button" onclick="basketAjax.add_to_cart(<?php echo $key ?>)" class="btn btn-default btn-number" data-type="plus"> <span class="fa fa-plus"></span> </button>
                                             </span>

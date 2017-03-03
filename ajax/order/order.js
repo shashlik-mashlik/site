@@ -1,5 +1,5 @@
 var order = {
-	check_adress: function(addr) {
-		
+	check_address: function(addr) {
+		console.log(addr);
 	}
 }
