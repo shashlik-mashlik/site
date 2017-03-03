@@ -572,7 +572,7 @@
                     ?>
                     <tr>
                         <td><?=$product['name']?></td>
-                        <td><?=$product['price']?>шт&nbsp;&nbsp;на&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?>руб.</td>
+                        <td><?=$product['coast']?>шт&nbsp;&nbsp;на&nbsp;&nbsp;<?=($_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'])?>руб.</td>
                     </tr>
 
                     
