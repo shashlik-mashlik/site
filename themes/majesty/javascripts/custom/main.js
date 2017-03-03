@@ -442,8 +442,8 @@ $(window).load(function() {
 */
 
     //$(window).load(function() {
-        $(".loader-item").delay(200).fadeOut();
-        $("#loader, #loader2, #loader3").delay(200).fadeOut("slow");
+        $(".loader-item").delay(800).fadeOut();
+        $("#loader, #loader2, #loader3").delay(800).fadeOut("slow");
     //});
 
 
