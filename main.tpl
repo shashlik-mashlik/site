@@ -49,6 +49,9 @@
 <link href="/themes/majesty/stylesheets/main.css" rel="stylesheet">
 <!-- Main Template Responsive Styles -->
 <link href="/themes/majesty/stylesheets/main-responsive.css" rel="stylesheet">
+<style>
+  .btn-gold:hover {color: white;}
+</style>
 <!--[if lt IE 9]>
       <script src="javascripts/libs/html5shiv.js"></script>
       <script src="javascripts/libs/respond.min.js"></script>
