@@ -143,7 +143,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
                       <span class="btn btn-gold added" onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>)"><i class="fa fa-shopping-cart"></i></span>
                     </div>
                     <!-- End Button -->
-                    <a class="close-overlay hidden">x</a> </div>
+                    <a class="close-overlay hidden"></a> </div>
                 </div>
               </div>
               <!-- Overlay Item -->
