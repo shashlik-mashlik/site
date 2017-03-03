@@ -103,7 +103,7 @@ var basketAjax = {
 				el.appendChild(div).appendChild(div2);
 			}
 			
-			if (typeof response[0] === null) document.querySelector('#top_cart_all_coast').innerText = '0р';
+			if (typeof response[0] !== 'number') document.querySelector('#top_cart_all_coast').innerText = '0р';
 				else document.querySelector('#top_cart_all_coast').innerText = response[0] + 'р';
 		},
 		hide: function(){
