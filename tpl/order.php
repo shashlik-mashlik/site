@@ -596,7 +596,7 @@
                 <div class="calc-shipping">
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
-                    <input onkeyup="function() {if(this.value.length > 4) {getGGG();} else {console.log('Коротко');}}" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
+                    <input onkeyup="order.get_addr(this.value);" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Контактный телефон">
                     <input type="text" class="form-control" placeholder="Эл. почта">
