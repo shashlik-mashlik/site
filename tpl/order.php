@@ -579,9 +579,9 @@
                 <div class="calc-shipping">
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
-                    <input onkeyup="order.get_addr(this.value);" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
+                    <input onkeyup="order.get_addr(this.value);" name="adrs" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <div id="min_order_coast" style="font-size: 12px; color: red; margin-bottom: 15px; text-align: center; display: none;"></div>
-                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Имя" name="name" value="<?php if (isset($_POST['name']) && !empty($_POST['name'])) echo $_POST['name']; ?>">
                     <input type="text" class="form-control" placeholder="Контактный телефон">
                     <input type="text" class="form-control" placeholder="Эл. почта">
                     <textarea class="form-control" placeholder="Комментарий"></textarea>
