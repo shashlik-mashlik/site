@@ -354,7 +354,7 @@
     
     include('tpl/mailto.php');
     
-    $_SESSION['products_incart']='';$_SESSION['products']='';
+    $_SESSION['products_incart']='';$_SESSION['products']=''; $_SESSION['cart_coast']='';
     $msg = "<div class='alert alert-warning alert-dismissable'>
                 <b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";  
 
