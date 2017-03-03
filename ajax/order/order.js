@@ -8,7 +8,7 @@ var order = {
 			document.querySelector('#min_order_coast').style.display = 'block';
 			document.querySelector('#min_order_coast').innerText = addr.hintContent;
 
-			if (order.coasts[addr.id] <= parseInt(document.querySelector('#order_all_coast').innetText, 10)) {
+			if (order.coasts[addr.id] <= parseInt(document.querySelector('#order_all_coast').innerText, 10)) {
 				document.querySelector('#order_submit').removeAttribute('disabled');
 			}
 		}
