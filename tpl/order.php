@@ -167,7 +167,7 @@
 
                     //TODO это после клика на конкретном адресе, выставляем в какую зону попали
                     //console.log(res);
-                    console.log(res);
+                    order.check_address(res);
                 });
 
             });
@@ -596,7 +596,7 @@
                 <div class="calc-shipping">
                   <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
                   <div class="form-group">
-                    <input onkeypress="order.check_address(this.value);" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
+                    <input onkeyup="getGGG();" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Контактный телефон">
                     <input type="text" class="form-control" placeholder="Эл. почта">
