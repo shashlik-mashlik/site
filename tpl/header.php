@@ -19,10 +19,11 @@ session_start();// Начинаем сессию
         <div id="logo"> 
             <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
             <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
-        <!--End #logo  -->
+
+            <span style="color: white;">89214101296</span>
+                    <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
-            <span style="color: white;">89214101296</span>
         <nav id="main-menu" class="dark">
           <ul>
             <li><a href="/"><div>Главная</div></a></li>
