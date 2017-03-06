@@ -349,11 +349,7 @@
     if (isset($_POST['tel']) && empty($_POST['tel'])) { $msg =  "<div class='alert alert-warning alert-dismissable'>
                                             <b> Укажите телефон! </b>";} else
     {   
-    $phone = preg_match("|^[\d]*$|", $_POST['tel']); 
-    $num_digits = strlen($_POST['tel']);
-    if  ($num_digits != 11 || $phone[0] != "1") {$msg =     "<div class='alert alert-warning alert-dismissable'>
-                                                                <b> Укажите телефон в формате 79045517721! </b>";} else 
-    
+   
     include('tpl/mailto.php');
     
     $_SESSION['products_incart']='';$_SESSION['products']=''; $_SESSION['cart_coast']='';
