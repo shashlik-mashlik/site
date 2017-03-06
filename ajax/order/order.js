@@ -12,6 +12,7 @@ var order = {
 			for (let i = 2; i < arr.length; i++) {
 				str += arr[i] + ' ';
 			}
+			str.charAt(0).toUpperCase() + str.substr(1);
 			document.querySelector('#min_order_coast').innerText = str + ': ' + addr.hintContent; //ТЕКСТ О МИН ЗАКАЗЕ
 
 			if (order.coasts[addr.id] <= parseInt(document.querySelector('#order_all_coast').innerText, 10)) {
