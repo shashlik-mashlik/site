@@ -167,7 +167,7 @@
                 showOnMap(firstGeoObject).then(function (res) {
                     //TODO это после клика на конкретном адресе, выставляем в какую зону попали
                     //console.log(res);
-                    order.check_address(res);
+                    order.check_address(res, firstGeoObject.properties.get('text'));
                 });
 
             });
