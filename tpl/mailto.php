@@ -52,8 +52,8 @@ $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_
 $msg = "";
 
 
-	$phonenumber=$_POST['tel'];
-	$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
+	//$phonenumber=$_POST['tel'];
+	//$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
 	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<
 
 
@@ -67,8 +67,8 @@ $headers .= "From: SHASHLIK-MASHLIK <test@test.ru>\r\n";
 $headers .= "Cc: test@test.ru\r\n";
 $headers .= "Bcc: test@test.ru\r\n";
 	
-	if (mail($TEXT['test'], $subject, $message, $headers ))){
-	//mail($email, $subject, $message, $headers
+	if (mail($TEXT['test'], $subject, $message, $headers )){
+	mail($email, $subject, $message, $headers
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
     $msg = "<div class='alert alert-warning alert-dismissable'>
