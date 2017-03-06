@@ -344,6 +344,8 @@
                                             <b> Заполните форму! </b>";} else
     if (isset($_POST['name']) && empty($_POST['name'])) { $msg =    "<div class='alert alert-warning alert-dismissable'>
                                             <b> Назовите ваше имя! </b>";} else
+    if (isset($_POST['col']) && empty($_POST['col'])) { $msg =    "<div class='alert alert-warning alert-dismissable'>
+                                            <b> Укажите количество персон! </b>";} else
     if (isset($_POST['tel']) && empty($_POST['tel'])) { $msg =  "<div class='alert alert-warning alert-dismissable'>
                                             <b> Укажите телефон! </b>";} else
     {   
@@ -412,6 +414,7 @@
                     <input onkeyup="order.get_addr(this.value);" name="adrs" id="adrs" type="text" class="form-control" placeholder="Адрес" value="<?php if (isset($_POST['adrs']) && !empty($_POST['adrs'])) echo $_POST['adrs']; ?>">
                     <div id="min_order_coast" style="font-size: 12px; color: red; margin-bottom: 15px; text-align: center; display: none;"></div>
                     <input type="text" class="form-control" placeholder="Имя" name="name" value="<?php if (isset($_POST['name']) && !empty($_POST['name'])) echo $_POST['name']; ?>">
+                    <input type="text" class="form-control" placeholder="Кол-во персон" name="col" value="<?php if (isset($_POST['col']) && !empty($_POST['col'])) echo $_POST['col']; ?>">
                     <input type="text" class="form-control" placeholder="Контактный телефон" name="tel" value="<?php if (isset($_POST['tel']) && !empty($_POST['tel'])) echo $_POST['tel']; ?>">
                     <input type="text" class="form-control" placeholder="Эл. почта" name="email" value="<?php if (isset($_POST['email']) && !empty($_POST['email'])) echo $_POST['email']; ?>">
                     <textarea class="form-control" placeholder="Комментарий" name="message"><?php if (isset($_POST['message']) && !empty($_POST['message'])) echo $_POST['message']; ?></textarea>

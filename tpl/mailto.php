@@ -38,6 +38,7 @@ $primary_key = $primary_key."-".$date_today."-".time ();
 $email = $_POST['email'];
 $subject = "'BONVIO-TRADE' Заказ №: ".$primary_key." принят.";
 $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
+			Кол-во персон: ".htmlspecialchars(stripslashes(substr($_POST['col'],0,32))).". 
 			Адрес: ".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32))).". 
 			тел.: ".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32))).". 
 			Комментарий: ".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."
@@ -66,7 +67,7 @@ $headers .= "Cc: test@test.ru\r\n";
 $headers .= "Bcc: test@test.ru\r\n";
 	
 	if (mail($email, $subject, $message, $headers )){
-	mail($TEXT['e-mail'], $subject, $message, $headers );
+	mail($TEXT['test'], $subject, $message, $headers );
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
     $msg = "<div class='alert alert-warning alert-dismissable'>
