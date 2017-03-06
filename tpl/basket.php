@@ -87,7 +87,7 @@ if (isset($_GET['del_basket_item'])) {
                             <? } ?>
                         </blockquote>
 
-
+                        <div style="overflow-x: auto;">
                         <table class="table table-striped table-responsive table-cart">
                             <thead>
                             <tr>
@@ -152,6 +152,7 @@ if (isset($_GET['del_basket_item'])) {
 
                             </tbody>
                         </table>
+                        </div>
                         <!-- End Table carts  -->
                 </div>
                 <!-- Carts content -->
