@@ -55,7 +55,6 @@ $msg = "";
 	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<
 
 
-if (isset($_POST['email']) && !empty($_POST['email'])){
 
 $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
@@ -64,30 +63,16 @@ $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: BONVIO-STEAM <bonvio@bonvio.ru>\r\n";
 $headers .= "Cc: bonvio@bonvio.ru\r\n";
 $headers .= "Bcc: bonvio@bonvio.ru\r\n";
-	echo "email" . $TEXT['test'];
+echo "email" . $TEXT['test'];
 	if (mail($TEXT['test'], $subject, $message, $headers )){
-	//mail($email, $subject, $message, $headers );
+	@mail($email, $subject, $message, $headers );
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
-    $msg = "<div class='alert alert-warning alert-dismissable'>
-				<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
+    	$msg = "<div class='alert alert-warning alert-dismissable'>
+			<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
+	}
 	
-	
-	
-	
-	//-----------------------
-	
-	
-	
-	
-  }else{
-    $msg = "Ошибка отправки сообщения <b>".$_POST['email']."</b>.";
-  }
-}else{
-  if (isset($_POST['submit'])){
-    $msg = "<div class='alert alert-warning alert-dismissable'>Email не был введен!</div>";
-  }
-}
+
 if (!empty($message)){
   $msg .= "";
 }
