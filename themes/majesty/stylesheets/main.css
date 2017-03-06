@@ -783,7 +783,7 @@ input:focus, textarea:focus {
 	display: inline-block
 }
 #header-sticky-wrapper.is-sticky #header .dark-logo img {
-	margin-top: 10px
+	margin-top: 0px
 }
 #header-sticky-wrapper.is-sticky .main_menu {
 	padding-top: 10px
@@ -825,7 +825,7 @@ input:focus, textarea:focus {
 #shop_cart {
 	position: relative;
 	float: right;
-	margin-top: 18px
+	margin-top: 10px
 }
 #shop_cart>a>span {
 	display: block;
@@ -5499,9 +5499,4 @@ body.boxed .video-full, body.boxed .zooming-slider {
 }
 body.boxed .error-404, body.boxed .login-full {
 	background-color: #191919
-}
-@media (min-width:767px) {
-	#header_phone {
-		display: block;
-	}
 }
