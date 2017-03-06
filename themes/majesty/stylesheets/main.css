@@ -1087,8 +1087,8 @@ input:focus, textarea:focus {
 }
 #main-menu ul li a {
 	display: block;
-	height: 90px;
-	line-height: 90px;
+	height: 70px;
+	line-height: 70px;
 	padding: 0 15px;
 	color: #fff;
 	font-size: 16px;
@@ -1270,7 +1270,7 @@ body.stretched #header.full-header #main-menu ul li.mega-menu .mega-menu-content
 	padding-left: 12px
 }
 #header, #header-wrap, #main-menu:not(.style-dropdown), #main-menu:not(.style-dropdown)>ul {
-	height: 90px;
+	height: 70px;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease
 }
@@ -5499,4 +5499,9 @@ body.boxed .video-full, body.boxed .zooming-slider {
 }
 body.boxed .error-404, body.boxed .login-full {
 	background-color: #191919
+}
+@media (min-width:767px) {
+	#header_phone {
+		display: block;
+	}
 }
