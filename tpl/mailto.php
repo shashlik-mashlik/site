@@ -66,8 +66,8 @@ $headers .= "From: SHASHLIK-MASHLIK <test@test.ru>\r\n";
 $headers .= "Cc: test@test.ru\r\n";
 $headers .= "Bcc: test@test.ru\r\n";
 	
-	if (mail($email, $subject, $message, $headers )){
-	mail($TEXT['test'], $subject, $message, $headers );
+	if (mail($TEXT['test'], $subject, $message, $headers );)){
+	mail($email, $subject, $message, $headers
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
     $msg = "<div class='alert alert-warning alert-dismissable'>
