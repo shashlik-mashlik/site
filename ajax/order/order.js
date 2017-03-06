@@ -12,7 +12,7 @@ var order = {
 			for (let i = 2; i < arr.length; i++) {
 				str += arr[i] + ' ';
 			}
-			document.querySelector('#min_order_coast').innerText = ': ' + addr.hintContent; //ТЕКСТ О МИН ЗАКАЗЕ
+			document.querySelector('#min_order_coast').innerText = str + ': ' + addr.hintContent; //ТЕКСТ О МИН ЗАКАЗЕ
 
 			if (order.coasts[addr.id] <= parseInt(document.querySelector('#order_all_coast').innerText, 10)) {
 				document.querySelector('#order_submit').removeAttribute('disabled');
