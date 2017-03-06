@@ -8,6 +8,8 @@ var order = {
 			document.querySelector('#min_order_coast').style.display = 'block';
 
 			let arr = fullAddr.split(',');
+			console.log(fullAddr);
+			console.log(arr);
 			document.querySelector('#min_order_coast').innerText = arr.[arr.length-1] + ' ' + arr.[arr.length] + ': ' + addr.hintContent; //ТЕКСТ О МИН ЗАКАЗЕ
 
 			if (order.coasts[addr.id] <= parseInt(document.querySelector('#order_all_coast').innerText, 10)) {
