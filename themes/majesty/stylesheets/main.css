@@ -1270,7 +1270,7 @@ body.stretched #header.full-header #main-menu ul li.mega-menu .mega-menu-content
 	padding-left: 12px
 }
 #header, #header-wrap, #main-menu:not(.style-dropdown), #main-menu:not(.style-dropdown)>ul {
-	height: 60px;
+	height: 90px;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease
 }
