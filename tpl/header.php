@@ -17,8 +17,8 @@ session_start();// Начинаем сессию
         <!-- Logo
                     ============================================= -->
         <div id="logo"> 
-            <a href="index01.html" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
-            <a href="index01.html" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
+            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
+            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
         <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
@@ -85,6 +85,7 @@ session_start();// Начинаем сессию
               </div>
             </li>
             <li><a href="/about"><div>О нас</div></a></li>
+            <li><a href="/about#conacts"><div>Контакты</div></a></li>
             <li><a href="/basket"><div>Корзина</div></a></li>
             <!--
             <li><a href="/review"><div>Отзывы</div></a></li>

@@ -79,7 +79,7 @@ if ($URL[1] != '') {
 
             <!-- Address content
             ============================================= -->
-            <section class="address-content dark">
+            <section class="address-content dark" name="contacts">
                 <!--  BG parallax -->
                 <div id="address-content">
                     <div class="bcg"
