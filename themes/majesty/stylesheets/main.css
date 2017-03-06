@@ -5500,3 +5500,8 @@ body.boxed .video-full, body.boxed .zooming-slider {
 body.boxed .error-404, body.boxed .login-full {
 	background-color: #191919
 }
+@media (max-width:767px) {
+	#header_phone {
+		display: none;
+	}
+}
