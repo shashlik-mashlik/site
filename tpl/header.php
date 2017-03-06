@@ -18,9 +18,10 @@ session_start();// Начинаем сессию
                     ============================================= -->
         <div id="logo"> 
             <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
-            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> </div>
+            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> 
 
             <span style="color: white;">89214101296</span>
+        </div>
                     <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
