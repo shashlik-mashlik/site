@@ -17,7 +17,7 @@ session_start();// Начинаем сессию
         <!-- Logo
                     ============================================= -->
         <div id="logo"> 
-            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo" height="60px"></a> 
+            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo" height="70px"></a> 
             <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo" height="70px"></a> 
         </div>
                     <!--End #logo  -->

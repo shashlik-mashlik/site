@@ -792,7 +792,7 @@ input:focus, textarea:focus {
 	display: none!important
 }
 #header {
-	padding-top: 40px;
+	padding-top: 5px;
 	position: absolute;
 	top: 0;
 	z-index: 1000!important;
@@ -825,7 +825,7 @@ input:focus, textarea:focus {
 #shop_cart {
 	position: relative;
 	float: right;
-	margin-top: 5px
+	margin-top: 18px
 }
 #shop_cart>a>span {
 	display: block;
