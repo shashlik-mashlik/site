@@ -1088,7 +1088,7 @@ input:focus, textarea:focus {
 #main-menu ul li a {
 	display: block;
 	height: 90px;
-	line-height: 60px;
+	line-height: 90px;
 	padding: 0 15px;
 	color: #fff;
 	font-size: 16px;
