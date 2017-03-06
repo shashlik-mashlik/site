@@ -11,7 +11,7 @@ if($_SESSION['status'] != 'superadmin') {
 }
 
 //SETUP
-$sql = "SELECT * FROM `orders` LIMIT 1";
+//$sql = "SELECT * FROM `orders` LIMIT 1";
 $r = mysql_query($sql);
 if (mysql_num_rows($r)!=1) {
 	//catalog base setup
