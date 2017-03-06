@@ -34,7 +34,7 @@
 
 $date_today = date("mdy");
 $primary_key = $primary_key."-".$date_today."-".time ();
-
+echo $primary_key . "PRIMARY KEY";
 $email = $_POST['email'];
 $subject = "'BONVIO-TRADE' Заказ №: ".$primary_key." принят.";
 $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
