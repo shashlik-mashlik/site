@@ -34,8 +34,9 @@
 
 $date_today = date("mdy");
 $primary_key = $primary_key."-".$date_today."-".time ();
+$kek = $primary_key;
 
-$email = $_POST['email'];
+$email = @$_POST['email'];
 $subject = "'BONVIO-TRADE' Заказ №: ".$primary_key." принят.";
 $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
 			Кол-во персон: ".htmlspecialchars(stripslashes(substr($_POST['col'],0,32))).". 
@@ -66,7 +67,7 @@ $headers .= "From: SHASHLIK-MASHLIK <test@test.ru>\r\n";
 $headers .= "Cc: test@test.ru\r\n";
 $headers .= "Bcc: test@test.ru\r\n";
 	
-	if (mail($TEXT['test'], $subject, $message, $headers );)){
+	if (mail($TEXT['test'], $subject, $message, $headers ))){
 	//mail($email, $subject, $message, $headers
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
