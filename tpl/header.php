@@ -22,6 +22,7 @@ session_start();// Начинаем сессию
         <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
+            <span style="color: white;">89214101296</span>
         <nav id="main-menu" class="dark">
           <ul>
             <li><a href="/"><div>Главная</div></a></li>
