@@ -12,7 +12,7 @@ if($_SESSION['status'] != 'superadmin') {
 
 //SETUP
 //$sql = "SELECT * FROM `orders` LIMIT 1";
-$r = mysql_query($sql);
+/*$r = mysql_query($sql);
 if (mysql_num_rows($r)!=1) {
 	//catalog base setup
     $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/30_orders.sql.php'),'<>?'));
@@ -20,7 +20,7 @@ if (mysql_num_rows($r)!=1) {
 	
 	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');	 
 }
-
+*/
 ?>
 <h1>Управление главным меню</h1>
 <?
