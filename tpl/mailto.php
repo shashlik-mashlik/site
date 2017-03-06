@@ -11,13 +11,13 @@
 									$product=mysql_fetch_assoc(mysql_query($q));
 
 								$basket = $basket."
-											____________________________"."
-											№ продукта: ".$key.".
-											наименование ".$product['name'].".
-											артикул ".$product['articul'].".
-											цена ".$product['price'].".
-											сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].". 
-											количество.: ".$_SESSION['products'][$key]['count'];
+											____________________________".
+											"№ продукта: ".$key.
+											"наименование ".$product['name'].
+											"артикул ".$product['articul'].
+											"цена ".$product['price'].
+											"сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].
+											"количество.: ".$_SESSION['products'][$key]['count'];
 											
 											
 											
@@ -36,7 +36,7 @@ $date_today = date("mdy");
 $primary_key = $primary_key."-".$date_today."-".time ();
 
 $email = $_POST['email'];
-$subject = "'BONVIO-TRADE' Заказ №: ".$primary_key." принят.";
+$subject = "'SHASHLIK-MASHLIK' Заказ №: ".$primary_key." принят.";
 $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
 			Кол-во персон :" .htmlspecialchars(stripslashes(substr($_POST['col'],0,32))).". 
 			Адрес: ".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32))).". 
