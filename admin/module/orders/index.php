@@ -43,11 +43,11 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	//$sql = "SELECT * FROM `mandarinko_main_menu` ORDER BY `id` DESC";
-	//$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT main_menu');
-	//for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
-	//foreach($data as $el) {?>
-	 <!-- <tr>	  	
+	$sql = "SELECT * FROM `mandarinko_main_menu` ORDER BY `id` DESC";
+	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT main_menu');
+	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
+	foreach($data as $el) {?>
+	  <tr>	  	
 	  	<td><?=$el['name'];?></td>
 	  	<td><?=$el['about'];?></td>
 	  	<td width="56">
@@ -58,4 +58,4 @@ else {
 	  </tr>
 	<?}
 	?></table><?
-}?>-->
+}?>
