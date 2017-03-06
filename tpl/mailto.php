@@ -11,7 +11,7 @@
 									$product=mysql_fetch_assoc(mysql_query($q));
 
 								$basket = $basket."
-											____________________________".
+											\n__________________________________________________________".
 											"\n№ продукта: ".$key.
 											"\nнаименование ".$product['name'].
 											"\nартикул ".$product['articul'].
@@ -37,16 +37,16 @@ $primary_key = $primary_key."-".$date_today."-".time ();
 
 $email = $_POST['email'];
 $subject = "'SHASHLIK-MASHLIK' Заказ №: ".$primary_key." принят.";
-$message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).". 
-			Кол-во персон :" .htmlspecialchars(stripslashes(substr($_POST['col'],0,32))).". 
-			Адрес: ".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32))).". 
-			тел.: ".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32))).". 
-			Комментарий: ".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."
+$message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_POST['name'],0,32))).
+			"\nКол-во персон :" .htmlspecialchars(stripslashes(substr($_POST['col'],0,32))).
+			"\nАдрес: ".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32))). 
+			"\nтел.: ".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32))). 
+			"\nКомментарий: ".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."
 			".$basket."
-			________________________________________________________
-			общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."
-			________________________________________________________
-			номер заказа: ".$primary_key;
+			\n__________________________________________________________
+			\nобщая итоговая сумма заказа.: ".$_SESSION['cart_coast']."
+			\n__________________________________________________________
+			\nномер заказа: ".$primary_key;
 
 $msg = "";
 
@@ -61,9 +61,9 @@ $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "From:\r\n";
 /* дополнительные шапки */
-$headers .= "From: BONVIO-STEAM <bonvio@bonvio.ru>\r\n";
-$headers .= "Cc: bonvio@bonvio.ru\r\n";
-$headers .= "Bcc: bonvio@bonvio.ru\r\n";
+$headers .= "From: SHASHLIK-MASHLIK <shashlikmashlik.spb@gmail.com>\r\n";
+$headers .= "Cc: shashlikmashlik.spb@gmail.com\r\n";
+$headers .= "Bcc: shashlikmashlik.spb@gmail.com\r\n";
 	if (mail($TEXT['test'], $subject, $message, $headers )){
 	@mail($email, $subject, $message, $headers );
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
