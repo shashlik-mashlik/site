@@ -50,9 +50,9 @@ $message = "Имя заказчика: ".htmlspecialchars(stripslashes(substr($_
 $msg = "";
 
 
-	$phonenumber=$_POST['tel'];
-	$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
-	include('tpl/register.php');//-------------------------------------------------------------------------------<<<
+	//$phonenumber=$_POST['tel'];
+	//$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
+	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<
 
 
 if (isset($_POST['email']) && !empty($_POST['email'])){
