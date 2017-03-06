@@ -13,7 +13,7 @@
 								$basket = $basket."
 											____________________________".
 											"№ продукта: ".$key.
-											"наименование ".$product['name'].
+											"\nнаименование ".$product['name'].
 											"артикул ".$product['articul'].
 											"цена ".$product['price'].
 											"сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].
