@@ -60,7 +60,7 @@ var basketAjax = {
 	},
 	remove_from_cart: function(item) {
 		let xhr = ajax.ini();
-		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'remove_from_cart=' + item, basketAjax.callback.remove);
+		ajax.send(xhr, 'post', '/ajax/basket/basket.php', 'remove_from_cart=' + item, basketAjax.callback.remove); // test
 	},
 	delete_basket_item: function(item) {
 		let xhr = ajax.ini();
