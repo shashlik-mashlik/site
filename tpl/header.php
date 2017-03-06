@@ -20,7 +20,7 @@ session_start();// Начинаем сессию
             <a href="/" class="light-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a> 
             <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a> 
         </div>
-        <div style="float: left; height: 70px; line-height: 70px; font-size: 18px; color: white;" id="header_phone">985-00-06</div>
+        <div style="float: left; height: 70px; line-height: 70px; font-size: 18px; color: white;" class="hidden-xs">тел. 985-00-06</div>
                     <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
