@@ -17,10 +17,10 @@ session_start();// Начинаем сессию
         <!-- Logo
                     ============================================= -->
         <div id="logo"> 
-            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo"></a> 
-            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo"></a> 
+            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo.png" alt="Logo" height="60px"></a> 
+            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-dark.png" alt="Logo" height="70px"></a> 
 
-            <span style="color: grey;">89214101296</span>
+            <span style="color: #d7d7d7;">89214101296</span>
         </div>
                     <!--End #logo  -->
         <!-- Primary Navigation
