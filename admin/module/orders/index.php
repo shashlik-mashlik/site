@@ -32,19 +32,22 @@ elseif($_GET['item'])  include($URL[2].'/'.$URL[3].'/item.php');
 else {
 ?>
 
-	<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>
+	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
 	<table class="table">
 	  <tr>
-	  	<th>Название</th>
-	  	<th>Описание</th>
+	  	<th>Номер заказа</th>
+	  	<th>Имя, телефон</th>
+	  	<th>Адрес</th>
+	  	<th>Состав заказа</th>
+	  	<th>Кол-во персон</th>
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `mandarinko_main_menu` ORDER BY `id` DESC";
-	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT main_menu');
-	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
-	foreach($data as $el) {?>
-	  <tr>	  	
+	//$sql = "SELECT * FROM `mandarinko_main_menu` ORDER BY `id` DESC";
+	//$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT main_menu');
+	//for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
+	//foreach($data as $el) {?>
+	 <!-- <tr>	  	
 	  	<td><?=$el['name'];?></td>
 	  	<td><?=$el['about'];?></td>
 	  	<td width="56">
@@ -55,4 +58,4 @@ else {
 	  </tr>
 	<?}
 	?></table><?
-}?>
+}?>-->
