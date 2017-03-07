@@ -65,7 +65,7 @@ else {
 	  			</tr>
                 <tr>
                     <td style="color: #818181;">Статус:</td>
-                    <td><?=$el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span>' : '<span>Готовится</span>';?></td>
+                    <td><?=$el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span >' : '<span style="color: green;">Готовится</span>';?></td>
                 </tr>
 	  			<tr>
 	  				<td style="color: #818181;">Имя:</td>
