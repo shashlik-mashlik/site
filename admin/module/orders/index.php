@@ -99,7 +99,7 @@ else {
           ?>
 	  	<td><?=$html?></td>
 	  	<td width="56">
-	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px;" title="Сменить статус" href="/admin/module/orders/edit.php?<?=$el['id'];?>"></a>
+	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders/edit.php?id=<?=$el['id'];?>"></a>
 	  	</td>
 	  </tr>
       <tr>
