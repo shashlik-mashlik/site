@@ -45,7 +45,18 @@ else {
 	$sql = "SELECT * FROM `orders` WHERE `status`='ready' OR `status`='expected' ORDER BY `id` DESC";
 	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
-	foreach($data as $el) {?>
+
+	$html = "<table>";
+    $ord = json_decode($el['ord']);
+	for ($i = 0; $i < sizeof($ord); $i++) {
+	    $html .= "<tr><td>";
+	    $html .= $ord[$i]->name . ' ' . $ord[$i]->count . ' ' $ord[$i]->price;
+	    $html .= "</td></tr>";
+
+    }
+    $html = "</table>";
+
+  	foreach($data as $el) {?>
 	  <tr>	  	
 	  	<td>
 	  		<table>
@@ -72,7 +83,7 @@ else {
 	  		</table>
 	  	</td>
 	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['adrs'];?>"><?=$el['adrs'];?></td>
-	  	<td><?=json_decode($el['ord'])[0]->id;?></td>
+	  	<td><?=?></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
 	  		<a class="tooltip" title="Редактировать" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>

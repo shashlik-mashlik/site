@@ -4,7 +4,7 @@ $order = array();
 foreach ($_SESSION['products'] as $key=>$value) {
     $q = "SELECT * FROM `mandarinko_catalog_item` WHERE id='" . $key . "'";
     $product = mysql_fetch_assoc(mysql_query($q));
-    $order[] = ["id" => $key, "Наименование" => $product['name'], "Цена" => $product['price'], "Сумма" => $_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast'], "Количество" => $_SESSION['products'][$key]['count']];
+    $order[] = ["id" => $key, "name" => $product['name'], "price" => $product['price'], "sum" => $_SESSION['products'][$key]['count'] * $_SESSION['products'][$key]['coast'], "count" => $_SESSION['products'][$key]['count']];
 }
 
 	$sql = "INSERT INTO `orders` SET
