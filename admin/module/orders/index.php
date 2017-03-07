@@ -41,14 +41,19 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `mandarinko_main_menu` ORDER BY `id` DESC";
-	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT main_menu');
+	$sql = "SELECT * FROM `orders` ORDER BY `id` DESC WHERE `status`='ready' OR `status`='expected'";
+	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 	foreach($data as $el) {?>
 	  <tr>	  	
-	  	<td><?=$el['name'];?></td>
+	  	<td>
+	  		<div><span><?=$el['id'];?></span>&nbsp;<span><?=$el['status'];?></span></div>
+	  		<div><?=$el['name'];?></div>
+	  		<div><?=$el['phone'];?></div>
+	  		<div><?=$el['prsns'];?></div>
+	  	</td>
 	  	<td><?=$el['about'];?></td>
-	  	<td></td>
+	  	<td><?=$el['about'];?></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
 	  		<a class="tooltip" title="Редактировать" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>
