@@ -23,7 +23,7 @@ if (mysql_num_rows($r)!=1) {
 */
 
 ?>
-<h1>Управление главным меню</h1>
+<h1>Управление заказами</h1>
 <?
 $CONTENT['title'] .= 'Управление главным меню';
 if($_GET['add'])   include($URL[2].'/'.$URL[3].'/add.php');
@@ -72,7 +72,7 @@ else {
 	  		</table>
 	  	</td>
 	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['adrs'];?>"><?=$el['adrs'];?></td>
-	  	<td><?=var_dump(json_decode($el['ord']));?></td>
+	  	<td><?=json_decode($el['ord'])[0]->id;?></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
 	  		<a class="tooltip" title="Редактировать" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>
