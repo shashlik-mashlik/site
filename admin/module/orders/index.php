@@ -46,7 +46,7 @@ else {
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 	foreach($data as $el) {?>
 	  <tr>	  	
-	  	<td style="width: 250px;">
+	  	<td style="width: 300px;">
 	  		<!--<table>
 	  			<tr>
 	  				<td>Номер заказа, статус:</td>
