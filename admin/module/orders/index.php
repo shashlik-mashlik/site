@@ -63,7 +63,7 @@ else {
 	  		</table>-->
 	  		<table>
 	  			<tr>
-	  				<td style="font-weight: bold;">Номер заказа, статус:</td>
+	  				<td style="color: #818181;">Номер заказа, статус:</td>
 	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
 	  			</tr>
 
