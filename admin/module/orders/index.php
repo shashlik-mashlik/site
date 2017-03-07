@@ -33,10 +33,10 @@ else {
 ?>
 
 	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
-	<table class="table">
+	<table class="table" style="word-wrap: break-word;">
 	  <tr>
-	  	<th style="width: 300px;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
-	  	<th style="width: 180px;">Адрес</th>
+	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
+	  	<th style="width: 180px !important;">Адрес</th>
 	  	<th>Состав заказа</th> 	
 	  	<th></th>
 	  </tr>
