@@ -35,11 +35,9 @@ else {
 	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
 	<table class="table">
 	  <tr>
-	  	<th>Номер заказа</th>
-	  	<th>Имя, телефон</th>
+	  	<th>О заказе</th> <!--номер, имя, тлф, кол-во персон -->
 	  	<th>Адрес</th>
-	  	<th>Состав заказа</th>
-	  	<th>Кол-во персон</th>
+	  	<th>Состав заказа</th> 	
 	  	<th></th>
 	  </tr>
 	<?
@@ -50,6 +48,7 @@ else {
 	  <tr>	  	
 	  	<td><?=$el['name'];?></td>
 	  	<td><?=$el['about'];?></td>
+	  	<td></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
 	  		<a class="tooltip" title="Редактировать" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>
