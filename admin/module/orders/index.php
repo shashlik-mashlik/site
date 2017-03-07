@@ -66,7 +66,7 @@ else {
 	  			</tr>
 	  		</table>
 	  	</td>
-	  	<td><?=$el['adrs'];?></td>
+	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis;" title="<?=$el['adrs'];?>"><?=$el['adrs'];?></td>
 	  	<td><?=$el['about'];?></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
