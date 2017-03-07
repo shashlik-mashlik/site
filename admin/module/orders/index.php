@@ -41,7 +41,7 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `orders` ORDER BY `id` DESC WHERE `status`='ready' OR `status`='expected'";
+	$sql = "SELECT * FROM `orders` WHERE `status`='ready' OR `status`='expected' ORDER BY `id` DESC";
 	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 	foreach($data as $el) {?>
