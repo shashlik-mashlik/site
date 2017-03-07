@@ -47,10 +47,20 @@ else {
 	foreach($data as $el) {?>
 	  <tr>	  	
 	  	<td>
-	  		<div><span>Номер заказа:<?=$el['id'];?></span>&nbsp;<span>Статус: <?=$el['status'];?></span></div>
-	  		<div>Имя: <?=$el['name'];?></div>
-	  		<div>Телефон: <?=$el['phone'];?></div>
-	  		<div>Кол-во персон: <?=$el['prsns'];?></div>
+	  		<table>
+	  			<tr>
+	  				<td>Номер заказа, статус:</td>
+	  				<td>Имя:</td>
+	  				<td>Телефон:</td>
+	  				<td>Кол-во персон:</td>
+	  			</tr>
+	  			<tr>
+	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
+	  				<td><?=$el['name'];?></td>
+	  				<td><?=$el['phone'];?></td>
+	  				<td><?=$el['prsns'];?></td>
+	  			</tr>
+	  		</table>
 	  	</td>
 	  	<td><?=$el['about'];?></td>
 	  	<td><?=$el['about'];?></td>
