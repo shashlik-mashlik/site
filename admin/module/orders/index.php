@@ -35,8 +35,8 @@ else {
 	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
 	<table class="table">
 	  <tr>
-	  	<th>О заказе</th> <!--номер, имя, тлф, кол-во персон -->
-	  	<th>Адрес</th>
+	  	<th style="width: 300px;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
+	  	<th style="width: 180px;">Адрес</th>
 	  	<th>Состав заказа</th> 	
 	  	<th></th>
 	  </tr>
@@ -46,21 +46,7 @@ else {
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 	foreach($data as $el) {?>
 	  <tr>	  	
-	  	<td style="width: 300px;">
-	  		<!--<table>
-	  			<tr>
-	  				<td>Номер заказа, статус:</td>
-	  				<td>Имя:</td>
-	  				<td>Телефон:</td>
-	  				<td>Кол-во персон:</td>
-	  			</tr>
-	  			<tr>
-	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
-	  				<td><?=$el['name'];?></td>
-	  				<td><?=$el['phone'];?></td>
-	  				<td><?=$el['prsns'];?></td>
-	  			</tr>
-	  		</table>-->
+	  	<td>
 	  		<table>
 	  			<tr>
 	  				<td style="color: #818181;">Номер заказа, статус:</td>
@@ -80,7 +66,7 @@ else {
 	  			</tr>
 	  		</table>
 	  	</td>
-	  	<td><?=$el['about'];?></td>
+	  	<td><?=$el['adrs'];?></td>
 	  	<td><?=$el['about'];?></td>
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
