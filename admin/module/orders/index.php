@@ -61,8 +61,12 @@ else {
 	  		<table>
 	  			<tr>
 	  				<td style="color: #818181;">Номер заказа, статус:</td>
-	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
+	  				<td><?=$el['id'];?></td>
 	  			</tr>
+                <tr>
+                    <td style="color: #818181;">Статус:</td>
+                    <td><?=$el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span>span>' : '<span>Готовится</span>';?></td>
+                </tr>
 	  			<tr>
 	  				<td style="color: #818181;">Имя:</td>
 	  				<td><?=$el['name'];?></td>
