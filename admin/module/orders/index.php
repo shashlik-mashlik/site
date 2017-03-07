@@ -100,6 +100,12 @@ else {
 	  		<a class="tooltip" title="Удалить категорию" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?delete=<?=$el['id'];?>" onclick="if(confirm('Удалить? Восстановление будет невозможно!')) return true; else return false;"><img src="/<?=$URL[1];?>/img/ico_delete.png"/></a>
 	  	</td>
 	  </tr>
+      <tr>
+       <th style="width: 300px !important;"></th> <!--номер, имя, тлф, кол-во персон -->
+       <th style="width: 180px !important;"></th>
+       <th></th>
+       <th></th>
+      </tr>
 	<?}
 	?></table><?
 }?>
