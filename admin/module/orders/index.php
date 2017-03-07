@@ -47,7 +47,7 @@ else {
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 
 	$html = "<table>";
-    $ord = json_decode($el['ord']);
+    $ord = json_decode($r['ord']);
 	for ($i = 0; $i < sizeof($ord); $i++) {
 	    $html .= "<tr><td>";
 	    $html .= $ord[$i]->name . ' ' . $ord[$i]->count . ' ' . $ord[$i]->price;
