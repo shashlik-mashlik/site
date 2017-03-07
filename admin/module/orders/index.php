@@ -55,6 +55,7 @@ else {
 
     }
     $html = "</table>";
+    echo $html;
 
   	foreach($data as $el) {?>
 	  <tr>	  	
