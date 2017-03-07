@@ -87,7 +87,7 @@ else {
           $ord = json_decode($el['ord']);
           for ($i = 0; $i < sizeof($ord); $i++) {
               $html .= "<tr><td>";
-              $html .= $ord[$i]->name . ' ' . $ord[$i]->count . ' ' . $ord[$i]->price;
+              $html .= $ord[$i]->name . ', ' . $ord[$i]->count . ', ' . $ord[$i]->price;
               $html .= "</td></tr>";
 
           }
