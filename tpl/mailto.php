@@ -62,8 +62,8 @@ $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "From:\r\n";
 /* дополнительные шапки */
 $headers .= "From: SHASHLIK-MASHLIK <shashlikmashlik.spb@gmail.com>\r\n";
-$headers .= "Cc: shashlikmashlik.spb@gmail.com\r\n";
-$headers .= "Bcc: shashlikmashlik.spb@gmail.com\r\n";
+//$headers .= "Cc: shashlikmashlik.spb@gmail.com\r\n";
+//$headers .= "Bcc: shashlikmashlik.spb@gmail.com\r\n";
 	if (mail($TEXT['test'], $subject, $message, $headers )){
 	@mail($email, $subject, $message, $headers );
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
