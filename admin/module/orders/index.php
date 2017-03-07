@@ -102,7 +102,7 @@ else {
           ?>
 	  	<td><?=$html?></td>
 	  	<td width="56">
-	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders/?type=state&id=<?=$el['id'];?>"></a>
+	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders?type=state&id=<?=$el['id'];?>"></a>
 	  	</td>
 	  </tr>
       <tr>
