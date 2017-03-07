@@ -1,4 +1,5 @@
 <?
+echo "pepek[fkeoprfpgwerjgionejgndfngowerhngowerhngoewo";
 if($_POST['add']) {
 	$sql = "INSERT INTO `orders` SET
 		`sum`    = '".mysql_real_escape_string($_SESSION['cart_coast'])."',
