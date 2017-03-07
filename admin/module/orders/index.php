@@ -10,6 +10,9 @@ if($_SESSION['status'] != 'superadmin') {
     if ($RIGHT[trim($t[0])]!=1) die('NOT ACCESS');
 }
 
+if ($_GET['type'] == 'state') {
+    include 'edit.php';
+}
 //SETUP
 //$sql = "SELECT * FROM `orders` LIMIT 1";
 /*$r = mysql_query($sql);
@@ -99,7 +102,7 @@ else {
           ?>
 	  	<td><?=$html?></td>
 	  	<td width="56">
-	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders/edit.php?id=<?=$el['id'];?>"></a>
+	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders/?type=state&id=<?=$el['id'];?>"></a>
 	  	</td>
 	  </tr>
       <tr>
