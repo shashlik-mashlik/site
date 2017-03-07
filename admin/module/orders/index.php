@@ -47,14 +47,14 @@ else {
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 
 	$html = "<table>";
-    //$ord = json_decode($el['ord']);
-	//for ($i = 0; $i < sizeof($ord); $i++) {
+    $ord = json_decode($el['ord']);
+	for ($i = 0; $i < sizeof($ord); $i++) {
 	//    $html .= "<tr><td>";
 	//    $html .= $ord[$i]->name . ' ' . $ord[$i]->count . ' ' $ord[$i]->price;
 	//    $html .= "</td></tr>";
 
-    //}
-    //$html = "</table>";
+    }
+    $html = "</table>";
 
   	foreach($data as $el) {?>
 	  <tr>	  	
