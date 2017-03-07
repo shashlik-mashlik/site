@@ -66,7 +66,18 @@ else {
 	  				<td style="color: #818181;">Номер заказа, статус:</td>
 	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
 	  			</tr>
-
+	  			<tr>
+	  				<td style="color: #818181;">Имя:</td>
+	  				<td><?=$el['name'];?></td>
+	  			</tr>
+	  			<tr>
+	  				<td style="color: #818181;">Телефон:</td>
+	  				<td><?=$el['phone'];?></td>
+	  			</tr>
+	  			<tr>
+	  				<td style="color: #818181;">Кол-во персон:</td>
+	  				<td><?=$el['prsns'];?></td>
+	  			</tr>
 	  		</table>
 	  	</td>
 	  	<td><?=$el['about'];?></td>
