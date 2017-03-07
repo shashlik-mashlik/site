@@ -1,7 +1,8 @@
 <?
 echo $_GET['id'];
-//$sql = "SELECT `status` FROM `orders` WHERE `id` = " . $_GET['id']);
-//$r = mysql_fetch_assoc(mysql_query($sql));
+$sql = "SELECT `status` FROM `orders` WHERE `id` = " . $_GET['id']);
+$r = mysql_fetch_assoc(mysql_query($sql));
+echo var_dump($r);
 //if ($r['status'] == 'ready') {
 //    mysql_query("UPDATE `orders` SET `status` = 'expected'");
 //} else {
