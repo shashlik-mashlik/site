@@ -53,7 +53,7 @@ $msg = "";
 
 	//$phonenumber=$_POST['tel'];
 	//$msg_sms="BONVIO-TRADE | Заказ №: ".$primary_key." принят.";
-	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<
+	//include('tpl/register.php');//-------------------------------------------------------------------------------<<<а
 
 
 
@@ -76,4 +76,6 @@ $headers .= "Bcc: shashlikmashlik.spb@gmail.com\r\n";
 if (!empty($message)){
   $msg .= "";
 }
+
+include $_SERVER['DOCUMENT_ROOT'] . '/admin/module/orders/add.php';
 ?>
