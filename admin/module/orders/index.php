@@ -91,7 +91,7 @@ else {
           //    $html .= "</td></tr>";
 
           //}
-          $html = "</table>";
+          $html .= "</table>";
           ?>
 	  	<td><?=$html?></td>
 	  	<td width="56">
