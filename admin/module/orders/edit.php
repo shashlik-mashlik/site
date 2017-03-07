@@ -6,5 +6,5 @@ if ($r['status'] == 'ready') {
 } else {
     mysql_query("UPDATE `orders` SET `status` = 'sent'");
 }
-Header('Location: /admin/module/orders);
+Header('Location: /admin/module/orders');
 ?>
