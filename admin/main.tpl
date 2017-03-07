@@ -10,6 +10,7 @@
 	<link rel="icon" href="/<?=$URL[1];?>/favicon.png" type="image/x-icon"/>
 	<link rel="shortcut icon" href="/<?=$URL[1];?>/favicon.png" type="image/x-icon"/>
 	<link href="/<?=$URL[1];?>/js/fancybox/jquery.fancybox-1.3.2.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/themes/majesty/stylesheets/font-awesome.min.css">
 
 	<script type="text/javascript" src="/<?=$URL[1];?>/js/jquery.js"></script>
 	<script type="text/javascript" src="/<?=$URL[1];?>/js/jquery.cookie.js"></script> 
