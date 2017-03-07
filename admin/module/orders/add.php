@@ -1,5 +1,4 @@
 <?
-echo "pepek[fkeoprfpgwerjgionejgndfngowerhngowerhngoewo";
 if($_POST['add']) {
 	$sql = "INSERT INTO `orders` SET
 		`sum`    = '".mysql_real_escape_string($_SESSION['cart_coast'])."',
@@ -10,6 +9,7 @@ if($_POST['add']) {
 		`email`  =   '".mysql_real_escape_string(isset($email) ? $email : '')."',
 		`comment`  =   '".mysql_real_escape_string(htmlspecialchars(stripslashes(substr($_POST['message'],0,32))))."',
 		`name`    = '".mysql_real_escape_string(htmlspecialchars(stripslashes(substr($_POST['name'],0,32))))."'";
+	echo $sql;
 	mysql_query($sql) OR die('DB ERROR: CAN\'T CREATE GALLERY');
 	//header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3]);
 	//exit;
