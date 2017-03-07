@@ -1,5 +1,5 @@
 <?
-echo "pep";
+echo $_GET['id'];
 //$sql = "SELECT `status` FROM `orders` WHERE `id` = " . $_GET['id']);
 //$r = mysql_fetch_assoc(mysql_query($sql));
 //if ($r['status'] == 'ready') {
