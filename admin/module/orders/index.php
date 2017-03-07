@@ -47,7 +47,7 @@ else {
 	foreach($data as $el) {?>
 	  <tr>	  	
 	  	<td>
-	  		<table>
+	  		<!--<table>
 	  			<tr>
 	  				<td>Номер заказа, статус:</td>
 	  				<td>Имя:</td>
@@ -60,6 +60,13 @@ else {
 	  				<td><?=$el['phone'];?></td>
 	  				<td><?=$el['prsns'];?></td>
 	  			</tr>
+	  		</table>-->
+	  		<table>
+	  			<tr>
+	  				<td>Номер заказа, статус:</td>
+	  				<td><?=$el['id'];?>, <?=$el['status'];?></td>
+	  			</tr>
+
 	  		</table>
 	  	</td>
 	  	<td><?=$el['about'];?></td>
