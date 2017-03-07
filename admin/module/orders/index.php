@@ -10,9 +10,6 @@ if($_SESSION['status'] != 'superadmin') {
     if ($RIGHT[trim($t[0])]!=1) die('NOT ACCESS');
 }
 
-if ($_GET['type'] == 'state') {
-    include 'edit.php';
-}
 //SETUP
 //$sql = "SELECT * FROM `orders` LIMIT 1";
 /*$r = mysql_query($sql);
@@ -28,11 +25,7 @@ if (mysql_num_rows($r)!=1) {
 ?>
 <h1>Управление заказами</h1>
 <?
-$CONTENT['title'] .= 'Управление главным меню';
-if($_GET['add'])   include($URL[2].'/'.$URL[3].'/add.php');
-elseif($_GET['delete']) include($URL[2].'/'.$URL[3].'/del.php');
-elseif($_GET['edit'])   include($URL[2].'/'.$URL[3].'/edit.php');
-elseif($_GET['item'])  include($URL[2].'/'.$URL[3].'/item.php');
+if($_GET['type'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
 
