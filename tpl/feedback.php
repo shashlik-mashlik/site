@@ -66,7 +66,19 @@ if ($URL[1] != '') {
                                     <div id="comments">
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
-                                                
+                                                <?while ($row = $r) { ?>
+                                                        <li class="comment-x byuser" >
+                                                            <div class="the-comment" >
+                                                            <div class="comment-author vcard" > <span class="fn n" > TereKoi</span > </div >
+                                                            <div class="comment-meta" > <span > Nov 22, 2013 at 10:50 am </span > </div >
+                                                            <div class="comment-content" >
+                                                                <p ><?=$row['text'];?></p >
+                                                            </div >
+                                                            </div >
+                                                        </li >
+                                                <?
+                                                }
+                                                ?>
                                             </ol>
                                         </div>
                                         <div id="respond">
