@@ -6,6 +6,8 @@
  * Time: 11:50
  */
 include $_SERVER['DOCUMENT_ROOT'] . '/ajax/config.php';
+if ($_POST['type'] == 'show') {}
+
 /*
 $q = "SELECT `date`, `name`, `text` FROM `feedback` LIMIT 5";
 $r = mysql_fetch_assoc(mysql_query($q));
@@ -17,6 +19,5 @@ echo json_encode($response);
 */
 
 $sql = "INSERT INTO `feedback` SET `name` = '" . $_POST['name'] . "', `email` = '" . $_POST['email'] . "', `text` = '" . $_POST['text'] . "', `phone` = '" . $_POST['phone'] . "'";
-//$r = mysql_fetch_array(mysql_query($sql));
-echo json_encode(["r" => mysql_query($sql), "error" => mysql_error()]);
+echo json_encode(["status" => mysql_query($sql)]);
 ?>

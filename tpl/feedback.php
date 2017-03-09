@@ -1,12 +1,9 @@
 <?
 if ($URL[1] != '') {
-    $sql = "SELECT * FROM `mandarinko_static` WHERE `url` = 'about'";
+    $sql = "SELECT * FROM `feedback` ORDER BY `id` DESC LIMIT 5";
     $r = mysql_query($sql);
-    if (mysql_num_rows($r) == 1) {
-        $r = mysql_fetch_assoc($r);// http://example.org/page/name
-        $CONTENT['title'] .= " - " . $r['header'];
-        $CONTENT['metak'] = $r['metakey'];
-        $CONTENT['metad'] = $r['metadesc']; ?>
+    //if (mysql_num_rows($r) == 0) {$r =}
+        ?>
 
 
 <!-- banner
@@ -69,24 +66,20 @@ if ($URL[1] != '') {
                                     <div id="comments">
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
-                                                <li class="comment-x byuser">
-                                                    <div class="the-comment">
-                                                        <div class="comment-author vcard"> <span class="fn n">TereKoi</span> </div>
-                                                        <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
-                                                        <div class="comment-content">
-                                                            <p> Love how stout he is! But he stands so proudly with his long flowing mane of pure awesomeness! : D I love this! </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="comment-x byuser">
-                                                    <div class="the-comment">
-                                                        <div class="comment-author vcard"> <span class="fn n">Lontuku</span> </div>
-                                                        <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
-                                                        <div class="comment-content">
-                                                            <p> WOoooooow, beautiful and kind of scary I really like it, makes me think. </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                <?
+                                                    while ($row = $r) { ?>
+                                                        <li class="comment-x byuser" >
+                                                            <div class="the-comment" >
+                                                            <div class="comment-author vcard" > <span class="fn n" > TereKoi</span > </div >
+                                                            <div class="comment-meta" > <span > Nov 22, 2013 at 10:50 am </span > </div >
+                                                            <div class="comment-content" >
+                                                                <p ><?=$row['text'];?></p >
+                                                            </div >
+                                                            </div >
+                                                        </li >
+                                                <?
+                                                }
+                                                ?>
                                             </ol>
                                         </div>
                                         <div id="respond">
