@@ -182,16 +182,16 @@ if ($URL[1]=='') {
       <div class="container">
         <div class="row">
          <!-- Head Title -->
-            <div class="head_title">
+          <!--  <div class="head_title">
                 <i class="icon-intro"></i>
                 <h1>Последние события</h1>
                 <span class="welcome">Stay up to Date</span>
             </div>
-            <!-- End# Head Title -->
+
          
-          <!-- News Content -->
+
           <div class="news-content dark">
-            <!-- News Item -->
+
             <div class="news-item col-md-4 col-sm-4 col-xs-12">
               <figure> <img class="img-responsive" src="/themes/majesty/img/blog/block4.jpg" alt="RELAXING AMBIENCE" />
                 <figcaption class="text-center">
@@ -203,8 +203,7 @@ if ($URL[1]=='') {
                   <span class="btn btn-gold primary-bg white">30 ДЕКАБРЯ 2015</span> </figcaption>
               </figure>
             </div>
-            <!-- End News Item -->
-            <!-- News Item -->
+
             <div class="news-item col-md-4 col-sm-4 col-xs-12">
               <figure> <img class="img-responsive" src="/themes/majesty/img/blog/block5.jpg" alt="RELAXING AMBIENCE" />
                 <figcaption class="text-center">
@@ -216,8 +215,7 @@ if ($URL[1]=='') {
                   <span class="btn btn-gold primary-bg white">14 ФЕВРАЛЯ 2015</span> </figcaption>
               </figure>
             </div>
-            <!-- End News Item -->
-            <!-- News Item -->
+
             <div class="news-item col-md-4 col-sm-4 col-xs-12 ">
               <figure> <img class="img-responsive" src="/themes/majesty/img/blog/block6.jpg" alt="RELAXING AMBIENCE" />
                 <figcaption class="text-center">
@@ -229,8 +227,8 @@ if ($URL[1]=='') {
                   <span class="btn btn-gold primary-bg white">8 МАРТА 2015</span> </figcaption>
               </figure>
             </div>
-            <!-- End News Item -->
-          </div>
+
+          </div>-->
           <!-- End News Content -->
         </div>
       </div>
