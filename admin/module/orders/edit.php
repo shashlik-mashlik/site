@@ -6,5 +6,5 @@ if ($_GET['act'] == 'del') {
     mysql_query("UPDATE `feedback` SET `status` = 1 WHERE `id`=" . $_GET['id']);
 }
 
-Header('Location: /admin/module/feedback');
+//Header('Location: /admin/module/feedback');
 ?>
