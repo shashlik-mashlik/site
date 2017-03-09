@@ -30,7 +30,7 @@ else {
 ?>
     <h1>Управление заказами</h1>
 
-	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
+	<p onclick="aorders.last();" id="state">Завершенные заказы</p>
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
