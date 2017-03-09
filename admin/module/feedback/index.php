@@ -34,8 +34,7 @@ else {
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
-	  	<th style="width: 180px !important;">Адрес</th>
-	  	<th>Состав заказа</th> 	
+	  	<th>Состав заказа</th>
 	  	<th></th>
 	  </tr>
 	<?
@@ -73,26 +72,13 @@ else {
 	  			</tr>
 	  		</table>
 	  	</td>
-	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['adrs'];?>"><?=$el['adrs'];?></td>
-          <?
-          $html = "<table>";
-          $ord = json_decode($el['ord']);
-          for ($i = 0; $i < sizeof($ord); $i++) {
-              $html .= "<tr><td>";
-              $html .= $ord[$i]->name . ', ' . $ord[$i]->count . ', ' . $ord[$i]->price;
-              $html .= "</td></tr>";
-
-          }
-          $html .= "</table>";
-          ?>
-	  	<td><?=$html?></td>
+	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
 	  	<td width="56">
 	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders?type=state&id=<?=$el['id'];?>"></a>
 	  	</td>
 	  </tr>
       <tr>
        <th style="width: 300px !important;"></th> <!--номер, имя, тлф, кол-во персон -->
-       <th style="width: 180px !important;"></th>
        <th></th>
        <th></th>
       </tr>
