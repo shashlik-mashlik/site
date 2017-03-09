@@ -38,7 +38,7 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `feedback` WHERE `status`='false' ORDER BY `id` DESC";
+	$sql = "SELECT * FROM `feedback` WHERE `status`= '0' ORDER BY `id` DESC";
 	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 
