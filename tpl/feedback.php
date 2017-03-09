@@ -265,17 +265,6 @@ if ($URL[1] != '') {
         <!-- End BG parallax -->
     </section>
     <!-- End address content -->
-    <!-- Map
-    ============================================= -->
-    <div class="map">
-        <!--
-        <div id="map"></div>-->
-        <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZgvNQpT" width="100%" height="500px"
-                frameborder="0"></iframe>
-    </div>
-    <!-- End map -->
-
-
 </div>
 <!-- end of #content -->
 
