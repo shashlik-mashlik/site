@@ -54,7 +54,6 @@ if ($URL[1] != '') {
     <section id="intro01" class="padding-100 intro2_01">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-12 text-center intro_message mt40">
                     <!-- Head Title -->
                     <div class="head_title">
@@ -64,13 +63,10 @@ if ($URL[1] != '') {
                     </div>
                     <!-- End# Head Title -->
                     <p>
-
-
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="review">
                                 <!-- Comments -->
                                 <div class="comment-blog">
-                                    <!--<h3>Review   [5]</h3>-->
                                     <div id="comments">
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
@@ -79,96 +75,90 @@ if ($URL[1] != '') {
                                                         <div class="comment-author vcard"> <span class="fn n">TereKoi</span> </div>
                                                         <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
                                                         <div class="comment-content">
-                    <p> Love how stout he is! But he stands so proudly with his long flowing mane of pure awesomeness! : D I love this! </p>
-                </div>
-                <div class="comment-reply-link "> <a  data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Replay" class="comment-reply-link" href="menu_single.html#"><i class="fa fa-reply"></i></a> </div>
-            </div>
-
-            </li>
-            <li id="comment-2" class="comment-x byuser">
-                <div class="the-comment">
-                    <div class="comment-author vcard"> <span class="fn n">Lontuku</span> </div>
-                    <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
-                    <div class="comment-content">
-                        <p> WOoooooow, beautiful and kind of scary I really like it, makes me think. </p>
-                    </div>
-                    <div class="comment-reply-link"> <a  data-placement="bottom"  data-toggle="tooltip" title="" data-original-title="Replay" class="comment-reply-link" href="menu_single.html#"><i class="fa fa-reply"></i></a> </div>
-                </div>
-                <!--the-comment -->
-            </li>
-            </ol>
-        </div>
-        <div id="respond">
-            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
-            <!-- Contact form -->
-            <div class="contact-form">
-                <form method="post">
-                    <!-- Form Group -->
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                <!-- Element -->
-                                <div class="element">
-                                    <input type="text" name="name" class="form-control text" placeholder="Name *" />
+                                                            <p> Love how stout he is! But he stands so proudly with his long flowing mane of pure awesomeness! : D I love this! </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="comment-2" class="comment-x byuser">
+                                                    <div class="the-comment">
+                                                        <div class="comment-author vcard"> <span class="fn n">Lontuku</span> </div>
+                                                        <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
+                                                        <div class="comment-content">
+                                                            <p> WOoooooow, beautiful and kind of scary I really like it, makes me think. </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div id="respond">
+                                            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
+                                            <!-- Contact form -->
+                                            <div class="contact-form">
+                                                <form method="post">
+                                                    <!-- Form Group -->
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                   <input type="text" name="name" class="form-control text" placeholder="Name *" />
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                            <!-- Element -->
+                                                                <div class="element">
+                                                                    <input type="text" name="email" class="form-control text" placeholder="E-mail *" />
+                                                                </div>
+                                                            <!-- End Element -->
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                    <input type="text" name="website" class="form-control text" placeholder="Website" />
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End form group -->
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                        <!-- Form Group -->
+                                                            <div class="form-group">
+                                                            <!-- Element -->
+                                                                <div class="element">
+                                                                    <textarea name="comment" class="text textarea" placeholder="Comment *" ></textarea>
+                                                                </div>
+                                                            <!-- End Element -->
+                                                            </div>
+                                                        <!-- End form Group -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- Element -->
+                                                    <div class="element text-center">
+                                                        <button type="submit" id="submit-form" value="Send" class="btn btn-black btn-gold">Submit</button>
+                                                        <div class="loading"></div>
+                                                    </div>
+                                                    <!-- End Element -->
+                                                </form>
+                                                <div class="done mt30"> <strong>Thank you!</strong> We have received your message. </div>
+                                            </div>
+                                        <!-- End contact form -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- End Element -->
+                            <!-- End# Comments -->
                             </div>
-                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                <!-- Element -->
-                                <div class="element">
-                                    <input type="text" name="email" class="form-control text" placeholder="E-mail *" />
-                                </div>
-                                <!-- End Element -->
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                <!-- Element -->
-                                <div class="element">
-                                    <input type="text" name="website" class="form-control text" placeholder="Website" />
-                                </div>
-                                <!-- End Element -->
-                            </div>
+                        <!-- End Description tab-->
                         </div>
+                    <!-- End Tab panes -->
                     </div>
-                    <!-- End form group -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <!-- Element -->
-                                <div class="element">
-                                    <textarea name="comment" class="text textarea" placeholder="Comment *" ></textarea>
-                                </div>
-                                <!-- End Element -->
-                            </div>
-                            <!-- End form Group -->
-                        </div>
-                    </div>
-                    <!-- Element -->
-                    <div class="element text-center">
-                        <button type="submit" id="submit-form" value="Send" class="btn btn-black btn-gold">Submit</button>
-                        <div class="loading"></div>
-                    </div>
-                    <!-- End Element -->
-                </form>
-                <div class="done mt30"> <strong>Thank you!</strong> We have received your message. </div>
+                </p>
             </div>
-            <!-- End contact form -->
+            <!-- End intro center -->
         </div>
-</div>
-        </div>
-        <!-- End# Comments -->
-        </div>
-        <!-- End Description tab-->
-        </div>
-        <!-- End Tab panes -->
-        </div>
-
-
-                    </p>
-                </div>
-                <!-- End intro center -->
-            </div>
-        </div>
+    </div>
     </section>
     <!-- End intro -->
 </div>
