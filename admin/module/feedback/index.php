@@ -25,6 +25,7 @@ if (mysql_num_rows($r)!=1) {
 ?>
 
 <?
+echo $URL[2].'/'.$URL[3].'/edit.php';
 if($_GET['act'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
