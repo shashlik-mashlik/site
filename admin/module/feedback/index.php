@@ -66,8 +66,8 @@ else {
 	  	</td>
 	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
 	  	<td width="56">
-	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders?type=state&id=<?=$el['id'];?>"></a>
-            <a style="color: red; font-size: 18px; text-decoration: none;" class="fa fa-times" aria-hidden="true"></a>
+	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Подтвердить" href="/admin/module/feedback?act=add&id=<?=$el['id'];?>"></a>
+            <a style="color: red; font-size: 18px; text-decoration: none;" class="fa fa-times" aria-hidden="true" title="Удалить" href="/admin/module/feedback?act=del&id=<?=$el['id'];?>"></a>
 
         </td>
 	  </tr>
