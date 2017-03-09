@@ -96,7 +96,6 @@ if ($URL[1] != '') {
                     </div>
                 </li>
             </ul>
-            </li>
             <li id="comment-2" class="comment-x byuser">
                 <div class="the-comment">
                     <div class="comment-author vcard"> <img src="img/comment/3.jpg" class="avatar" alt=""> <span class="fn n">Lontuku</span> </div>
@@ -108,7 +107,6 @@ if ($URL[1] != '') {
                 </div>
                 <!--the-comment -->
             </li>
-            </ol>
         </div>
         <div id="respond">
             <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
@@ -167,19 +165,7 @@ if ($URL[1] != '') {
             <!-- End contact form -->
         </div>
 </div>
-        <!-- Description tab-->
-        <div role="tabpanel" class="tab-pane" id="description">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-            </div>
-        </div>
+
  <!-- end of #content -->
 
 
