@@ -76,30 +76,18 @@ if ($URL[1] != '') {
                                             <ol id="comments-list">
                                                 <li id="comment-1" class="comment-x byuser">
                                                     <div class="the-comment">
-                                                        <div class="comment-author vcard"> <img src="img/comment/1.jpg" class="avatar" alt=""> <span class="fn n">TereKoi</span> </div>
+                                                        <div class="comment-author vcard"> <span class="fn n">TereKoi</span> </div>
                                                         <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
                                                         <div class="comment-content">
                     <p> Love how stout he is! But he stands so proudly with his long flowing mane of pure awesomeness! : D I love this! </p>
                 </div>
                 <div class="comment-reply-link "> <a  data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Replay" class="comment-reply-link" href="menu_single.html#"><i class="fa fa-reply"></i></a> </div>
             </div>
-            <!--the-comment -->
-            <ul class="children">
-                <li id="comment-32" class="comment-x byuser comment-author-admin bypostauthor even depth-2 thm-c-y2013 thm-c-m05 thm-c-d19 thm-c-h14">
-                    <div class="the-comment">
-                        <div class="comment-author vcard"> <img src="img/comment/2.jpg" class="avatar" alt=""> <span class="fn n">FlushedDeadbeat</span> </div>
-                        <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
-                        <div class="comment-content">
-                            <p> Gotta love the combo of majestic flowing mane, and adorable stubby body. Fantastic! </p>
-                        </div>
-                        <div class="comment-reply-link"> <a  data-placement="bottom"  data-toggle="tooltip" title="" data-original-title="Replay" class="comment-reply-link" href="menu_single.html#"><i class="fa fa-reply"></i></a> </div>
-                    </div>
-                </li>
-            </ul>
+
             </li>
             <li id="comment-2" class="comment-x byuser">
                 <div class="the-comment">
-                    <div class="comment-author vcard"> <img src="img/comment/3.jpg" class="avatar" alt=""> <span class="fn n">Lontuku</span> </div>
+                    <div class="comment-author vcard"> <span class="fn n">Lontuku</span> </div>
                     <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
                     <div class="comment-content">
                         <p> WOoooooow, beautiful and kind of scary I really like it, makes me think. </p>
