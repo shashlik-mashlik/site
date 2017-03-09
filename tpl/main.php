@@ -67,7 +67,7 @@ if ($URL[1]=='') {
                 <span class="welcome">Welcome to Shashlik-Mashlik</span>
             </div>
             <!-- End# Head Title -->
-            <p>Служба доставки «Shashlik-Mashlik» была создана с целью напомнить, каким вкусным, разнообразным, а главное, полезным, могут быть блюда приготовленные на настоящем мангале.</p>
+            <p><?=$TEXT['block1_text']?></p>
             <a href="/about" class="btn btn-gold">О нас</a> </div>
           <!-- End intro center -->
           <!-- Right Img Intro -->

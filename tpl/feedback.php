@@ -92,21 +92,21 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                   <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" />
+                                                                   <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                             <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" />
+                                                                    <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" required/>
                                                                 </div>
                                                             <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон" />
+                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -119,7 +119,7 @@ if ($URL[1] != '') {
                                                             <div class="form-group">
                                                             <!-- Element -->
                                                                 <div class="element">
-                                                                    <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" ></textarea>
+                                                                    <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" required></textarea>
                                                                 </div>
                                                             <!-- End Element -->
                                                             </div>
