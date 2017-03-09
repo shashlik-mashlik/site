@@ -69,8 +69,8 @@ if ($URL[1] != '') {
                                                 <?while ($row = mysql_fetch_array($r)) { ?>
                                                         <li class="comment-x byuser" >
                                                             <div class="the-comment" >
-                                                            <div class="comment-author vcard" > <span class="fn n" > TereKoi</span > </div >
-                                                            <div class="comment-meta" > <span > Nov 22, 2013 at 10:50 am </span > </div >
+                                                            <div class="comment-author vcard" > <span class="fn n" ><?=$row['name']?></span > </div >
+                                                            <div class="comment-meta" > <span ><?=$row['date']?></span > </div >
                                                             <div class="comment-content" >
                                                                 <p ><?=$row['text'];?></p >
                                                             </div >
