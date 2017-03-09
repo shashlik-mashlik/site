@@ -1,14 +1,3 @@
-<?
-if ($URL[1] != '') {
-    $sql = "SELECT * FROM `mandarinko_static` WHERE `url` = '" . mysql_real_escape_string($URL[1]) . "'";
-    $r = mysql_query($sql);
-    if (mysql_num_rows($r) == 1) {
-        $r = mysql_fetch_assoc($r);// http://example.org/page/name
-        $CONTENT['title'] .= " - " . $r['header'];
-        $CONTENT['metak'] = $r['metakey'];
-        $CONTENT['metad'] = $r['metadesc']; ?>
-
-
 <!-- banner
     ============================================= -->
 <section class="banner about dark">
