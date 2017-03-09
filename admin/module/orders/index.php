@@ -66,7 +66,7 @@ else {
 	  			</tr>
                 <tr>
                     <td style="color: #818181;">Статус:</td>
-                    <td><?=$el['status'] == 'sent' ? '<span style="color: yellow;">Завершен</span >' : ($el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span >' : '<span style="color: green;">Готовится</span>');?></td>
+                    <td><?=$el['status'] == 'sent' ? '<span>Завершен</span >' : ($el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span >' : '<span style="color: green;">Готовится</span>');?></td>
                 </tr>
 	  			<tr>
 	  				<td style="color: #818181;">Имя:</td>
