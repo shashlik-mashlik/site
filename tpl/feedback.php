@@ -66,7 +66,7 @@ if ($URL[1] != '') {
                                     <div id="comments">
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
-                                                <?while ($row = $r) { ?>
+                                                <?while ($row = mysql_fetch_array($r)) { ?>
                                                         <li class="comment-x byuser" >
                                                             <div class="the-comment" >
                                                             <div class="comment-author vcard" > <span class="fn n" > TereKoi</span > </div >
