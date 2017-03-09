@@ -67,7 +67,9 @@ else {
 	  	<td style="width: 180px !important; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
 	  	<td width="56">
 	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Сменить статус" href="/admin/module/orders?type=state&id=<?=$el['id'];?>"></a>
-	  	</td>
+            <a class="fa fa-times" aria-hidden="true"></a>
+
+        </td>
 	  </tr>
       <tr>
        <th style="width: 300px !important;"></th> <!--номер, имя, тлф, кол-во персон -->
