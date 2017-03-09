@@ -30,7 +30,7 @@ else {
 ?>
     <h1>Управление заказами</h1>
 
-    <p class="text_img" onclick="aorders.last();" id="state"><a>Завершенные заказы</a></p>
+    <p class="text_img"><a href="/admin/module/orders?page=last">Завершенные заказы</a></p>
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
@@ -39,7 +39,11 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `orders` WHERE `status`='ready' OR `status`='expected' ORDER BY `id` DESC";
+    if (isset($_GET['page'])) {
+        $sql = "SELECT * FROM `orders` WHERE `status`='sent' ORDER BY `id` DESC LIMIT 20";
+    } else {
+        $sql = "SELECT * FROM `orders` WHERE `status`='ready' OR `status`='expected' ORDER BY `id` DESC";
+    }
 	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 
@@ -62,7 +66,7 @@ else {
 	  			</tr>
                 <tr>
                     <td style="color: #818181;">Статус:</td>
-                    <td><?=$el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span >' : '<span style="color: green;">Готовится</span>';?></td>
+                    <td><?=$el['status'] == 'sent' ? '<span style="color: yellow;">Завершен</span >' : $el['status'] == 'ready' ? '<span style="color: red;">Ожидание</span >' : '<span style="color: green;">Готовится</span>';?></td>
                 </tr>
 	  			<tr>
 	  				<td style="color: #818181;">Имя:</td>
