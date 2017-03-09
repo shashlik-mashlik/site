@@ -30,7 +30,7 @@ else {
 ?>
     <h1>Управление заказами</h1>
 
-    <p class="text_img"><a href="/admin/module/orders?page=last"><?=isset($_GET['page'] ? 'Активные заказы' : 'Завершенные заказы'?></a></p>
+    <p class="text_img"><a href="/admin/module/orders?page=last">Pfdthityyst pfrfps</a></p>
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
