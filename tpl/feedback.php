@@ -23,11 +23,10 @@ if ($URL[1] != '') {
                 <div class="banner-content">
                     <div class="container">
                         <div class="slider-content"><i class="icon-home-ico"></i>
-                            <h1>О нас</h1>
-                            <p>Where we all strart.</p>
+                            <h1>Отзывы</h1>
                             <ol class="breadcrumb">
-                                <li><a href="index01.html">Главная</a></li>
-                                <li>О нас</li>
+                                <li><a href="/">Главная</a></li>
+                                <li>Отзывы</li>
                             </ol>
                         </div>
                     </div>
@@ -101,21 +100,21 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                   <input type="text" name="name" class="form-control text" placeholder="Имя *" />
+                                                                   <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" />
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                             <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" name="email" class="form-control text" placeholder="E-mail *" />
+                                                                    <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" />
                                                                 </div>
                                                             <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" name="phone" class="form-control text" placeholder="Теефон" />
+                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон" />
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -128,7 +127,7 @@ if ($URL[1] != '') {
                                                             <div class="form-group">
                                                             <!-- Element -->
                                                                 <div class="element">
-                                                                    <textarea name="comment" class="text textarea" placeholder="Комментарий *" ></textarea>
+                                                                    <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" ></textarea>
                                                                 </div>
                                                             <!-- End Element -->
                                                             </div>
@@ -137,7 +136,7 @@ if ($URL[1] != '') {
                                                     </div>
                                                     <!-- Element -->
                                                     <div class="element text-center">
-                                                        <button type="submit" id="submit-form" name="send" class="btn btn-black btn-gold">Отправить</button>
+                                                        <button id="submit-form" name="send" onclick="feedback.send();" class="btn btn-black btn-gold">Отправить</button>
                                                         <div class="loading"></div>
                                                     </div>
                                                     <!-- End Element -->
