@@ -66,7 +66,7 @@ if ($URL[1] != '') {
                     <p>
 
 
-                    <div class="tab-content">
+                        <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="review">
                                 <!-- Comments -->
                                 <div class="comment-blog">
@@ -96,6 +96,7 @@ if ($URL[1] != '') {
                     </div>
                 </li>
             </ul>
+            </li>
             <li id="comment-2" class="comment-x byuser">
                 <div class="the-comment">
                     <div class="comment-author vcard"> <img src="img/comment/3.jpg" class="avatar" alt=""> <span class="fn n">Lontuku</span> </div>
@@ -107,6 +108,7 @@ if ($URL[1] != '') {
                 </div>
                 <!--the-comment -->
             </li>
+            </ol>
         </div>
         <div id="respond">
             <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
@@ -165,8 +167,117 @@ if ($URL[1] != '') {
             <!-- End contact form -->
         </div>
 </div>
+        </div>
+        <!-- End# Comments -->
+        </div>
+        <!-- Description tab-->
+        <div role="tabpanel" class="tab-pane" id="description">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Description tab-->
+        </div>
+        <!-- End Tab panes -->
+        </div>
 
- <!-- end of #content -->
+
+                    </p>
+                </div>
+                <!-- End intro center -->
+            </div>
+        </div>
+    </section>
+    <!-- End intro -->
+
+    <!-- Address content
+    ============================================= -->
+    <a style=" visibility: hidden;" name="contacts"></a>
+    <section class="address-content dark">
+        <!--  BG parallax -->
+        <div id="address-content">
+            <div class="bcg"
+                 data-center="background-position: 50% 0px;"
+                 data-bottom-top="background-position: 50% 100px;"
+                 data-top-bottom="background-position: 50% -100px;"
+                 data-anchor-target="#address-content"
+                 style="background-image:url('img/banner/certification.jpg');"
+            >
+                <!-- BG transparent -->
+                <div class="bg-transparent padding-100">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Adress -->
+                            <div class="col-md-4 adress">
+                                <!-- Icon -->
+                                <div class="col-md-3 icon "><i class="fa fa-road"></i></div>
+                                <!-- End Icon -->
+                                <!-- Content Item -->
+                                <div class="col-md-9 content-item">
+                                    <h3>Адрес</h3>
+                                    <p> Юр.адрес: 5я линия В.О. д.30/10. </p>
+                                </div>
+                                <!-- End content Item -->
+                            </div>
+                            <!--End Adress -->
+                            <!-- Phone -->
+                            <div class="col-md-4 Phone">
+                                <!-- Icon -->
+                                <div class="col-md-3 icon"><i class="fa fa-phone"></i></div>
+                                <!-- End Icon -->
+                                <!-- Content Item -->
+                                <div class="col-md-9 content-item">
+                                    <h3>Телефон</h3>
+                                    <p><span>8(812) 985-00-06</span></p>
+
+                                </div>
+                                <!-- End content Item -->
+                            </div>
+                            <!--End Phone -->
+                            <!-- Email -->
+                            <div class="col-md-4 email">
+                                <!-- Icon -->
+                                <div class="col-md-3 icon"><i class="fa fa-envelope"></i></div>
+                                <!-- End Icon -->
+                                <!-- Content Item -->
+                                <div class="col-md-9 content-item">
+                                    <h3>Почта</h3>
+                                    <p><a href="mailto:shashlikmashlik.spb@gmail.com">shashlikmashlik.spb@gmail.com</a>
+                                    </p>
+
+                                </div>
+                                <!-- End content Item -->
+                            </div>
+                            <!--End Email -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End BG transparent -->
+        </div>
+        <!-- End BG parallax -->
+    </section>
+    <!-- End address content -->
+    <!-- Map
+    ============================================= -->
+    <div class="map">
+        <!--
+        <div id="map"></div>-->
+        <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZgvNQpT" width="100%" height="500px"
+                frameborder="0"></iframe>
+    </div>
+    <!-- End map -->
+
+
+</div>
+<!-- end of #content -->
 
 
 <?
