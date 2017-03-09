@@ -122,7 +122,7 @@ if ($URL[1] != '') {
                                     </div>
                                     <!--End Phone -->
                                     <!-- Email -->
-                                    <div class="col-md-4 email">
+                                    <div class="col-md-3 email">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon"><i class="fa fa-envelope"></i></div>
                                         <!-- End Icon -->
