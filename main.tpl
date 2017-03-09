@@ -113,6 +113,7 @@
 <!--<script src="/ajax/common.js"></script>-->
 <script src="/ajax/basket/basket.js"></script>
 <script src="/ajax/order/order.js"></script>
+<script src="/ajax/feedback/feedback.js"></script>
 <!-- For This Pgae Only Zooming slider -->
 <script src="/themes/majesty/javascripts/custom/mbBgGallery_init.js"></script>
 </body>

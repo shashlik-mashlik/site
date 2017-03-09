@@ -70,7 +70,7 @@ if ($URL[1] != '') {
                                     <div id="comments">
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
-                                                <li id="comment-1" class="comment-x byuser">
+                                                <li class="comment-x byuser">
                                                     <div class="the-comment">
                                                         <div class="comment-author vcard"> <span class="fn n">TereKoi</span> </div>
                                                         <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
@@ -79,7 +79,7 @@ if ($URL[1] != '') {
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li id="comment-2" class="comment-x byuser">
+                                                <li class="comment-x byuser">
                                                     <div class="the-comment">
                                                         <div class="comment-author vcard"> <span class="fn n">Lontuku</span> </div>
                                                         <div class="comment-meta"> <span> Nov 22, 2013 at 10:50 am</span> </div>
@@ -94,14 +94,14 @@ if ($URL[1] != '') {
                                             <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
                                             <!-- Contact form -->
                                             <div class="contact-form">
-                                                <form method="post">
+                                                <form method="post" action="/feedback">
                                                     <!-- Form Group -->
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                   <input type="text" name="name" class="form-control text" placeholder="Name *" />
+                                                                   <input type="text" name="name" class="form-control text" placeholder="Имя *" />
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -115,7 +115,7 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" name="website" class="form-control text" placeholder="Website" />
+                                                                    <input type="text" name="phone" class="form-control text" placeholder="Теефон" />
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -128,7 +128,7 @@ if ($URL[1] != '') {
                                                             <div class="form-group">
                                                             <!-- Element -->
                                                                 <div class="element">
-                                                                    <textarea name="comment" class="text textarea" placeholder="Comment *" ></textarea>
+                                                                    <textarea name="comment" class="text textarea" placeholder="Комментарий *" ></textarea>
                                                                 </div>
                                                             <!-- End Element -->
                                                             </div>
@@ -137,7 +137,7 @@ if ($URL[1] != '') {
                                                     </div>
                                                     <!-- Element -->
                                                     <div class="element text-center">
-                                                        <button type="submit" id="submit-form" value="Send" class="btn btn-black btn-gold">Submit</button>
+                                                        <button type="submit" id="submit-form" name="send" class="btn btn-black btn-gold">Отправить</button>
                                                         <div class="loading"></div>
                                                     </div>
                                                     <!-- End Element -->
