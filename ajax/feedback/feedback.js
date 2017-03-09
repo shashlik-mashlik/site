@@ -11,6 +11,7 @@ var feedback = {
         ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
     },
     handler: function(params) {
-        console.log(params.responseText);
+        let response = eval('(' + params.responseText + ')');
+        if (response.status == 'true') {alert('Ваш комментарий добавлен. Он появится в списке после проверки.');}
     }
 }
