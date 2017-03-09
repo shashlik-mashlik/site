@@ -30,7 +30,7 @@ else {
 ?>
     <h1>Управление заказами</h1>
 
-	<p onclick="aorders.last();" id="state">Завершенные заказы</p>
+    <p onclick="aorders.last();" id="state"><a>Завершенные заказы</a></p>
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
