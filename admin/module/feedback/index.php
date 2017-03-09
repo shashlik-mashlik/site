@@ -25,7 +25,7 @@ if (mysql_num_rows($r)!=1) {
 ?>
 
 <?
-if($_GET['type'])   include($URL[2].'/'.$URL[3].'/edit.php');
+if($_GET['act'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
     <h1>Управление заказами</h1>
