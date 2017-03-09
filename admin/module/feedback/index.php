@@ -15,7 +15,7 @@ $sql = "SELECT * FROM `feedback` LIMIT 1";
 $r = mysql_query($sql);
 if (mysql_num_rows($r)!=1) {
 	//catalog base setup
-    $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/30_feedback.sql.php'),'<>?'));
+    $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/31_feedback.sql.php'),'<>?'));
     foreach($sql as $el) mysql_query($el);
 	
 	//header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');
@@ -25,7 +25,6 @@ if (mysql_num_rows($r)!=1) {
 ?>
 
 <?
-echo $URL[2].'/'.$URL[3].'/edit.php';
 if($_GET['act'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
