@@ -11,16 +11,16 @@ if($_SESSION['status'] != 'superadmin') {
 }
 
 //SETUP
-//$sql = "SELECT * FROM `orders` LIMIT 1";
-/*$r = mysql_query($sql);
+$sql = "SELECT * FROM `orders` LIMIT 1";
+$r = mysql_query($sql);
 if (mysql_num_rows($r)!=1) {
 	//catalog base setup
     $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/30_orders.sql.php'),'<>?'));
     foreach($sql as $el) mysql_query($el);
 	
-	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');	 
+	//header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');
 }
-*/
+
 
 ?>
 

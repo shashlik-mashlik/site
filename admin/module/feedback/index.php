@@ -11,16 +11,16 @@ if($_SESSION['status'] != 'superadmin') {
 }
 
 //SETUP
-//$sql = "SELECT * FROM `orders` LIMIT 1";
-/*$r = mysql_query($sql);
+$sql = "SELECT * FROM `feedback` LIMIT 1";
+$r = mysql_query($sql);
 if (mysql_num_rows($r)!=1) {
 	//catalog base setup
-    $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/30_orders.sql.php'),'<>?'));
+    $sql = explode(';',trim(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/'.$URL[1].'/setup/30_feedback.sql.php'),'<>?'));
     foreach($sql as $el) mysql_query($el);
 	
-	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');	 
+	//header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'/');
 }
-*/
+
 
 ?>
 
@@ -39,19 +39,10 @@ else {
 	  	<th></th>
 	  </tr>
 	<?
-	$sql = "SELECT * FROM `orders` WHERE `status`='ready' OR `status`='expected' ORDER BY `id` DESC";
+	$sql = "SELECT * FROM `feedback` WHERE `status`='false' ORDER BY `id` DESC";
 	$r = mysql_query($sql) or die('DB ERROR: CAN\'T EXTRACT orders');
 	for($data=array();$row=mysql_fetch_assoc($r);$data[]=$row);
 
-//	$html = "<table>";
-//    $ord = json_decode($el['ord']);
-//	for ($i = 0; $i < sizeof($ord); $i++) {
-//	    $html .= "<tr><td>";
-//	    $html .= $ord[$i]->name . ' ' . $ord[$i]->count . ' ' . $ord[$i]->price;
-//	    $html .= "</td></tr>";
-//
-//    }
-//    $html = "</table>";
   	foreach($data as $el) {?>
 	  <tr>	  	
 	  	<td>
