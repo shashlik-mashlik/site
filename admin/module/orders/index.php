@@ -29,11 +29,11 @@ if($_GET['type'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
     <h1>Управление заказами</h1>
-    <? (isset($_GET['page'])){
+    <? (isset($_GET['page'])){ ?>
         <p class="text_img" ><a href = "/admin/module/orders" > Активные заказы </a ></p >
-    } else {
+    <?} else {?>
         <p class="text_img" ><a href = "/admin/module/orders?page=last" > Завершенные заказы </a ></p >
-    }
+    <?}?>
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
 	  	<th style="width: 300px !important;">О заказе</th> <!--номер, имя, тлф, кол-во персон -->
