@@ -136,7 +136,7 @@ if ($URL[1] != '') {
                                                     </div>
                                                     <!-- Element -->
                                                     <div class="element text-center">
-                                                        <button id="submit-form" name="send" onclick="feedback.send();" class="btn btn-black btn-gold">Отправить</button>
+                                                        <button id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
                                                         <div class="loading"></div>
                                                     </div>
                                                     <!-- End Element -->
