@@ -18,5 +18,5 @@ echo json_encode($response);
 
 $sql = "INSERT INTO `feedback` SET `name` = '" . $_POST['name'] . "', `email` = '" . $_POST['email'] . "', `text` = '" . $_POST['text'] . "', `phone` = '" . $_POST['phone'] . "'";
 $r = mysql_fetch_array(mysql_query($sql));
-echo json_encode(["r" => var_dump($r)]);
+echo json_encode(["r" => $r]);
 ?>
