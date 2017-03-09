@@ -95,7 +95,7 @@ if ($URL[1] != '') {
                             <div class="container">
                                 <div class="row">
                                     <!-- Adress -->
-                                    <div class="col-md-4 adress">
+                                    <div class="col-md-3 adress">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon "><i class="fa fa-road"></i></div>
                                         <!-- End Icon -->
@@ -108,7 +108,7 @@ if ($URL[1] != '') {
                                     </div>
                                     <!--End Adress -->
                                     <!-- Phone -->
-                                    <div class="col-md-4 Phone">
+                                    <div class="col-md-3 Phone">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon"><i class="fa fa-phone"></i></div>
                                         <!-- End Icon -->
@@ -129,7 +129,20 @@ if ($URL[1] != '') {
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
                                             <h3>Почта</h3>
-                                            <p><a href="mailto:shashlikmashlik.spb@gmail.com"><?=$TEXT['email']?></a>
+                                            <p><a href="mailto:<?=$TEXT['email']?>"><?=$TEXT['email']?></a>
+                                            </p>
+
+                                        </div>
+                                        <!-- End content Item -->
+                                    </div>
+                                    <div class="col-md-3 email">
+                                        <!-- Icon -->
+                                        <div class="col-md-3 icon"><i class="fa fa-vk"></i></div>
+                                        <!-- End Icon -->
+                                        <!-- Content Item -->
+                                        <div class="col-md-9 content-item">
+                                            <h3>ВКонтакте</h3>
+                                            <p><a href="<?=$TEXT['vk']?>" target="_blank"><?=$TEXT['vk']?></a>
                                             </p>
 
                                         </div>

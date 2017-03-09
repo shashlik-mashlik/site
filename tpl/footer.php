@@ -4,7 +4,7 @@
 
   <!-- Footer
     ============================================= -->
-  <footer id="footer" class="padding-50 dark">
+  <footer id="footer" class="dark">
    <!-- <div class="container">
       <div class="row">
 
