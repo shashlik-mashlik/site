@@ -95,7 +95,7 @@ if ($URL[1] != '') {
                             <div class="container">
                                 <div class="row">
                                     <!-- Adress -->
-                                    <div class="col-md-3 adress">
+                                    <div class="col-md-6 adress">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon "><i class="fa fa-road"></i></div>
                                         <!-- End Icon -->
@@ -108,7 +108,7 @@ if ($URL[1] != '') {
                                     </div>
                                     <!--End Adress -->
                                     <!-- Phone -->
-                                    <div class="col-md-3 Phone">
+                                    <div class="col-md-6 Phone">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon"><i class="fa fa-phone"></i></div>
                                         <!-- End Icon -->
@@ -122,7 +122,7 @@ if ($URL[1] != '') {
                                     </div>
                                     <!--End Phone -->
                                     <!-- Email -->
-                                    <div class="col-md-3 email">
+                                    <div class="col-md-6 email">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon"><i class="fa fa-envelope"></i></div>
                                         <!-- End Icon -->
@@ -135,7 +135,7 @@ if ($URL[1] != '') {
                                         </div>
                                         <!-- End content Item -->
                                     </div>
-                                    <div class="col-md-3 email">
+                                    <div class="col-md-6 email">
                                         <!-- Icon -->
                                         <div class="col-md-3 icon"><i class="fa fa-vk"></i></div>
                                         <!-- End Icon -->
