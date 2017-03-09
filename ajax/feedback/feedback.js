@@ -12,7 +12,6 @@ var feedback = {
     },
     handler: function(param) {
         let response = eval("(" + param.responseText + ")");//
-        if (parseInt(response.status, 10) == 1) {alert('Ваш комментарий добавлен. Он появится в списке после проверки.');}
-        console.log(response.status);
+        if (response.status == true) {alert('Ваш комментарий добавлен. Он появится в списке после проверки.');}
     }
 }
