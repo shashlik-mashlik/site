@@ -10,8 +10,8 @@ var feedback = {
         let xhr = ajax.ini();
         ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
     },
-    handler: function(params) {
-        let response = eval('(' + params.responseText + ')');
+    handler: function(param) {
+        let response = eval("(" + param.responseText + ")");
         if (response.status == 'true') {alert('Ваш комментарий добавлен. Он появится в списке после проверки.');}
     }
 }
