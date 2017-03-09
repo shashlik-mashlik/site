@@ -102,7 +102,7 @@ if ($URL[1] != '') {
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
                                             <h3>Адрес</h3>
-                                            <p> Юр.адрес: 5я линия В.О. д.30/10. </p>
+                                            <p><?=$TEXT['adrs']?></p>
                                         </div>
                                         <!-- End content Item -->
                                     </div>
@@ -115,7 +115,7 @@ if ($URL[1] != '') {
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
                                             <h3>Телефон</h3>
-                                            <p><span>8(812) 985-00-06</span></p>
+                                            <p><span><?=$TEXT['phone']?></span></p>
 
                                         </div>
                                         <!-- End content Item -->
@@ -129,7 +129,7 @@ if ($URL[1] != '') {
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
                                             <h3>Почта</h3>
-                                            <p><a href="mailto:shashlikmashlik.spb@gmail.com">shashlikmashlik.spb@gmail.com</a>
+                                            <p><a href="mailto:shashlikmashlik.spb@gmail.com"><?=$TEXT['email']?></a>
                                             </p>
 
                                         </div>
