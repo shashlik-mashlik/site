@@ -28,7 +28,7 @@ if (mysql_num_rows($r)!=1) {
 if($_GET['act'])   include($URL[2].'/'.$URL[3].'/edit.php');
 else {
 ?>
-    <h1>Управление заказами</h1>
+    <h1>Управление отзывами</h1>
 
 	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
 	<table class="table" style="word-wrap: break-word;">

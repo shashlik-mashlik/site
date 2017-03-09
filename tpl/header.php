@@ -106,7 +106,7 @@ session_start();// Начинаем сессию
 
           	</a>
             <div class="shop_cart_content" id="shop_cart_content" style="width: 450px;">
-              <h4>Shopping Cart</h4>
+              <h4>Корзина</h4>
               <div class="cart_items" id="top_cart_items">
                 <div id="top_cart_content"></div>
                 <div class="shop_action clearfix"> <span id="top_cart_all_coast" class="shop_checkout_price">0р</span>

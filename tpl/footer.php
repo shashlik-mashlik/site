@@ -5,9 +5,9 @@
   <!-- Footer
     ============================================= -->
   <footer id="footer" class="padding-50 dark">
-    <div class="container">
+   <!-- <div class="container">
       <div class="row">
-        <!-- Our location !-->
+
         <div class="col-md-3 col-sm-6 col-xs-12 our_location">
           <h3>Мы находимся</h3>
           <p>Юридический адрес:</p>
@@ -21,8 +21,7 @@
             <li><a href="#" data-toggle="tooltip" title="Behance"><i class="fa fa-behance"></i></a></li>
           </ul>
         </div>
-        <!-- End our location -->
-        <!-- Latest Post !-->
+
         <div class="col-md-3 col-sm-6 col-xs-12 latest_post ">
           <h3>Последние новости</h3>
           <div class="media">
@@ -31,24 +30,23 @@
               <h4 class="media-heading"><a href="blog_single_image.html">Thai Tanic</a></h4>
               Lorem ipsum dolor sit amet, sectetur adipiscing elit. </div>
           </div>
-          <!-- End media -->
+
           <div class="media">
             <div class="media-left"> <a href="blog_single_image.html" > <img class="media-object" rel="prettyPhoto" src="/themes/majesty/img/post_thumb2.jpg" alt="post thumb"> </a> </div>
             <div class="media-body">
               <h4 class="media-heading"><a href="blog_single_image.html">Work & Roll</a></h4>
               Lorem ipsum dolor sit amet, sectetur adipiscing elit. </div>
           </div>
-          <!-- End media -->
+
           <div class="media">
             <div class="media-left"> <a href="blog_single_image.html" > <img class="media-object" rel="prettyPhoto" src="/themes/majesty/img/post_thumb3.jpg" alt="post thumb"> </a> </div>
             <div class="media-body">
               <h4 class="media-heading"><a href="blog_single_image.html">Blog Name</a></h4>
               Lorem ipsum dolor sit amet, sectetur adipiscing elit. </div>
           </div>
-          <!-- End media -->
+
         </div>
-        <!-- End latest Post -->
-        <!-- Opening time !-->
+
         <div class="col-md-3 col-sm-6 col-xs-12 opening_time">
           <h3>Мы открыты</h3>
           <ul>
@@ -80,7 +78,7 @@
             <li>
               <p>Суббота 
               	<time datetime="00:01">5:00 - 1:00</time>
-              	<!--<span class="label label-default">Closed</span>-->
+              	<span class="label label-default">Closed</span>
               </p>
             </li>
             <li>
@@ -90,16 +88,15 @@
             </li>
           </ul>
         </div>
-        <!-- End opening time -->
-        <!-- Flickr !-->
+
         <div class="col-md-3 col-sm-6 col-xs-12 flickr">
           <h3>Фото</h3>
           <ul id="flickrbox" class="thumbs">
           </ul>
         </div>
-        <!-- End flickr -->
+
       </div>
-    </div>
+    </div>-->
     <!-- End container -->
     <!-- Footer logo !-->
     <div class="footer_logo text-center"> <img  src="/themes/majesty/img/footer_logo.png"  alt="logo">
