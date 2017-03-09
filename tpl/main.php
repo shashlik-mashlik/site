@@ -63,7 +63,7 @@ if ($URL[1]=='') {
           <!-- Head Title -->
             <div class="head_title">
                 <i class="icon-intro"></i>
-                <h1>ИСКУССТВО В ЕДЕ</h1>
+                <h1><?=$TEXT['block1_title']?></h1>
                 <span class="welcome">Welcome to Shashlik-Mashlik</span>
             </div>
             <!-- End# Head Title -->
@@ -90,7 +90,7 @@ if ($URL[1]=='') {
         <!-- Bg Transparent -->
         <div class="bg-transparent padding-100" >
           <div class="container">
-            <h1>Мы создаем вкусные истории</h1>
+            <h1><?=$TEXT['block2']?></h1>
             <!--<p class="text-uppercase">You can promote your creative parallax effects</p>
             <a href="about" class="btn btn-gold white">О нас</a> </div>-->
         </div>
@@ -163,7 +163,7 @@ if ($URL[1]=='') {
               <div class="col-md-7 text-center">-->
               <div class="col-md-12 text-center">
                 <h1 class="">SHASHLIK-MASHLIK</h1>
-                <b>Мы работаем для Вас ежедневно с 11:00 до 02:00. </b>
+                <b><?=$TEXT['block3']?></b>
                 <p class="italic mt40">Минимальная стоимость заказа варьируется в зависимости от вашего района. </p>
               </div>
               <!-- End Text video center -->
