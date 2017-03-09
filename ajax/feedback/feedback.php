@@ -6,5 +6,5 @@
  * Time: 11:50
  */
 
-echo $_SERVER['REQUEST_URI'];
+echo $_SERVER['HTTP_USER_AGENT'];
 ?>
