@@ -11,6 +11,6 @@ var feedback = {
         ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
     },
     handler: function(params) {
-        console.log(params);
+        console.log(params.responseText);
     }
 }
