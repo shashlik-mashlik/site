@@ -1,6 +1,6 @@
 <?
 if ($URL[1] != '') {
-    $sql = "SELECT * FROM `feedback` ORDER BY `id` DESC LIMIT 5";
+    $sql = "SELECT * FROM `feedback` WHERE `status` = '1' ORDER BY `id` DESC LIMIT 5";
     $r = mysql_query($sql);
     if (mysql_num_rows($r) >= 0) {
         ?>
