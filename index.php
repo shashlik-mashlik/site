@@ -32,8 +32,8 @@ if ($URL[2]=='main') {
 } elseif ($URL[1]=='order') {
 	include('tpl/order.php');
 } elseif ($URL[1]=='search') {
-	include('tpl/search.php');
-  elseif ($URL[1]=='feedback') {
+    include('tpl/search.php');
+}  elseif ($URL[1]=='feedback') {
     include('tpl/feedback.php');
 } elseif ($URL[1]=='test') {
 	include('tpl/test.php');
