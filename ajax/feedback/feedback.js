@@ -8,7 +8,7 @@ var feedback = {
                     '&phone=' + document.querySelector('#ajax_phone') +
                     '&text=' + document.querySelector('#ajax_comment');
         let xhr = ajax.ini();
-        ajax.send(xhr, 'POST', '/feedback', query, feedback.handler);
+        ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
     },
     handler: function(params) {
         console.log(params);

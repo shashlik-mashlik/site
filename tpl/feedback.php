@@ -93,7 +93,7 @@ if ($URL[1] != '') {
                                             <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
                                             <!-- Contact form -->
                                             <div class="contact-form">
-                                                <form method="post" action="/feedback">
+                                                <form>
                                                     <!-- Form Group -->
                                                     <div class="form-group">
                                                         <div class="row">
