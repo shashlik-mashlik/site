@@ -5511,6 +5511,9 @@ body.boxed .error-404, body.boxed .login-full {
 #top_cart_content::-moz-scrollbar {
 	width: 0px;
 }
+#top_cart_content::scrollbar {
+	width: 0px;
+}
 #top_cart_content {
 	max-height: 200px;
 	overflow: auto;
