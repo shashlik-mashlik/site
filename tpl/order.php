@@ -309,7 +309,7 @@
           <div class="banner-content">
             <div class="container" >
               <div class="slider-content  "> <i class="icon-home-ico"></i>
-                <h1>Check out</h1>
+                <h1>Оформление заказа</h1>
                 <p>Every Thing You Know About Shaslik-Mashlik</p>
                 <ol class="breadcrumb">
                   <li><a href="/basket">Корзина</a></li>
