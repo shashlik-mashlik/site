@@ -5507,7 +5507,6 @@ body.boxed .error-404, body.boxed .login-full {
 }
 top-cart-scroll-content::-webkit-scrollbar {
 	width: 0px;
-	display: none;
 	overflow: auto;
 	max-height: 200px;
 }
