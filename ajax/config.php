@@ -3,7 +3,7 @@
 //DATABASE
 $dbuser  = "shashlld_sm";
 $dbname  = "shashlld_sm";
-$dbpass  = "shashlld_sm";
+$dbpass  = "passwordshlk";
 $dbhost  = "localhost";
 
 mysql_connect($dbhost, $dbuser, $dbpass) or die ("Could not connect: ".mysql_error());
