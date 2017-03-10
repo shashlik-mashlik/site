@@ -5505,10 +5505,10 @@ body.boxed .error-404, body.boxed .login-full {
 		display: none;
 	}
 }
-#top-cart-content::-webkit-scrollbar {
+#top_cart_content::-webkit-scrollbar {
 	width: 0px;
 	overflow: auto;
 }
-#top-cart-content {
+#top_cart_content {
 	max-height: 200px;
 }
