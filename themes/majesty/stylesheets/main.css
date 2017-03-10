@@ -5515,6 +5515,6 @@ body.boxed .error-404, body.boxed .login-full {
 	width: 0px;
 }
 #top_cart_content {
-	max-height: 200px;
+	max-height: 400px;
 	overflow: auto;
 }
