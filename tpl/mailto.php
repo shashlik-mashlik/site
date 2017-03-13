@@ -61,17 +61,14 @@ $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "From:\r\n";
 /* дополнительные шапки */
-//$headers .= "From: SHASHLIK-MASHLIK <" . $TEXT['email'] . ">\r\n";
+$headers .= "From: SHASHLIK-MASHLIK <" . $TEXT['email'] . ">\r\n";
 //$headers .= "Cc: " . $TEXT['email'] . "\r\n";
 //$headers .= "Bcc: " . $TEXT['email'] . "\r\n";
-	//if (/*mail($TEXT['email']*/'rus.syndicate@gmail.com', $subject, $message, $headers )){
-	//@mail($email, $subject, $message, $headers );
-      mail("rus.syndicate@gmail.com", $subject, $message, $headers );
-                                //mail("rus.syndicate@gmail.com", 'us', 'msg', $headers );
-	//mail("gva@bonvio.com", $subject, $message, $headers );
-    //	$msg = "<div class='alert alert-warning alert-dismissable'>
-	//		<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
-	//}
+	if (mail($TEXT['email']*/'rus.syndicate@gmail.com', $subject, $message, $headers)){
+		@mail($email, $subject, $message, $headers );
+    	$msg = "<div class='alert alert-warning alert-dismissable'>
+			<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
+	}
 	
 
 if (!empty($message)){
