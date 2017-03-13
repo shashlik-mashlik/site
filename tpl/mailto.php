@@ -64,7 +64,7 @@ $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: SHASHLIK-MASHLIK <" . $TEXT['email'] . ">\r\n";
 $headers .= "Cc: " . $TEXT['email'] . "\r\n";
 $headers .= "Bcc: " . $TEXT['email'] . "\r\n";
-	if (mail($TEXT['email'], $subject, $message, $headers )){
+	if (!mail($TEXT['email'], $subject, $message, $headers )){
 	@mail($email, $subject, $message, $headers );
 	//mail("rus.syndicate@gmail.com", $subject, $message, $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
