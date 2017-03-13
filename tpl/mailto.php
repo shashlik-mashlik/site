@@ -66,8 +66,8 @@ $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "Bcc: " . $TEXT['email'] . "\r\n";
 	//if (/*mail($TEXT['email']*/'rus.syndicate@gmail.com', $subject, $message, $headers )){
 	//@mail($email, $subject, $message, $headers );
-//	mail("rus.syndicate@gmail.com", $subject, $message, $headers );
-                                mail("rus.syndicate@gmail.com", 'us', 'msg', $headers );
+      mail("rus.syndicate@gmail.com", $subject, $message, $headers );
+                                //mail("rus.syndicate@gmail.com", 'us', 'msg', $headers );
 	//mail("gva@bonvio.com", $subject, $message, $headers );
     //	$msg = "<div class='alert alert-warning alert-dismissable'>
 	//		<b> Сообщение было отправлено! </b> &nbsp&nbsp&nbsp   Заказ # ".$primary_key."</div>";
