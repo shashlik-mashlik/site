@@ -43,8 +43,8 @@ $Ask = $json['query']['results']['rate']['Ask'];
           <div class="menu-thumb-slide col-md-6">
             <div id="single-img" class="owl-carousel">
               <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
-              <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
-              <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
+              <div class="item"><img src="<?=$images_url . '_1'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
+              <div class="item"><img src="<?=$images_url . '_2'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
               <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
             </div>
             <div id="thumb-img" class="owl-carousel">
