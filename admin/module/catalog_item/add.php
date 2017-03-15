@@ -71,7 +71,7 @@ $item = mysql_fetch_assoc(mysql_query($sql));
 		copy($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$item['id'].'.jpg',$_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$item['id'].'.jpg');
 
 	//	SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$item['articul'].'.jpg',288,347);
-		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$item['id'].'.jpg',476,239);
+		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$item['id'].'.jpg',555,239);
 	//	SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$item['id'].'.jpg',164,218);
 		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$item['id'].'.jpg',476,303);
 	}
