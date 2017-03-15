@@ -80,13 +80,13 @@ $Ask = $json['query']['results']['rate']['Ask'];
 
               <span onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>); basketAjax.changeButton(<?php echo $el['id'] ?>);" class="shop btn btn-gold"data-toggle="tooltip" data-original-title="Добавить в корзину"><i id="add_cart_btn_<?php echo $el['id'] ?>" class="fa fa-shopping-cart"></i></span>
               <a class="added_to_cart wc-forward" style="visibility: hidden; margin-top: 12px;" id="go_to_cart_<?php echo $el['id'] ?>" href="/basket">Перейти в корзину</a>
-									<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki"></div>
-                <ul class="social pull-right">
-                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Behance"><i class="fa fa-behance"></i></a></li>
-                </ul>
+									<div class="social pull-right"class="ya-share2" data-services="vkontakte,facebook,odnoklassniki"></div>
+<!--                <ul class="social pull-right">-->
+<!--                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>-->
+<!--                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+<!--                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Google+"><i class="fa fa-google-plus"></i></a></li>-->
+<!--                  <li><a href="menu_single.html#" data-toggle="tooltip" title="" data-original-title="Behance"><i class="fa fa-behance"></i></a></li>-->
+<!--                </ul>-->
               </div>
               <!--End Meta description -->
             </div>
