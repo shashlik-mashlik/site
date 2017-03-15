@@ -15,7 +15,8 @@ if($_POST['addfiles']) {
 			or die("Ошибка закачки файла");			
 			copy($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$id.'_'.$add.$i.'.jpg', $_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$id.'_'.$add.$i.'.jpg');
 			
-			SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$id.'_'.$add.$i.'.jpg',128,134);			
+			SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$id.'_'.$add.$i.'.jpg',128,134);	
+			SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$id.'_'.$add.$i.'.jpg',555,239);			
 		}
 	}
 	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'?images=1&item='.$id.'&cid='.$_GET['cid']);
