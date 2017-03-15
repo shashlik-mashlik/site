@@ -43,9 +43,9 @@ $Ask = $json['query']['results']['rate']['Ask'];
           <div class="menu-thumb-slide col-md-6">
             <div id="single-img" class="owl-carousel">
               <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
-							<? if (file_exists('./upload/catalog/'.$el['id'].'_1')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_1'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?}?>
-			  			<? if (file_exists('./upload/catalog/'.$el['id'].'_2')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_2'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?}?>
-							<? if (file_exists('./upload/catalog/'.$el['id'].'_3')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_3'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?}?>
+							<? //if (file_exists('./upload/catalog/'.$el['id'].'_1')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_1'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?//}?>
+			  			<? //if (file_exists('./upload/catalog/'.$el['id'].'_2')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_2'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?//}?>
+							<? //if (file_exists('./upload/catalog/'.$el['id'].'_3')) {?><div class="item"><img src="<?='./upload/catalog/'.$el['id'].'_3'?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div><?//}?>
             </div>
             <div id="thumb-img" class="owl-carousel">
               <div class="item"><img src="<?=$images_url?>" alt="<?=$el['name']?>" title="<?=$el['name']?>"></div>
