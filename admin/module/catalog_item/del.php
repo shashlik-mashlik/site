@@ -5,7 +5,13 @@ if($_GET['delete']) {
 	$sql = "DELETE FROM `mandarinko_catalog_item` WHERE `id` = ".mysql_real_escape_string($_GET['item']);
 	mysql_query($sql) OR die('DB ERROR: CAN\'T DEL ITEM');
 	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$_GET['item'].'.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$_GET['item'].'_1.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$_GET['item'].'_2.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/'.$_GET['item'].'_3.jpg');
 	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$_GET['item'].'.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$_GET['item'].'_1.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$_GET['item'].'_2.jpg');
+	@unlink($_SERVER['DOCUMENT_ROOT'].'/upload/catalog/tmb/'.$_GET['item'].'_3.jpg');
 
 	$sql = "SELECT * FROM `mandarinko_catalog_item` WHERE `cid` = '".mysql_real_escape_string($_GET['cid'])."'";
 	$r = mysql_query($sql);
