@@ -13,6 +13,8 @@
     ============================================= -->
 <title><? //=strip_tags($CONTENT['title']);?>Шашлык-Машлык</title>
 <meta name="title" content="<? //=strip_tags($CONTENT['title']);?>Шашлык-Машлык" />
+<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
 <!-- Favicon Icons
      ============================================= -->
 <link rel="shortcut icon" href="/themes/majesty/img/favicon/favicon.ico">
