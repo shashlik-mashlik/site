@@ -40,7 +40,11 @@ session_start();// Начинаем сессию
 												$result = mysql_query($q);
 												while ($row = mysql_fetch_assoc($result)) {
 											?>
-													<div><?=$row['title'];?></div>
+														<div class="item">
+																<a href="<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'.$row['id']?>"  alt="<?=$row['text']?>">
+																		<h2><?=$row['title']?></h2>
+																</a>
+														</div>
 											<?}?>
                     </div>
                   </li>
