@@ -83,11 +83,11 @@ if($_POST['additem']) {
 		  	<td><input name="img" class="long" type="file"></td>
 		</tr>
 		<tr>
-			<td>Заголовок</td>
+			<td>Название</td>
 			<td><input type="text" class="long" name="title" value="<?=$r['title'];?>"/></td>
 		</tr>
 		<tr>
-			<td>Текст</td>
+			<td>Описание</td>
 			<td><input type="text" class="long" name="text" value="<?=$r['text'];?>"/></td>
 		</tr>
 		<tr>
