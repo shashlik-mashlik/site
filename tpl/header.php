@@ -35,13 +35,12 @@ session_start();// Начинаем сессию
                   <li class="mega-menu-title">
                     <div id="menu_carousel">
 											<?
-												echo "mysql ping: " . mysql_ping();
 												$q="SELECT * FROM `mandarinko_presentation_item`";
 												$result = mysql_query($q);
 												while ($row = mysql_fetch_assoc($result)) {
 											?>
 														<div class="item">
-																<a href="<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'.$row['id']?>"  alt="<?=$row['text']?>">
+																<a href="<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'.$row['id']?>.jpg"  alt="<?=$row['text']?>">
 																		<h2><?=$row['title']?></h2>
 																</a>
 														</div>
