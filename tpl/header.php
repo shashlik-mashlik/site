@@ -34,53 +34,18 @@ session_start();// Начинаем сессию
                 <ul>
                   <li class="mega-menu-title">
                     <div id="menu_carousel">
-                    	<div class="item"> <a href="/market/shashliks"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/shashliks.jpg"  alt="shashliks">
-                        	<h2>Шашлыки</h2>
-                        </a> </div>
-                      	<!--
-                      	<div class="item"> <a href="/market/shashliks/svinina"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/dishes.jpg"  alt="dishes">
-                        	<h2>Свинина</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/baranina"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/fishes.jpg"  alt="fishes">
-                        	<h2>Баранина</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/kura"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/salads.jpg"  alt="salads">
-                        	<h2>Курица</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/telyatina"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/deserts.jpg"  alt="deserts">
-                        	<h2>Телятина</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/govyadina"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/drinks.jpg"  alt="drinks">
-                        	<h2>Говядина</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/ryba"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/soup.jpg"  alt="Soups">
-                        	<h2>Рыба</h2>
-                        </a> </div>
-                      	<div class="item"> <a href="/market/shashliks/nabory"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/combo.jpg"  alt="Combo Meals">
-                        	<h2>Наборы</h2>
-                        </a> </div>
-						<div class="item"> <a href="/market/shashliks/ovoschi"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/combo.jpg"  alt="Combo Meals">
-                        	<h2>Овощи</h2>
-                        </a> </div>
-						-->
-						<div class="item"> <a href="/market/salat"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/salat.jpg"  alt="salat">
-                        	<h2>Салаты и Закуски</h2>
-                        </a> </div>
-						<div class="item"> <a href="/market/garniry"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/garniry.jpg"  alt="garniry">
-                        	<h2>Гарниры</h2>
-                        </a> </div>
-						<div class="item"> <a href="/market/sousy"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/sousy.jpg"  alt="sousy">
-                        	<h2>Соусы</h2>
-                        </a> </div>
-                        <div class="item"> <a href="/market/hleb"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/hleb.jpg"  alt="hleb">
-                        	<h2>Хлеб</h2>
-                        </a> </div>
-                        <div class="item"> <a href="/market/napitki"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/napitki.jpg"  alt="napitki">
-                        	<h2>Напитки</h2>
-                        </a> </div>
-                        <div class="item"> <a href="/market/pivo"> <img class="img-responsive" src="/themes/majesty/img/drop_menu/pivo.jpg"  alt="pivo">
-                        	<h2>Пиво</h2>
-                        </a> </div>
+												<?$q="SELECT * FROM `mandarinko_presentation_item`";
+												$result = mysql_query($q);
+												while ($row = mysql_fetch_assoc($result)) {
+
+
+												?>
+                    	<div class="item">
+													<a href="<?$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'$row['id']?>"  alt="<?$row['text']?>">
+                        		<h2><?$row['title']?></h2>
+                        	</a>
+											</div>
+												<?}?>
                     </div>
                   </li>
                 </ul>
