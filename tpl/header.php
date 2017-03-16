@@ -41,8 +41,8 @@ session_start();// Начинаем сессию
 
 												?>
                     	<div class="item">
-													<a href="<?$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'$row['id']?>"  alt="<?$row['text']?>">
-                        		<h2><?$row['title']?></h2>
+													<a href="<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'$row['id']?>"  alt="<?=$row['text']?>">
+                        		<h2><?=$row['title']?></h2>
                         	</a>
 											</div>
 												<?}?>
