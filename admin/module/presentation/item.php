@@ -49,7 +49,7 @@ if($_POST['additem']) {
 		`pid`	=	'".mysql_real_escape_string($_GET['item'])."',
 		`title`    = '".mysql_real_escape_string($_POST['title'])."',
 		`text`    = '".mysql_real_escape_string($_POST['text'])."',
-		`link`   = '/".mysql_real_escape_string($_POST['link'])."'";
+		`link`   = '".mysql_real_escape_string($_POST['link'])."'";
 		mysql_query($sql) OR die('DB ERROR: CAN\'T INSERT ITEM');
 
 	$id=mysql_insert_id();
