@@ -36,7 +36,7 @@ if($_POST['saveitem']) {
 		or die("Ошибка закачки файла");
 		copy($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg',$_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg');
 
-		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg',0,400, 1);
+		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg',564,510, 1);
 	}
 	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'?item='.$_GET['item']);
 	exit;
@@ -49,17 +49,18 @@ if($_POST['additem']) {
 		`pid`	=	'".mysql_real_escape_string($_GET['item'])."',
 		`title`    = '".mysql_real_escape_string($_POST['title'])."',
 		`text`    = '".mysql_real_escape_string($_POST['text'])."',
-		`link`   = '".mysql_real_escape_string($_POST['link'])."'";	
+		`link`   = '/".mysql_real_escape_string($_POST['link'])."'";
 		mysql_query($sql) OR die('DB ERROR: CAN\'T INSERT ITEM');
 
 	$id=mysql_insert_id();
 
  	if($_FILES['img']['name']) {
-		move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg')
+		//move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg')
+			echo var_dump($_FILES['img']['tmp_name']);
 		or die("Ошибка закачки файла");
 		copy($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg',$_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg');
 
-		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg',0,400, 1);
+		SetImgSize($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg',564,510, 1);
 	}
 	header('Location: /'.$URL[1].'/'.$URL[2].'/'.$URL[3].'?item='.$_GET['item']);
 	exit;
