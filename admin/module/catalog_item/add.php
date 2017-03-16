@@ -43,7 +43,7 @@ if($_POST['additem']) {
 	$URL_ = array_reverse($URL_);	
 	$URL_ = implode("/", $URL_);	
 	
-	$sql = "UPDATE `mandarinko_catalog_item` SET `url` = '".$URL_.", `c_url` = " . $id . "' WHERE `id` = '".$id."'";
+	$sql = "UPDATE `mandarinko_catalog_item` SET `url` = '".$URL_."', `c_url` = '" . $id . "' WHERE `id` = '".$id."'";
 	mysql_query($sql) or die($sql);
 	
 // 	if($_FILES['img']['name']) {
