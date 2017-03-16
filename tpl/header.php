@@ -40,7 +40,7 @@ session_start();// Начинаем сессию
 												while ($row = mysql_fetch_assoc($result)) {
 											?>
 														<div class="item">
-																<a href=/market/"<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'.$row['id']?>.jpg"  alt="<?=$row['text']?>">
+																<a href="/market/<?=$row['link']?>"> <img class="img-responsive" src="/upload/presentation/tmb/<?=$row['pid'].'_'.$row['id']?>.jpg"  alt="<?=$row['text']?>">
 																		<h2><?=$row['title']?></h2>
 																</a>
 														</div>
