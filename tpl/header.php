@@ -40,7 +40,7 @@ session_start();// Начинаем сессию
 												$result = mysql_query($q);
 												while ($row = mysql_fetch_assoc($result)) {
 											?>
-
+													<div><?=var_dump($row);?></div>
 											<?}?>
                     </div>
                   </li>
