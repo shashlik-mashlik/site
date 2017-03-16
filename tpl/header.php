@@ -35,13 +35,13 @@ session_start();// Начинаем сессию
                   <li class="mega-menu-title">
                     <div id="menu_carousel">
 											<?
-											echo "mysql ping: " . mysql_ping();
-											//$q="SELECT * FROM `mandarinko_presentation_item`";
-											//	$result = mysql_query($q);
-											//	while ($row = mysql_fetch_assoc($result)) {
+												echo "mysql ping: " . mysql_ping();
+												$q="SELECT * FROM `mandarinko_presentation_item`";
+												$result = mysql_query($q);
+												while ($row = mysql_fetch_assoc($result)) {
 											?>
 
-											<?//}?>
+											<?}?>
                     </div>
                   </li>
                 </ul>
