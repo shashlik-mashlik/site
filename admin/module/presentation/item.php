@@ -55,8 +55,7 @@ if($_POST['additem']) {
 	$id=mysql_insert_id();
 
  	if($_FILES['img']['name']) {
-		//move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg')
-			echo var_dump($_FILES['img']['tmp_name']);
+		move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg')
 		or die("Ошибка закачки файла");
 		copy($_SERVER['DOCUMENT_ROOT'].'/upload/presentation/'.$_GET['item'].'_'.$id.'.jpg',$_SERVER['DOCUMENT_ROOT'].'/upload/presentation/tmb/'.$_GET['item'].'_'.$id.'.jpg');
 
