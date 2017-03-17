@@ -37,12 +37,12 @@ else {
 	  <tr>
 	  	<th>URL</th>
 	  	<th>Название</th>
-		<th>Ширина</th>
-		<th>Высота</th>
-		<th>Время паузы</th>
-		<th>Время показа</th>
-		<th>Метод смены картинки</th>
-		<th>Позиция текста</th>
+<!--		<th>Ширина</th>-->
+<!--		<th>Высота</th>-->
+<!--		<th>Время паузы</th>-->
+<!--		<th>Время показа</th>-->
+<!--		<th>Метод смены картинки</th>-->
+<!--		<th>Позиция текста</th>-->
 	  	<th></th>
 	  </tr>
 	<?
@@ -53,12 +53,12 @@ else {
 	  <tr>	  	
 	  	<td><?=$el['url'];?></td>
 	  	<td><?=$el['name'];?></td>
-		<td><?=$el['width'];?></td>
-		<td><?=$el['height'];?></td>
-	  	<td><?=$el['time_pause'];?></td>
-	  	<td><?=$el['time_active'];?></td>
-		<td><?=$el['method'];?></td>
-		<td><?=$el['text_position'];?></td>
+<!--		<td>--><?//=$el['width'];?><!--</td>-->
+<!--		<td>--><?//=$el['height'];?><!--</td>-->
+<!--	  	<td>--><?//=$el['time_pause'];?><!--</td>-->
+<!--	  	<td>--><?//=$el['time_active'];?><!--</td>-->
+<!--		<td>--><?//=$el['method'];?><!--</td>-->
+<!--		<td>--><?//=$el['text_position'];?><!--</td>-->
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое презентации" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
 	  		<a class="tooltip" title="Редактировать презентацию" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>
