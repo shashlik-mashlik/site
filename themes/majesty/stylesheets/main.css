@@ -2295,7 +2295,7 @@ span.welcome:after {
 .single-menu .desc-content p:first-child {
 	margin: 0
 }
-.single-menu .desc-content {
+.single-menu .desc-content .social a {
 	background-color: #f1f1f1;
 	color: #262626
 }
