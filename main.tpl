@@ -63,7 +63,7 @@
 <!-- Loader
     ============================================= -->
 <div id="loader">
-  <div class="loader-item"> <img src="/themes/majesty/img/preloader.jpg" alt="" width="500px">
+  <div class="loader-item"> <img src="/themes/majesty/img/preloader.png" alt="" width="300px">
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
