@@ -63,7 +63,7 @@
 <!-- Loader
     ============================================= -->
 <div id="loader">
-  <div class="loader-item"> <img src="/themes/majesty/img/logo-intro.png" alt="">
+  <div class="loader-item"> <img src="/themes/majesty/img/logo-intro.png" alt="" width="100px">
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
