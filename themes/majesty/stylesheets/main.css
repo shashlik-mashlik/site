@@ -2299,6 +2299,7 @@ span.welcome:after {
 	background-color: #f1f1f1;
 	color: #262626
 }
+.social a {background: white;}
 .single-menu .desc-content .meta-desc {
 	margin-top: 30px
 }
