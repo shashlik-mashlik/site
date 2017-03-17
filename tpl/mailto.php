@@ -60,8 +60,7 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 //$headers .= "From:\r\n";
 /* дополнительные шапки */
-//$headers .= "From: SHASHLIK-MASHLIK hertz@cybek.ru\r\n"; //" . $TEXT['email'] . "
-$headers .= "From: hertz@cybek.ru\r\n"; //" . $TEXT['email'] . "
+$headers .= "From: noreply@shashlik-mashlik.com\r\n"; //" . $TEXT['email'] . "
 
 //$headers .= "Cc: " . $TEXT['email'] . "\r\n";
 //$headers .= "Bcc: " . $TEXT['email'] . "\r\n";
