@@ -61,8 +61,8 @@ else {
 <!--		<td>--><?//=$el['text_position'];?><!--</td>-->
 	  	<td width="56">
 	  	    <a class="tooltip" title="Содержимое презентации" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?item=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_photos.png"/></a>
-	  		<a class="tooltip" title="Редактировать презентацию" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?edit=<?=$el['id'];?>"><img src="/<?=$URL[1];?>/img/ico_edit.png"/></a>
-	  		<a class="tooltip" title="Удалить категорию" href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?delete=<?=$el['id'];?>" onclick="if(confirm('Удалить? Восстановление будет невозможно!')) return true; else return false;"><img src="/<?=$URL[1];?>/img/ico_delete.png"/></a>
+<!--	  		<a class="tooltip" title="Редактировать презентацию" href="/--><?//=$URL[1];?><!--/--><?//=$URL[2];?><!--/--><?//=$URL[3];?><!--?edit=--><?//=$el['id'];?><!--"><img src="/--><?//=$URL[1];?><!--/img/ico_edit.png"/></a>-->
+<!--	  		<a class="tooltip" title="Удалить категорию" href="/--><?//=$URL[1];?><!--/--><?//=$URL[2];?><!--/--><?//=$URL[3];?><!--?delete=--><?//=$el['id'];?><!--" onclick="if(confirm('Удалить? Восстановление будет невозможно!')) return true; else return false;"><img src="/--><?//=$URL[1];?><!--/img/ico_delete.png"/></a>-->
 	  	</td>
 	  </tr>
 	<?}
