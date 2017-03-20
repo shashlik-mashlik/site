@@ -46,7 +46,7 @@ $message = "
 		<body>
 			<h2>Заказ №: ".$primary_key." принят.</h2>
 			<hr>
-			<table>
+			<table align=\"left\" cellpadding='10'>
 				<tr>
 					<th>Имя заказчика</th>
 					<th>Кол-во персон</th>
@@ -65,7 +65,7 @@ $message = "
 			
 			</br>
 			
-			<table>
+			<table align=\"left\" cellpadding='10'>
 				<tr>
 					<th>Наименование</th>
 					<th>Цена</th>
