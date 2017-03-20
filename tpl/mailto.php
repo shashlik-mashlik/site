@@ -4,16 +4,14 @@
 		$q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
 		$product=mysql_fetch_assoc(mysql_query($q));
 
-		$basket = $basket."		
-			<ul>
-				<li><span>Наименование</span>: ".$product['name']."</li>
-				<li><span>Цена</span>: ".$product['price']."</li>
-				<li><span>Количество</span>: ".$_SESSION['products'][$key]['count']."</li>
-				<li><span>Сумма</span>: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</li>
-			</ul>
-				
-			<hr>
-			". "\r\n";
+		$basket = $basket.
+
+
+		"\n Наименование ".$product['name'].
+		"\n Цена ".$product['price'].
+		"\n Количество.: ".$_SESSION['products'][$key]['count'].
+		"\n Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'];
+
 
 		$primary_key = $primary_key.$key;
 
@@ -30,36 +28,35 @@ $subject = "'SHASHLIK-MASHLIK' Заказ №: ".$primary_key." принят.";
 $message = "
 
 	<html>
-	<head>
-	<title>SHASHLIK-MASHLIK</title>
-	</head>
-	<body>
-	<h2>Заказ №: ".$primary_key." принят.</h2>
-	<hr>
-	<table style='color: gray'>
-	<tr>
-	<th>Имя заказчика</th>
-	<th>Кол-во персон</th>
-	<th>Адрес</th>
-	<th>Телефон</th>
-	<th>Комментарий</th>
-	</tr>
-	<tr>
-	<td>".htmlspecialchars(stripslashes(substr($_POST['name'],0,32)))."</td>
-	<td>".htmlspecialchars(stripslashes(substr($_POST['col'],0,32)))."</td>
-	<td>".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32)))."</td>
-	<td>".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32)))."</td>
-	<td>".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."</td>
-	</tr>
-	</table>
-	<hr>
-	
-	".$basket."
-
-	<hr>
-	<p>Общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
-	<h2>Приятного апетита!</p>
-	</body>
+		<head>
+			<title>SHASHLIK-MASHLIK</title>
+		</head>
+		<body>
+			<h2>Заказ №: ".$primary_key." принят.</h2>
+			<hr>
+			<table>
+				<tr>
+					<th>Имя заказчика</th>
+					<th>Кол-во персон</th>
+					<th>Адрес</th>
+					<th>Телефон</th>
+					<th>Комментарий</th>
+				</tr>
+				<tr>
+					<td>".htmlspecialchars(stripslashes(substr($_POST['name'],0,32)))."</td>
+					<td>".htmlspecialchars(stripslashes(substr($_POST['col'],0,32)))."</td>
+					<td>".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32)))."</td>
+					<td>".htmlspecialchars(stripslashes(substr($_POST['tel'],0,32)))."</td>
+					<td>".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."</td>
+				</tr>
+			</table>
+			
+			".$basket."
+		
+			<hr>
+			<p>Общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
+			<h2>Приятного апетита!</p>
+		</body>
 	</html>
 	
 ";
