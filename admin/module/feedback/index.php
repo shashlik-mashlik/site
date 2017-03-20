@@ -63,7 +63,7 @@ else {
 	  			</tr>
 				<tr>
 					<td style="color: #818181;">Комментарий:</td>
-					<td style="width: 400px; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
+					<td style="max-width: 700px; overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
 				</tr>
 
 	  		</table>
