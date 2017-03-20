@@ -45,6 +45,7 @@ if (($URL[2]=='shashliks') && ($URL[3]=='')) {
         <!-- menu Filter
         ============================================= -->
         <ul id="menu-fillter" class="clearfix">
+          <li class="activeFilter"><a href="/market/" data-filter="*">Все меню</a></li>
           <li class="activeFilter"><a href="#" data-filter="*">Шашлыки</a></li>
           <li><a href="#" data-filter=".248">Свинина</a></li>
           <li><a href="#" data-filter=".249">Баранина</a></li>
