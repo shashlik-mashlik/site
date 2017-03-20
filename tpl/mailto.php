@@ -32,8 +32,8 @@ $message = "
 	<title>SHASHLIK-MASHLIK</title>
 	</head>
 	<body>
-	<p>Заказ №: ".$primary_key." принят.</p>
-	<table>
+	<h2>Заказ №: ".$primary_key." принят.</h2>
+	<table style='border: solid 1px #ccc'>
 	<tr>
 	<th>Имя заказчика</th>
 	<th>Кол-во персон</th>
@@ -50,7 +50,8 @@ $message = "
 	</tr>
 	</table>
 	<hr>
-	<p>общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
+	<p>Общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
+	<h2>Приятного апетита!</p>
 	</body>
 	</html>
 	
