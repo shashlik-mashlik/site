@@ -4,14 +4,22 @@
 		$q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
 		$product=mysql_fetch_assoc(mysql_query($q));
 
-		$basket = $basket."
-					\n__________________________________________________________".
-					"\n № продукта: ".$key.
-					"\n Наименование ".$product['name'].
-					"\n Артикул ".$product['articul'].
-					"\n Цена ".$product['price'].
-					"\n Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].
-					"\n Количество.: ".$_SESSION['products'][$key]['count'];
+		$basket = $basket."		
+			<table>
+				<tr style='border: solid 1px #ccc'>
+					<th>Наименование</th>
+					<th>Цена</th>
+					<th>Количество</th>
+					<th>Сумма</th>
+				</tr>
+				<tr style='border: solid 1px #ccc'>
+					<td>".$product['name']."</td>
+					<td>".$product['price']."</td>
+					<td>".$_SESSION['products'][$key]['count']."</td>
+					<td>".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</td>
+				</tr>
+			</table>
+			";
 
 		$primary_key = $primary_key.$key;
 
