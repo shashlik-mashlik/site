@@ -124,7 +124,7 @@ if ($URL[1] != '') {
                                             <!-- End contact form -->
                                         </div>
 
-                                        <hr>
+                                        <hr style="margin: 20px;">
 
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
