@@ -7,28 +7,15 @@
 		$basket = $basket.
 
 			"
-			<ul>
-				<li>Наименование: ".$product['name']."</li>
-				<li>Цена: ".$product['price']."</li>
-				<li>Количество: ".$_SESSION['products'][$key]['count']."</li>
-				<li>Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</li>
-			</ul>
 			
 			
-			<table>
-				<tr>
-					<th>Наименование</th>
-					<th>Цена</th>
-					<th>Количество</th>
-					<th>Сумма</th>
-				</tr>
 				<tr>
 					<td>".$product['name']."</td>
 					<td>".$product['price']."</td>
 					<td>".$_SESSION['products'][$key]['count']."</td>
 					<td>".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</td>
 				</tr>
-			</table>
+			
 			
 			";
 
@@ -76,7 +63,19 @@ $message = "
 				</tr>
 			</table>
 			
-			".$basket."
+			
+			
+			<table>
+				<tr>
+					<th>Наименование</th>
+					<th>Цена</th>
+					<th>Количество</th>
+					<th>Сумма</th>
+				</tr>
+				
+				".$basket."
+				
+			</table>
 		
 			<hr>
 			<p>Общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
