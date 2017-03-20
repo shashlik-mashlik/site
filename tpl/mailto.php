@@ -6,12 +6,20 @@
 
 		$basket = $basket.
 
+			"
+			<ul>
+				<li>Наименование: ".$product['name']."</li>
+				<li>Цена: ".$product['price']."</li>
+				<li>Количество: ".$_SESSION['products'][$key]['count']."</li>
+				<li>Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</li>
+			</ul>
+			
+			".
 
-		"\n Наименование ".$product['name'].
-		"\n Цена ".$product['price'].
-		"\n Количество.: ".$_SESSION['products'][$key]['count'].
-		"\n Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'];
-
+		//"\n Наименование ".$product['name'].
+		//"\n Цена ".$product['price'].
+		//"\n Количество.: ".$_SESSION['products'][$key]['count'].
+		//"\n Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'];
 
 		$primary_key = $primary_key.$key;
 
