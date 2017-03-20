@@ -10,14 +10,23 @@ var feedback = {
         let xhr = ajax.ini();
 
         if (!document.querySelector('#ajax_name').value) {
+            document.querySelector('#ajax_email_span').style.visibility = 'hidden';
+            document.querySelector('#ajax_phone_span').style.visibility = 'hidden';
+
             document.querySelector('#ajax_name_span').style.visibility = 'visible';
             document.querySelector('#ajax_name_span').innerHTML ='Введите Ваше имя';
         }
         else if (!document.querySelector('#ajax_email').value) {
+            document.querySelector('#ajax_name_span').style.visibility = 'hidden';
+            document.querySelector('#ajax_phone_span').style.visibility = 'hidden';
+
             document.querySelector('#ajax_email_span').style.visibility = 'visible';
             document.querySelector('#ajax_email_span').innerHTML ='Введите Ваш адрес';
         }
         else if (!document.querySelector('#ajax_phone').value) {
+            document.querySelector('#ajax_name_span').style.visibility = 'hidden';
+            document.querySelector('#ajax_email_span').style.visibility = 'hidden';
+
             document.querySelector('#ajax_phone_span').style.visibility = 'visible';
             document.querySelector('#ajax_phone_span').innerHTML ='Введите номер телефона';
         }
