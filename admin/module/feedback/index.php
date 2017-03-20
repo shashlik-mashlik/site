@@ -33,8 +33,7 @@ else {
 	<!--<p class="text_img"><img src="/<?=$URL[1];?>/img/ico_add.png"> <a href="/<?=$URL[1];?>/<?=$URL[2];?>/<?=$URL[3];?>?add=1">Добавить меню</a></p>-->
 	<table class="table" style="word-wrap: break-word;">
 	  <tr>
-	  	<th style="width: 300px !important;">Информация</th> <!--номер, имя, тлф, кол-во персон -->
-	  	<th>Комментарий</th>
+	  	<th style="width: 300px !important;">Информация</th>
 	  	<th></th>
 	  </tr>
 	<?
@@ -62,9 +61,13 @@ else {
 	  				<td style="color: #818181;">Почта:</td>
 	  				<td><?=$el['email'];?></td>
 	  			</tr>
+				<tr>
+					<td style="color: #818181;">Комментарий:</td>
+					<td style="width: overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
+				</tr>
+
 	  		</table>
 	  	</td>
-	  	<td style="width: overflow: hidden; text-overflow: ellipsis; display: block;" title="<?=$el['text'];?>"><?=$el['text'];?></td>
 	  	<td width="56">
 	  	    <a aria-hidden="true" class="fa fa-check" style="color: green; font-size: 18px; text-decoration: none;" title="Подтвердить" href="/admin/module/feedback?act=add&id=<?=$el['id'];?>"></a>
             <a style="color: red; font-size: 18px; text-decoration: none;" class="fa fa-times" aria-hidden="true" title="Удалить" href="/admin/module/feedback?act=del&id=<?=$el['id'];?>"></a>
