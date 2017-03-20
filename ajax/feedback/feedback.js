@@ -9,7 +9,7 @@ var feedback = {
             '&text=' + document.querySelector('#ajax_comment').value;
         let xhr = ajax.ini();
         if (!document.querySelector('#ajax_phone').value) {
-            alert('Введите номер телефона');
+            document.querySelector('#ajax_phone').value ='Введите номер телефона';
         }
         else {
             ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
