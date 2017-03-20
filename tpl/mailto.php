@@ -1,34 +1,22 @@
 
+<?php
+	foreach ($_SESSION['products'] as $key=>$value) {$i++;
+		$q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
+		$product=mysql_fetch_assoc(mysql_query($q));
 
+		$basket = $basket."
+					\n__________________________________________________________".
+					"\n№ продукта: ".$key.
+					"\nнаименование ".$product['name'].
+					"\nартикул ".$product['articul'].
+					"\nцена ".$product['price'].
+					"\nсумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].
+					"\nколичество.: ".$_SESSION['products'][$key]['count'];
 
+		$primary_key = $primary_key.$key;
 
-
-								<?
-							
-
-								foreach ($_SESSION['products'] as $key=>$value) {$i++;
-									$q="SELECT * FROM `mandarinko_catalog_item` WHERE id='".$key."'";
-									$product=mysql_fetch_assoc(mysql_query($q));
-
-								$basket = $basket."
-											\n__________________________________________________________".
-											"\n№ продукта: ".$key.
-											"\nнаименование ".$product['name'].
-											"\nартикул ".$product['articul'].
-											"\nцена ".$product['price'].
-											"\nсумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'].
-											"\nколичество.: ".$_SESSION['products'][$key]['count'];
-											
-											
-											
-								$primary_key = $primary_key.$key;										
-											
-								
-								}
-								?>
-
-
-
+	}
+?>
 
 <?php
 
@@ -63,7 +51,6 @@ $message = "
 	</table>
 	<hr>
 	<p>общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
-	<p>номер заказа: ".$primary_key."</p>
 	</body>
 	</html>
 	
@@ -76,19 +63,17 @@ $msg = "";
 //include('tpl/register.php');//-------------------------------------------------------------------------------<<<а
 
 
-$headers = "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-//$headers .= "From:\r\n";
-/* дополнительные шапки */
-$headers .= "From: <".$TEXT['email'].">\r\n";
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= 'From: <orders@shashlik-mashlik.com>' . "\r\n";
 
 //$headers .= "Cc: " . $TEXT['email'] . "\r\n";
 //$headers .= "Bcc: " . $TEXT['email'] . "\r\n";
 
-	if (mail($TEXT['email'].", ".$_POST['email'], $subject, $message, $headers)){
-		//@mail($email, $subject, $message, $headers );
-    	$msg = "<div class='alert alert-warning alert-dismissable'>Заказ # ".$primary_key." принят!</div>";
-	}
+if (mail($TEXT['email'].", ".$_POST['email'], $subject, $message, $headers)){
+	//@mail($email, $subject, $message, $headers );
+	$msg = "<div class='alert alert-warning alert-dismissable'>Заказ # ".$primary_key." принят!</div>";
+}
 	
 
 if (!empty($message)){
@@ -96,4 +81,5 @@ if (!empty($message)){
 }
 
 include $_SERVER['DOCUMENT_ROOT'] . '/admin/module/orders/add.php';
+
 ?>
