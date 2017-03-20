@@ -5,20 +5,13 @@
 		$product=mysql_fetch_assoc(mysql_query($q));
 
 		$basket = $basket."		
-			<table>
-				<tr>
-					<th>Наименование</th>
-					<th>Цена</th>
-					<th>Количество</th>
-					<th>Сумма</th>
-				</tr>
-				<tr>
-					<td>".$product['name']."</td>
-					<td>".$product['price']."</td>
-					<td>".$_SESSION['products'][$key]['count']."</td>
-					<td>".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</td>
-				</tr>
-			</table>
+			<ul>
+				<li><span>Наименование</span>: ".$product['name']."</li>
+				<li><span>Цена</span>: ".$product['price']."</li>
+				<li><span>Количество</span>: ".$_SESSION['products'][$key]['count']."</li>
+				<li><span>Сумма</span>: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</li>
+			</ul>
+				
 			<hr>
 			". "\r\n";
 
