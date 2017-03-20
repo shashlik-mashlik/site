@@ -6,20 +6,21 @@
 
 		$basket = $basket."		
 			<table>
-				<tr style='border: solid 1px #ccc'>
+				<tr>
 					<th>Наименование</th>
 					<th>Цена</th>
 					<th>Количество</th>
 					<th>Сумма</th>
 				</tr>
-				<tr style='border: solid 1px #ccc'>
+				<tr>
 					<td>".$product['name']."</td>
 					<td>".$product['price']."</td>
 					<td>".$_SESSION['products'][$key]['count']."</td>
 					<td>".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</td>
 				</tr>
 			</table>
-			";
+			<hr>
+			". "\r\n";
 
 		$primary_key = $primary_key.$key;
 
@@ -41,15 +42,16 @@ $message = "
 	</head>
 	<body>
 	<h2>Заказ №: ".$primary_key." принят.</h2>
-	<table>
-	<tr style='border: solid 1px #ccc'>
+	<hr>
+	<table style='color: gray'>
+	<tr>
 	<th>Имя заказчика</th>
 	<th>Кол-во персон</th>
 	<th>Адрес</th>
 	<th>Телефон</th>
 	<th>Комментарий</th>
 	</tr>
-	<tr style='border: solid 1px #ccc'>
+	<tr>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['name'],0,32)))."</td>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['col'],0,32)))."</td>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32)))."</td>
@@ -57,6 +59,7 @@ $message = "
 	<td>".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."</td>
 	</tr>
 	</table>
+	<hr>
 	
 	".$basket."
 
