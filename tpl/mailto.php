@@ -14,14 +14,15 @@
 				<li>Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast']."</li>
 			</ul>
 			
-			".
+			";
 
 		//"\n Наименование ".$product['name'].
 		//"\n Цена ".$product['price'].
 		//"\n Количество.: ".$_SESSION['products'][$key]['count'].
 		//"\n Сумма: ".$_SESSION['products'][$key]['count']*$_SESSION['products'][$key]['coast'];
 
-		$primary_key = $primary_key.$key;
+		//$primary_key = $primary_key.$key;
+		$primary_key = $key;
 
 	}
 ?>
