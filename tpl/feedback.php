@@ -79,7 +79,7 @@ if ($URL[1] != '') {
                                                                 <!-- Element -->
                                                                 <div class="element">
                                                                     <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
-                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30; left: 40px;" id="ajax_name_span"></span>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30px; left: 40px;" id="ajax_name_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -87,7 +87,7 @@ if ($URL[1] != '') {
                                                                 <!-- Element -->
                                                                 <div class="element">
                                                                     <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" required/>
-                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30; left: 40px;" id="ajax_email_span"></span>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30px; left: 40px;" id="ajax_email_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -95,7 +95,7 @@ if ($URL[1] != '') {
                                                                 <!-- Element -->
                                                                 <div class="element">
                                                                     <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
-                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30; left: 40px;" id="ajax_phone_span"></span>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -30px; left: 40px;" id="ajax_phone_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
