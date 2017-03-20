@@ -33,15 +33,15 @@ $message = "
 	</head>
 	<body>
 	<h2>Заказ №: ".$primary_key." принят.</h2>
-	<table style='border: solid 1px #ccc'>
-	<tr>
+	<table>
+	<tr style='border: solid 1px #ccc'>
 	<th>Имя заказчика</th>
 	<th>Кол-во персон</th>
 	<th>Адрес</th>
 	<th>Телефон</th>
 	<th>Комментарий</th>
 	</tr>
-	<tr>
+	<tr style='border: solid 1px #ccc'>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['name'],0,32)))."</td>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['col'],0,32)))."</td>
 	<td>".htmlspecialchars(stripslashes(substr($_POST['adrs'],0,32)))."</td>
@@ -49,6 +49,9 @@ $message = "
 	<td>".htmlspecialchars(stripslashes(substr($_POST['message'],0,32)))."</td>
 	</tr>
 	</table>
+	
+	".$basket."
+
 	<hr>
 	<p>Общая итоговая сумма заказа.: ".$_SESSION['cart_coast']."</p>
 	<h2>Приятного апетита!</p>
