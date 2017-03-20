@@ -64,6 +64,67 @@ if ($URL[1] != '') {
                                 <!-- Comments -->
                                 <div class="comment-blog">
                                     <div id="comments">
+
+
+
+                                        <div id="respond">
+                                            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
+                                            <!-- Contact form -->
+                                            <div class="contact-form">
+                                                <form>
+                                                    <!-- Form Group -->
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                    <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                    <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" required/>
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 col-sx-12">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End form group -->
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+                                                                <!-- Element -->
+                                                                <div class="element">
+                                                                    <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" required></textarea>
+                                                                </div>
+                                                                <!-- End Element -->
+                                                            </div>
+                                                            <!-- End form Group -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- Element -->
+                                                    <div class="element text-center">
+                                                        <button id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
+                                                        <div class="loading"></div>
+                                                    </div>
+                                                    <!-- End Element -->
+                                                </form>
+                                                <div class="done mt30"> <strong>Thank you!</strong> We have received your message. </div>
+                                            </div>
+                                            <!-- End contact form -->
+                                        </div>
+
+
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
                                                 <?while ($row = mysql_fetch_array($r)) { ?>
@@ -81,62 +142,13 @@ if ($URL[1] != '') {
                                                 ?>
                                             </ol>
                                         </div>
-                                        <div id="respond">
-                                            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
-                                            <!-- Contact form -->
-                                            <div class="contact-form">
-                                                <form>
-                                                    <!-- Form Group -->
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                                                <!-- Element -->
-                                                                <div class="element">
-                                                                   <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
-                                                                </div>
-                                                                <!-- End Element -->
-                                                            </div>
-                                                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                                            <!-- Element -->
-                                                                <div class="element">
-                                                                    <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" required/>
-                                                                </div>
-                                                            <!-- End Element -->
-                                                            </div>
-                                                            <div class="col-md-4 col-sm-4 col-sx-12">
-                                                                <!-- Element -->
-                                                                <div class="element">
-                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
-                                                                </div>
-                                                                <!-- End Element -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End form group -->
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                        <!-- Form Group -->
-                                                            <div class="form-group">
-                                                            <!-- Element -->
-                                                                <div class="element">
-                                                                    <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" required></textarea>
-                                                                </div>
-                                                            <!-- End Element -->
-                                                            </div>
-                                                        <!-- End form Group -->
-                                                        </div>
-                                                    </div>
-                                                    <!-- Element -->
-                                                    <div class="element text-center">
-                                                        <button id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
-                                                        <div class="loading"></div>
-                                                    </div>
-                                                    <!-- End Element -->
-                                                </form>
-                                                <div class="done mt30"> <strong>Thank you!</strong> We have received your message. </div>
-                                            </div>
-                                        <!-- End contact form -->
-                                        </div>
+
+
+
+
+
+
+
                                     </div>
                                 </div>
                             <!-- End# Comments -->
