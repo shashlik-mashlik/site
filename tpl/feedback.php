@@ -92,7 +92,7 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
+                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/><span style="padding: 10px; background: #000; opacity: 0.7; color: #FFF" id="ajax_phone_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
