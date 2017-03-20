@@ -68,7 +68,7 @@ if ($URL[1] != '') {
 
 
                                         <div id="respond">
-                                            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
+                                            <h3 id="reply-title">Мы будем рады любому отзыву о нас!<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
                                             <!-- Contact form -->
                                             <div class="contact-form">
                                                 <form>
@@ -114,7 +114,7 @@ if ($URL[1] != '') {
                                                     </div>
                                                     <!-- Element -->
                                                     <div class="element text-center">
-                                                        <button id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
+                                                        <button  type="submit" id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
                                                         <div class="loading"></div>
                                                     </div>
                                                     <!-- End Element -->
