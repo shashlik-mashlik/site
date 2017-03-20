@@ -20,7 +20,7 @@ session_start();// Начинаем сессию
             <a href="/" class="light-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="100px"></a>
             <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a>
         </div>
-        <div style="float: left; height: 70px; line-height: 70px; font-size: 18px; color: white;" class="hidden-xs">тел. <?=$TEXT['phone']?></div>
+        <div style="float: left; height: 100px; line-height: 100px; font-size: 22px; color: white;" class="hidden-xs">тел. <?=$TEXT['phone']?></div>
                     <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
