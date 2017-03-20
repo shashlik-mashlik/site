@@ -30,7 +30,7 @@ if ($URL[1]=='') {
         <!-- End Text Rotater -->
         <i class="icon-home-ico"></i>
         <p class="text-uppercase">Мы создаем вкусные воспоминания</p>
-        <a href="/market/shashliks" class="btn btn-gold white">МЕНЮ</a> </div>
+        <a href="#" class="btn btn-gold white mega-menu">МЕНЮ</a> </div>
       <!-- End Slider content  -->
     </div>
   </section>
