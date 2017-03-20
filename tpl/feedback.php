@@ -124,6 +124,7 @@ if ($URL[1] != '') {
                                             <!-- End contact form -->
                                         </div>
 
+                                        <hr>
 
                                         <div id="comments-list-wrapper" class="comments">
                                             <ol id="comments-list">
@@ -133,7 +134,7 @@ if ($URL[1] != '') {
                                                             <div class="comment-author vcard" > <span class="fn n" ><?=$row['name']?></span > </div >
                                                             <div class="comment-meta" > <span ><?=$row['date']?></span > </div >
                                                             <div class="comment-content" >
-                                                                <p ><?=$row['text'];?></p >
+                                                                <p style="font-size: 16px;"><?=$row['text'];?></p >
                                                             </div >
                                                             </div >
                                                         </li >
