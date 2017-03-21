@@ -33,7 +33,7 @@ session_start();// Начинаем сессию
               <div class="mega-menu-content  col-1 clearfix">
                 <ul>
                   <li class="mega-menu-title">
-											<div style="line-height: 100%; height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px;" class="fa fa-angle-left"></div>
+											<div style="vertical-align: middle; height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px;" class="fa fa-angle-left"></div>
                     <div id="menu_carousel">
 											<?
 												$q="SELECT * FROM `mandarinko_presentation_item`";
