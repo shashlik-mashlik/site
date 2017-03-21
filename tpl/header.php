@@ -34,6 +34,7 @@ session_start();// Начинаем сессию
                 <ul>
                   <li class="mega-menu-title">
                     <div id="menu_carousel">
+												<span style="height: 100%; width: 30px; background-color: red;">-</span>
 											<?
 												$q="SELECT * FROM `mandarinko_presentation_item`";
 												$result = mysql_query($q);
