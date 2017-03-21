@@ -36,7 +36,7 @@ session_start();// Начинаем сессию
 											<div style="height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px; z-index: 5;">
 													<table style="width: 100%; height: 100%;">
 															<tr style="width: 100%; height: 100%;">
-																	<td style="width: 100%; height: 100%;"><span style="font-size: 22px;" class="fa fa-angle-left"></span></td>
+																	<td style="width: 100%; height: 100%;"><span style="font-size: 22px;" class="fa fa-angle-left">hfghgdhdfg</span></td>
 															</tr>
 													</table>
 											</div>
