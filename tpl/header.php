@@ -34,7 +34,7 @@ session_start();// Начинаем сессию
                 <ul>
                   <li class="mega-menu-title">
 											<div style="height: 100%; width: 30px; position: absolute; margin-left: 0px; z-index: 5; background: transparent;">
-													<table style="width: 100%; height: 100%;">
+													<table style="width: 100%; height: 100%; border: none;">
 															<tr style="width: 100%; height: 100%;">
 																	<td style="width: 100%; height: 100%; font-size: 30px;">&lt;</td>
 															</tr>
