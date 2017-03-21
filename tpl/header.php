@@ -35,8 +35,8 @@ session_start();// Начинаем сессию
                   <li class="mega-menu-title">
 											<div style="height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px;">
 													<table style="width: 100%; height: 100%;">
-															<tr>
-																	<td><span class="fa fa-angle-left">d</span></td>
+															<tr style="width: 100%; height: 100%;">
+																	<td style="width: 100%; height: 100%;"><span class="fa fa-angle-left">d</span></td>
 															</tr>
 													</table>
 											</div>
