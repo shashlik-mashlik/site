@@ -53,7 +53,7 @@ session_start();// Начинаем сессию
 														</div>
 											<?}?>
                     </div>
-											<div style="height: 100%; width: 30px; position: absolute; right: 0px; z-index: 5; background: transparent;">
+											<div style="height: 100%; width: 30px; position: absolute; top: 0px; right: 0px; z-index: 5; background: transparent;">
 													<table style="width: 100%; height: 100%; border: none;">
 															<tr style="width: 100%; height: 100%;">
 																	<td style="width: 100%; height: 100%; font-size: 30px;">&gt;</td>
