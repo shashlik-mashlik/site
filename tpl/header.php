@@ -32,7 +32,7 @@ session_start();// Начинаем сессию
               </a>
               <div class="mega-menu-content  col-1 clearfix">
                 <ul>
-                  <li class="mega-menu-title" style="padding: 0px 30px;">
+                  <li class="mega-menu-title">
                     <div id="menu_carousel">
 											<?
 												$q="SELECT * FROM `mandarinko_presentation_item`";
@@ -45,7 +45,7 @@ session_start();// Начинаем сессию
 																</a>
 														</div>
 											<?}?>
-                    </div>cd ..
+                    </div>
                   </li>
                 </ul>
               </div>
