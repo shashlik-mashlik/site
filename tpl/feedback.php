@@ -64,25 +64,11 @@ if ($URL[1] != '') {
                                 <!-- Comments -->
                                 <div class="comment-blog">
                                     <div id="comments">
-                                        <div id="comments-list-wrapper" class="comments">
-                                            <ol id="comments-list">
-                                                <?while ($row = mysql_fetch_array($r)) { ?>
-                                                        <li class="comment-x byuser" >
-                                                            <div class="the-comment" >
-                                                            <div class="comment-author vcard" > <span class="fn n" ><?=$row['name']?></span > </div >
-                                                            <div class="comment-meta" > <span ><?=$row['date']?></span > </div >
-                                                            <div class="comment-content" >
-                                                                <p ><?=$row['text'];?></p >
-                                                            </div >
-                                                            </div >
-                                                        </li >
-                                                <?
-                                                }
-                                                ?>
-                                            </ol>
-                                        </div>
+
+
+
                                         <div id="respond">
-                                            <h3 id="reply-title">add a Review<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
+                                            <h3 id="reply-title">Мы будем рады любому отзыву о нас!<small> <a rel="nofollow" id="cancel-comment-reply-link" href="menu_single.html#" class="cancelled">Cancel reply</a></small> </h3>
                                             <!-- Contact form -->
                                             <div class="contact-form">
                                                 <form>
@@ -92,21 +78,24 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                   <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
+                                                                    <input type="text" id="ajax_name" class="form-control text" placeholder="Имя *" required/>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -35px; left: 10px;" id="ajax_name_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
-                                                            <!-- Element -->
+                                                                <!-- Element -->
                                                                 <div class="element">
                                                                     <input type="text" id="ajax_email" class="form-control text" placeholder="E-mail *" required/>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -35px; left: 10px;" id="ajax_email_span"></span>
                                                                 </div>
-                                                            <!-- End Element -->
+                                                                <!-- End Element -->
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
                                                                     <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -35px; left: 10px;" id="ajax_phone_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>
@@ -115,28 +104,55 @@ if ($URL[1] != '') {
                                                     <!-- End form group -->
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                        <!-- Form Group -->
+                                                            <!-- Form Group -->
                                                             <div class="form-group">
-                                                            <!-- Element -->
+                                                                <!-- Element -->
                                                                 <div class="element">
                                                                     <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" required></textarea>
                                                                 </div>
-                                                            <!-- End Element -->
+                                                                <!-- End Element -->
                                                             </div>
-                                                        <!-- End form Group -->
+                                                            <!-- End form Group -->
                                                         </div>
                                                     </div>
                                                     <!-- Element -->
                                                     <div class="element text-center">
-                                                        <button id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
+                                                        <button  type="submit" id="submit-form" name="send" onclick="feedback.send(); return false;" class="btn btn-black btn-gold">Отправить</button>
                                                         <div class="loading"></div>
                                                     </div>
                                                     <!-- End Element -->
                                                 </form>
                                                 <div class="done mt30"> <strong>Thank you!</strong> We have received your message. </div>
                                             </div>
-                                        <!-- End contact form -->
+                                            <!-- End contact form -->
                                         </div>
+
+                                        <hr style="margin: 20px;">
+
+                                        <div id="comments-list-wrapper" class="comments">
+                                            <ol id="comments-list">
+                                                <?while ($row = mysql_fetch_array($r)) { ?>
+                                                        <li class="comment-x byuser" >
+                                                            <div class="the-comment" >
+                                                            <div class="comment-author vcard" > <span class="fn n" ><?=$row['name']?></span > </div >
+                                                            <div class="comment-meta" > <span ><?=$row['date']?></span > </div >
+                                                            <div class="comment-content" >
+                                                                <p style="font-size: 16px;"><?=$row['text'];?></p >
+                                                            </div >
+                                                            </div >
+                                                        </li >
+                                                <?
+                                                }
+                                                ?>
+                                            </ol>
+                                        </div>
+
+
+
+
+
+
+
                                     </div>
                                 </div>
                             <!-- End# Comments -->

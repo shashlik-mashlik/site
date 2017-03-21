@@ -17,10 +17,10 @@ session_start();// Начинаем сессию
         <!-- Logo
                     ============================================= -->
         <div id="logo"> 
-            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a> 
-            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a> 
+            <a href="/" class="light-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="100px"></a>
+            <a href="/" class="dark-logo"><img src="/themes/majesty/img/logo-intro-dark-loader.png" alt="Logo" height="70px"></a>
         </div>
-        <div style="float: left; height: 70px; line-height: 70px; font-size: 18px; color: white;" class="hidden-xs">тел. <?=$TEXT['phone']?></div>
+        <div style="float: left; height: 90px; line-height: 90px; font-size: 22px; color: white;" class="hidden-xs"><?=$TEXT['phone']?></div>
                     <!--End #logo  -->
         <!-- Primary Navigation
                     ============================================= -->
