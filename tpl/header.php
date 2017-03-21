@@ -33,13 +33,6 @@ session_start();// Начинаем сессию
               <div class="mega-menu-content  col-1 clearfix">
                 <ul>
                   <li class="mega-menu-title" style="padding: 0px 30px;">
-											<div style="height: 100%; width: 30px; position: absolute; margin-left: -30px; z-index: 5; background: transparent;">
-													<table style="width: 100%; height: 100%; border: none;">
-															<tr style="width: 100%; height: 100%;">
-																	<td style="width: 100%; height: 100%; font-size: 30px;">&lt;</td>
-															</tr>
-													</table>
-											</div>
                     <div id="menu_carousel">
 											<?
 												$q="SELECT * FROM `mandarinko_presentation_item`";
@@ -52,14 +45,7 @@ session_start();// Начинаем сессию
 																</a>
 														</div>
 											<?}?>
-                    </div>
-											<div style="height: 100%; width: 30px; position: absolute; top: 0px; right: 0px; z-index: 5; background: transparent;">
-													<table style="width: 100%; height: 100%; border: none;">
-															<tr style="width: 100%; height: 100%;">
-																	<td style="width: 100%; height: 100%; font-size: 30px;">&gt;</td>
-															</tr>
-													</table>
-											</div>
+                    </div>cd ..
                   </li>
                 </ul>
               </div>
