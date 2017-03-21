@@ -32,7 +32,7 @@ session_start();// Начинаем сессию
               </a>
               <div class="mega-menu-content  col-1 clearfix">
                 <ul>
-                  <li class="mega-menu-title" style="padding: 30px;">
+                  <li class="mega-menu-title" style="padding: 0px 30px;">
 											<div style="height: 100%; width: 30px; position: absolute; margin-left: 0px; z-index: 5; background: transparent;">
 													<table style="width: 100%; height: 100%; border: none;">
 															<tr style="width: 100%; height: 100%;">
