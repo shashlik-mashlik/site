@@ -33,10 +33,10 @@ session_start();// Начинаем сессию
               <div class="mega-menu-content  col-1 clearfix">
                 <ul>
                   <li class="mega-menu-title">
-											<div style="height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px;">
+											<div style="height: 100%; width: 30px; background-color: red; position: absolute; margin-left: 0px; z-index: 5;">
 													<table style="width: 100%; height: 100%;">
 															<tr style="width: 100%; height: 100%;">
-																	<td style="width: 100%; height: 100%;"><span class="fa fa-angle-left">d</span></td>
+																	<td style="width: 100%; height: 100%;"><span style="font-size: 22px;" class="fa fa-angle-left"></span></td>
 															</tr>
 													</table>
 											</div>
