@@ -21,7 +21,11 @@ if ($URL[2]=='') {
         ============================================= -->
         <ul id="menu-fillter" class="clearfix">
           <li class="activeFilter"><a href="menu_masonry_fullwidth.html#" data-filter="*">Показать все</a></li>
+          <!--
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".247">Шашлыки</a></li>
+          -->
+          <li><a href="http://shashlik-mashlik.com/market/shashliks" onclick="location.href = 'http://shashlik-mashlik.com/market/shashliks'">Шашлыки</a></li>
+          
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".256">Салаты</a></li>
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".258">Соусы</a></li>
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".259">Хлеб</a></li>
@@ -45,8 +49,8 @@ if (($URL[2]=='shashliks') && ($URL[3]=='')) {
         <!-- menu Filter
         ============================================= -->
         <ul id="menu-fillter" class="clearfix">
-          <li class="activeFilter"><a href="/market/" data-filter="*">Все меню</a></li>
-          <li class="activeFilter"><a href="#" data-filter="*">Шашлыки</a></li>
+          <li class="activeFilter"><a href="/market/" onclick="location.href = 'http://shashlik-mashlik.com/market'">Все меню</a></li>
+          <li><a href="#" data-filter="*">Шашлыки</a></li>
           <li><a href="#" data-filter=".248">Свинина</a></li>
           <li><a href="#" data-filter=".249">Баранина</a></li>
           <li><a href="#" data-filter=".250">Курица</a></li>
@@ -140,7 +144,7 @@ $Ask = $json['query']['results']['rate']['Ask'];
                     <!-- Button -->
                     <div class="button"> 
                       <span id="add_cart_btn_parent_<?php echo $el['id'] ?>" class="btn btn-gold" onclick="basketAjax.add_to_cart(<?php echo $el['id'] ?>); basketAjax.changeButton(<?php echo $el['id'] ?>);"><i id="add_cart_btn_<?php echo $el['id'] ?>" class="fa fa-shopping-cart"></i></span>
-                      <span class="btn btn-gold" onclick="window.location='/market/<?=$el['url']?>/<?=$el['c_url']?>'"><i class="fa fa-link"></i></span>
+                      <span class="btn btn-gold" onclick="window.location='/market/<?=$el['url']?>/<?=$el['c_url']?>'"><i class="fa fa-folder-open"></i></span>
                     </div>
                     <a class="added_to_cart wc-forward" style="visibility: hidden; margin-top: 12px;" id="go_to_cart_<?php echo $el['id'] ?>" href="/basket">Перейти в корзину</a>
                     <!-- End Button -->

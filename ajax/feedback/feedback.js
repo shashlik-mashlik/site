@@ -30,6 +30,13 @@ var feedback = {
             document.querySelector('#ajax_phone_span').style.visibility = 'visible';
             document.querySelector('#ajax_phone_span').innerHTML ='Введите номер телефона';
         }
+        else if (!document.querySelector('#ajax_comment').value) {
+            document.querySelector('#ajax_comment_span').style.visibility = 'hidden';
+            document.querySelector('#ajax_comment_span').style.visibility = 'hidden';
+
+            document.querySelector('#ajax_comment_span').style.visibility = 'visible';
+            document.querySelector('#ajax_comment_span').innerHTML ='Введите сообщение';
+        }
         else {
             ajax.send(xhr, 'POST', '/ajax/feedback/feedback.php', query, feedback.handler);
         }

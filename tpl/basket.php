@@ -32,7 +32,7 @@ if (isset($_GET['del_basket_item'])) {
                     <div class="container">
                         <div class="slider-content  "><i class="icon-home-ico"></i>
                             <h1>Cart</h1>
-                            <p>Shop With Us</p>
+                            <p>Order With Us</p>
                             <ol class="breadcrumb">
                                 <li><a href=".">Главная</a></li>
                                 <li>Корзина</li>

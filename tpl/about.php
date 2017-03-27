@@ -24,9 +24,9 @@ if ($URL[1] != '') {
                             <div class="container">
                                 <div class="slider-content"><i class="icon-home-ico"></i>
                                     <h1>О нас</h1>
-                                    <p>Where we all strart.</p>
+                                    <p>Where we all started</p>
                                     <ol class="breadcrumb">
-                                        <li><a href="index01.html">Главная</a></li>
+                                        <li><a href="/">Главная</a></li>
                                         <li>О нас</li>
                                     </ol>
                                 </div>
@@ -59,8 +59,8 @@ if ($URL[1] != '') {
                             <!-- Head Title -->
                             <div class="head_title">
                                 <i class="icon-intro"></i>
-                                <h1>О нас</h1>
-                                <span class="welcome">Welcome to Shaslik-Mashlik</span>
+                                <h1>Традиции вкуса</h1>
+                                <span class="welcome">Welcome to Shashlik-Mashlik</span>
                             </div>
                             <!-- End# Head Title -->
                             <p>
@@ -101,7 +101,7 @@ if ($URL[1] != '') {
                                         <!-- End Icon -->
                                         <!-- Content Item -->
                                         <div class="col-md-9 content-item">
-                                            <h3>Адрес</h3>
+                                            <h3>Юр. Адрес</h3>
                                             <p><?=$TEXT['adrs']?></p>
                                         </div>
                                         <!-- End content Item -->

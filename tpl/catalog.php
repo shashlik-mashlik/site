@@ -26,7 +26,7 @@ if ($URL[1]=='market') {
             <div class="container" >
               <div class="slider-content"> <i class="icon-home-ico"></i>
                 <h1>Меню</h1>
-                <p>Come & Taste</p>
+                <p>Enjoy taste</p>
                 <ol class="breadcrumb">
                   <li><a href="/">Главная</a></li>
                   <li>Меню</li>

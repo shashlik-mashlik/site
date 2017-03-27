@@ -94,7 +94,7 @@ if ($URL[1] != '') {
                                                             <div class="col-md-4 col-sm-4 col-sx-12">
                                                                 <!-- Element -->
                                                                 <div class="element">
-                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Теефон *" required/>
+                                                                    <input type="text" id="ajax_phone" class="form-control text" placeholder="Телефон *" required/>
                                                                     <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -35px; left: 10px;" id="ajax_phone_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
@@ -109,6 +109,7 @@ if ($URL[1] != '') {
                                                                 <!-- Element -->
                                                                 <div class="element">
                                                                     <textarea id="ajax_comment" class="text textarea" placeholder="Комментарий *" required></textarea>
+                                                                    <span style="visibility: hidden; padding: 10px; background: #000; opacity: 0.7; color: #FFF; position: absolute; top: -35px; left: 10px;" id="ajax_comment_span"></span>
                                                                 </div>
                                                                 <!-- End Element -->
                                                             </div>

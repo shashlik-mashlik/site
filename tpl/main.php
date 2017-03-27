@@ -18,19 +18,19 @@ if ($URL[1]=='') {
         <!-- Text Rotater -->
         <ul id="fade">
           <li>
-            <h1>ИСКУССТВО П‎РИГОТОВЛЕНИЯ ШАШЛЫКОВ НА МАНГАЛЕ</h1>
+            <h1>Искусство приготовления шашлыков на мангале</h1>
           </li>
           <li>
-            <h1>Рады Вас видеть</h1>
+            <h1>Здесь создаются вкусные истории</h1>
           </li>
           <li>
-            <h1>Сочетание традиций и вкуса</h1>
+            <h1>Сочетание традиций с разнообразием вкуса</h1>
           </li>
         </ul>
         <!-- End Text Rotater -->
         <i class="icon-home-ico"></i>
-        <p class="text-uppercase">Мы создаем вкусные воспоминания</p>
-        <a href="/market/shashliks" class="btn btn-gold white">ПЕРЕЙТИ В РАЗДЕЛ ШАШЛЫКИ</a> </div>
+        <p class="text-uppercase">Традиции вкуса</p>
+        <a href="/market" class="btn btn-gold white">Наше меню</a> </div>
       <!-- End Slider content  -->
     </div>
   </section>
@@ -68,7 +68,7 @@ if ($URL[1]=='') {
             </div>
             <!-- End# Head Title -->
             <p><?=$TEXT['block1_text']?></p>
-            <a href="/about" class="btn btn-gold">О нас</a> </div>
+            <a href="/about" class="btn btn-gold">Подробнее...</a> </div>
           <!-- End intro center -->
           <!-- Right Img Intro -->
           <div class="col-md-4"> <img class="img-responsive" src="themes/majesty/img/right-image.jpg" alt=""> </div>
@@ -112,7 +112,7 @@ if ($URL[1]=='') {
             <div class="head_title">
               <i class="icon-intro"></i>
                 <h1>О нас</h1>
-                <span class="welcome">Welcome to Shaslik-Mashlik</span>
+                <span class="welcome">Welcome to Shasklik-Mashlik</span>
             </div>
             <!-- End# Head Title -->
             <p>

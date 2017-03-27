@@ -58,12 +58,12 @@ $Ask = $json['query']['results']['rate']['Ask'];
           <!-- Menu Desc -->
           <div class="menu-desc col-md-6">
             <h2><?=$el['name']?> <span class="pull-right"><?=number_format($el['price'], 2, ',', ' ')?> руб.</span></h2>
-            <!-- Rating -->
+            <!-- Rating 
             <fieldset class="rating">
               <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span> 
               <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
               <span><i class="fa fa-star"></i></span>
-            </fieldset>
+            </fieldset>-->
             <!-- End Rating -->
             <!-- Tagged -->
             <div class="tagged"> 
