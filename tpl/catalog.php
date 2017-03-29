@@ -84,7 +84,7 @@ if ($URL[1]=='market') {
 						$i = $count_url;					
 
 						if ($i == 1) { 
-							$sql = "SELECT * FROM `mandarinko_catalog_item`"; 
+							$sql = "SELECT * FROM `mandarinko_catalog_item` ORDER BY `cid`"; 
 						//	include('tpl/items-catalog.php');
 						}				
 				

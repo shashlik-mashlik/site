@@ -25,9 +25,14 @@ $(function ($) {
                 // else:
 
                  images:[
-                 "img/background/custom/001_dark.jpg",
-                 "img/background/custom/002_dark.jpg",
-                 "img/background/custom/003_dark.jpg"
+                 "img/background/custom/0_dark.jpg",
+                 "img/background/custom/1_dark.jpg",
+                 "img/background/custom/2_dark.jpg",
+                 "img/background/custom/3_dark.jpg",
+                 "img/background/custom/4_dark.jpg",
+                 "img/background/custom/5_dark.jpg",
+                 "img/background/custom/6_dark.jpg",
+                 "img/background/custom/7_dark.jpg"
                  ],    
 
                 onStart:function(){},

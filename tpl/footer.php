@@ -100,7 +100,11 @@
     <!-- End container -->
     <!-- Footer logo !-->
     <div class="footer_logo text-center"> <img  src="/themes/majesty/img/footer_logo.png"  alt="logo">
+    <!--
       <p> 2017 ALL RIGHT RESERVED. DESIGNED BY <a href="http://konekon.ru/" target="_blank">&nbspK&nbspO&nbspN&nbspΞ&nbspK&nbspO&nbspN&nbsp</a></p>
+
+      <p> 2017 ALL RIGHT RESERVED. DESIGNED BY <a href="http://konekon.ru/" target="_blank">&nbspK&nbspO&nbspN&nbspΞ&nbspK&nbspO&nbspN&nbsp</a></p>
+    -->
     </div>
     <!-- End Footer logo !-->
   </footer>

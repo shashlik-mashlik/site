@@ -25,7 +25,7 @@ if ($URL[2]=='') {
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".247">Шашлыки</a></li>
           -->
           <li><a href="http://shashlik-mashlik.com/market/shashliks" onclick="location.href = 'http://shashlik-mashlik.com/market/shashliks'">Шашлыки</a></li>
-          
+          <li><a href="menu_masonry_fullwidth.html#" data-filter=".257">Гарниры</a></li>
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".256">Салаты</a></li>
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".258">Соусы</a></li>
           <li><a href="menu_masonry_fullwidth.html#" data-filter=".259">Хлеб</a></li>
@@ -49,7 +49,7 @@ if (($URL[2]=='shashliks') && ($URL[3]=='')) {
         <!-- menu Filter
         ============================================= -->
         <ul id="menu-fillter" class="clearfix">
-          <li class="activeFilter"><a href="/market/" onclick="location.href = 'http://shashlik-mashlik.com/market'">Все меню</a></li>
+          <li class="activeFilter"><a href="/market/" onclick="location.href = 'http://shashlik-mashlik.com/market'">Меню</a></li>
           <li><a href="#" data-filter="*">Шашлыки</a></li>
           <li><a href="#" data-filter=".248">Свинина</a></li>
           <li><a href="#" data-filter=".249">Баранина</a></li>
