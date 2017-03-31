@@ -79,7 +79,7 @@ if ($URL[1]=='') {
     <!-- End welcome block -->
     <!-- Discover
     ============================================= -->
-    <section id="slide-2" class="discover dark text-center">
+    <section id="slide-2" class="discover dark text-center hidden-xs">
       <!-- Parallax Bg -->
       <div class="bcg background14"
         data-center="background-position: 50% 0px;"
@@ -131,7 +131,7 @@ if ($URL[1]=='') {
 
     <!-- Video 
     ============================================= -->
-    <section id="slide-04" class="video dark text-center" >
+    <section id="slide-04" class="video dark text-center " >
       <!-- BG Parallax -->
       <div class="bcg background16"
         data-center="background-position: 50% 0px;"
