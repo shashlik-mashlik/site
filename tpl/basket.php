@@ -19,7 +19,7 @@ if (isset($_GET['del_basket_item'])) {
 
 <!-- banner 
   ============================================= -->
-<section class="banner dark">
+<section class="banner dark hidden-xs">
     <div id="cart-parallax">
         <div class="bcg background46"
              data-center="background-position: 50% 0px;"

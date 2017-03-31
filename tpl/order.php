@@ -297,7 +297,7 @@
 
 <!-- banner 
     ============================================= -->
-  <section class="banner dark" >
+  <section class="banner dark hidden-xs">
     <div id="myccount-parallax">
       <div class="bcg background46"
                 data-center="background-position: 50% 0px;"
@@ -310,7 +310,7 @@
             <div class="container" >
               <div class="slider-content  "> <i class="icon-home-ico"></i>
                 <h1>Оформление заказа</h1>
-                <p>Every Thing You Know About Shaslik-Mashlik</p>
+                <p>Every Thing You Know About Shashlik-Mashlik</p>
                 <ol class="breadcrumb">
                   <li><a href="/basket">Корзина</a></li>
                   <li>Подтверждение заказа</li>
